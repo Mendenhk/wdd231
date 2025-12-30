@@ -1,5 +1,7 @@
 /*Added by Kriston: Add the following link in the head of any HTML page, BEFORE any other CSS link reference:
 <link rel="stylesheet" href="styles/normalize.css"> */
+/*Added by Kriston:  NOTE: the following content delivery network minimization reference link can be used instead of hosting/creating your own file:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
