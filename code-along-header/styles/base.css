@@ -2,7 +2,7 @@
 /* terra cotta #E07A5F */
 /* deep slate blue #3D405B */
 
-/* -------------------------(25) SITE WIDE ----------------------------- */
+/* ------------------------- (25) SITE WIDE ----------------------------- */
 * {
     font-family: "Josefin Sans", sans-serif;
     box-sizing: border-box;
@@ -13,8 +13,42 @@
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    border: solid 1px #ddd;
+    /* above: light gray */
+    column-gap: 8px;
+    /* above: small gap between grid cells */
+    align-items: end;
+    /* above: pushes items to the bottom */
 }
 
 header img {
     display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D405B;
+}
+
+/* ------------------------- NAVIGATION ------------------------- */
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* above: this font is used to increase the size of "x" */
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
 }
