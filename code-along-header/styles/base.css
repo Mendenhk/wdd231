@@ -4,66 +4,83 @@
 
 /* ------------------------- (25) SITE WIDE ----------------------------- */
 * {
-    font-family: "Josefin Sans", sans-serif;
-    box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 
 /* ------------------------- HEADER  ------------------------- */
 header {
-    display: grid;
-    grid-template-columns: 24px auto 44px;
-    padding: 5px 0 5px 10px;
-    border: solid 1px #ddd;
-    /* above: light gray */
-    column-gap: 8px;
-    /* above: small gap between grid cells */
-    align-items: end;
-    /* above: pushes items to the bottom */
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  border: solid 1px #ddd;
+  /* above: light gray */
+  column-gap: 8px;
+  /* above: small gap between grid cells */
+  align-items: end;
+  /* above: pushes items to the bottom */
 }
 
 header img {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding-bottom: 3px;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 3px;
 }
 
 header span {
-    font-size: 1.2rem;
-    color: #3D405B;
+  font-size: 1.2rem;
+  color: #3D405B;
 }
 
 /* ------------------------- HAMBURGER ------------------------- */
 .hamburger {
-    background: none;
-    border: none;
-    color: #3D405B;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* above: this font is used to increase the size of "x" */
+  background: none;
+  border: none;
+  color: #3D405B;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* above: this font is used to increase the size of "x" */
 }
 
 .hamburger::before {
-    content: "\2630";
-    font-size: 2rem;
+  content: "\2630";
+  font-size: 2rem;
 }
 
 .hamburger.show::before {
-    content: "\00D7";
+  content: "\00D7";
 }
 
 
 /* ------------------------- NAVIGATION ------------------------- */
 .navigation {
-    display: none;
+  display: none;
 }
 
 .navigation.show {
-    display: block;
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* all <ul>elements come with preset padding and margins, so we want to get rid of them */
 }
 
 .navigation li {
-    height: 44px;
-    /* above: large enough for finger touch */
+  height: 44px;
+
+}
+
+.navigation a {
+  display: block;
+  /* <a> elements default to inline */
+  padding: 0.8rem 10px;
+  /* above: large enough for finger touch (check with inspect-44px), and padding L/R to match header padding */
+  color: #3D405B;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
 }
