@@ -84,3 +84,14 @@ header span {
   text-decoration: none;
   border-bottom: solid 1px #ddd;
 }
+
+/* below: wayfinding effect-light grey background for a li element with a class of "current" */
+.navigation li.current {
+  background-color: #eee;
+}
+
+
+
+h1 {
+  margin-left: 10px;
+}
