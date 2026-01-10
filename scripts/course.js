@@ -81,6 +81,7 @@ const courses = [
 const coursesDiv = document.getElementById('courses');
 const allButton = document.getElementById('all-button');
 allButton.addEventListener('click', () => {
+  coursesDiv.innerText = ``;
   for (const course of courses) {
     const courseItem = document.createElement('div');
     if (course.completed) {
