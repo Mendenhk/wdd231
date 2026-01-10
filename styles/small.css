@@ -1,14 +1,13 @@
-/* -------------------------25 - last checked ------------------------- WDD131-not checked*/
 /* -------------------------25 - Color Scheme choices (chatGTP) ------------------------- WDD131-not checked*/
 :root {
  
 /* Clean & Modern */
 /* Deep Navy */
-/* --base-color: #0F172A */
+--base-color: #0F172A;
 /* Soft Gray */
-/* --top-color: #E5E7EB */
+--top-color: #E5E7EB;
 /* Accent Blue */
-/* --Accent color: #3B82F6 */
+--Accent-color: #3B82F6;
 
 /* Warm & Inviting (great for lifestyle, blogs, wellness) */
 /* Warm Beige */
@@ -39,6 +38,9 @@
 /* google font */
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* -------------------------25 - HEADER  ------------------------- from WDD231-not checked*/
@@ -68,10 +70,11 @@ header span {
 .hamburger {
   background: none;
   border: none;
-  color: #3D405B;
   cursor: pointer;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* above: this font is used to increase the size of "x" */
+  padding-bottom: 0.5rem;
+  /* above: vertically centers the hamburger button */
 }
 
 .hamburger::before {
@@ -81,162 +84,72 @@ header span {
 
 .hamburger.show::before {
   content: "\00D7";
-
-:root {
-  --cambodia-blue: #032EA1;
-  --light-cambodia-blue: #5A7ED1;
-  --cambodia-red: #E00025;
-  --placeholder: lightgray;
 }
 
-* {
-  margin: 0;
+
+/* ------------------------- NAVIGATION ------------------------- */
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
+  /* all <ul>elements come with preset padding and margins, so we want to get rid of them */
 }
+
+.navigation li {
+  height: 44px;
+}
+
+.navigation a {
+  display: block;
+  /* <a> elements default to inline */
+  padding: 0.8rem 10px;
+  /* above: large enough for finger touch (check with inspect-44px), and padding L/R to match header padding */
+  color: #3D405B;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+  cursor: pointer;
+}
+
+.navigation a:hover {
+  background-color: #E07A5F;
+}
+
+/* below: wayfinding effect-light grey background for a li element with a class of "current" */
+.navigation li.current {
+  background-color: #eee;
+}
+
+
+
+
+
+
+
+/* -------------------------25 - last checked ------------------------- WDD131-not checked*/
 
 body {
-  font-family: Roboto, helvetica, sans-serif;
   margin: 1rem;
 }
 
 header {
-  background-color: var(--cambodia-blue);
+  background-color: var(--Accent-color);
   text-align: center;
 }
 
-/*CSS code for the menu button (#menu) and the nav list (.navigation) */
-ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
 
-nav a {
-  display: none;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: larger;
-  text-decoration: none;
-}
-
-nav a:hover {
-  background-color: yellow;
-  color: red;
-}
-
-/* small view navigation.  #menu is the button */
-#menu {
-  font-size: 1.5rem;
-  border: 0;
-  background: none;
-  /*so it is see through*/
-  color: #000;
-  position: absolute;
-  /*since no relative container, this is absolute in relation to the page*/
-  top: 1rem;
-  right: 1rem;
-}
-
-#menu::before {
-  content: '☰';
-  color: white;
-}
-
-#menu.open::before {
-  content: '❌';
-}
-
-.open a {
-  display: block;
-}
-
-h1 {
-  text-align: center;
-  padding: 1rem;
-}
-
-.red-stripe {
-  padding: 0.5rem;
-  background-color: var(--cambodia-red);
-}
-
-/* .bottom-stripe {
-  padding: 0.25rem;
-  background-color: var(--cambodia-blue);
-} */
-
-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.data,
-.weather {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  padding: 3.5rem 1rem 1rem 1rem;
-}
-
-.weather {
-  border-top: solid 2px rgba(211, 211, 211, 0.5);
-}
-
-h2 {
-  grid-column: 1 / -1;
-  margin: 0 auto;
-}
-
-/*------------------ weather svg for small screens --------------------*/
-.weatherSVG {
-  grid-column: 1/-1;
-  margin: 0 auto;
-  width: 50px;
-  height: 50px;
-
-}
-
-/* svg styling: */
-.title {
-  font-family: 'Cinzel', serif;
-  font-size: 28px;
-  fill: #D4AF37;
-  font-weight: 700;
-}
-
-.logo-container svg {
-  width: 300px;
-  height: auto;
-}
-
-svg {
-  grid-column: 1 / -1;
-  margin: 0 auto;
-  width: 100px;
-}
-
-.r-justify-list {
-  text-align: right;
-}
-
-li {
-  padding: 0.25rem 0;
-}
-
-
-
-
-
-/* 🌤️ partly cloudy emoticon (large window) */
-
-/*Below is the basic footer for all pages*/
+/* -------------------------25 FOOTER ------------------------- */
 footer {
   grid-column: 1/4;
   place-items: center;
-  background-color: var(--cambodia-blue);
+  background-color: var(--Accent-color);
   color: white;
   padding: 1rem;
 }
@@ -251,153 +164,3 @@ footer p {
   color: yellow;
 }
 
-
-/*----------- FORM STYLING --------------*/
-.wf1 {
-  background: linear-gradient(var(--light-cambodia-blue), #FFFFFF);
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.wf1 label {
-  display: block;
-  /* changes from inline to block, putting each label on own line */
-
-}
-
-/* now to fix the "audience" and "software needed" text spacing for the radial and checkboxes */
-/* they are in div containers */
-.wf1 div {
-  /* using font size to match the labels above */
-  font-size: 0.9rem;
-}
-
-/* Now to move label text above and left justified of the input fields */
-.wf1 input[type="text"],
-.wf1 input[type="email"],
-.wf1 textarea,
-.wf1 select {
-  background-color: #eee;
-  display: block;
-  border: 1px solid #999;
-  border-radius: 6px;
-  /* padding added to make input areas at least 44px tall for touch */
-  padding: 0.75rem;
-  color: #555;
-  /* min width of 100% for phone screens, but limit to 400px for large screens */
-  width: 100%;
-  max-width: 400px;
-  /* the code below overides the default browser styling */
-  /* NOTE: this also removes the arrows in the dropdown so we add these back in html */
-  appearance: none;
-}
-
-/* now to make it so the checkboxes are not touching their text */
-.wf1 input[type="checkbox"] {
-  margin-right: 6px;
-}
-
-/* styling the input button */
-.wf1 input[type="submit"] {
-  border: 1px solid #999;
-  padding: 1rem;
-  background-image: linear-gradient(var(--light-cambodia-blue), #aa4f4f);
-  color: #fff;
-  border-radius: 6px;
-  width: 100%;
-  max-width: 400px;
-  /* now to correct the allignment of the submit button */
-  /* -1rem moves right, 2% width matches the inputs above (96% +2% + 2%) */
-  margin: 1rem 0 2rem 0;
-  box-shadow: 1px 1px 4px #999;
-}
-
-/*------------input text (not radio or checkbox)----------------*/
-.select-label,
-.textarea-label,
-.text-label {
-  margin-top: 1rem;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: var(--placeholder);
-}
-
-
-/*---------------------radio buttons---------------------*/
-.stars-paragraph {
-  margin-top: 1rem;
-}
-
-.stars-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 400px;
-}
-
-.stars-container div {
-  display: flex;
-  flex-direction: column;
-}
-
-/*---------------------checkboxes---------------------*/
-.checkbox-paragraph {
-  margin-top: 1rem;
-}
-
-/*.wf1 had to be added to override the .wf1 rule above for blocking labels*/
-.wf1 .checkbox {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.2rem;
-}
-
-input[type="checkbox"] {
-  height: 20px;
-  width: 20px;
-}
-
-
-/*-----------styling the "required" inputs--------------*/
-.wf1 input:required,
-textarea:required {
-  border-bottom: solid 8px red;
-}
-
-.wf1 input:required:valid,
-textarea:required:valid {
-  border-bottom: solid 8px green;
-}
-
-/*-----------------------Show more/less buttons on Places.html-------------------*/
-.show-hide-temple,
-.show-hide-park,
-.show-hide-fcity {
-  text-align: center;
-  border: 1px solid black;
-  padding: 0.75rem 0;
-  margin: 0 0 1rem 0;
-}
-
-.show-hide-temple:hover,
-.show-hide-park:hover,
-.show-hide-fcity:hover {
-  cursor: pointer;
-}
-
-/*show text with a toggle javaScript*/
-/* .temple-open {} */
-
-.temple-open::before {
-  content: 'There are more than 4000 anchient temples reported by the Ministry of Fine Arts, however, lidar technologies have discovered over 6000 and counting. These temples were originally built around Hinduism and have elaborate wall carvings portraying the Hinduism tradition, but were later transitioned to include Buddhism as the great Khmer Empire came into dominance.';
-}
-
-.park-open::before {
-  content: 'Khnang Phnum Park, perched on sacred Phnom Yat hill in Pailin Province, offers sweeping views of the Cardamom Mountains and lush forest. Climb about 200 steps past colorful temples and giant granite boulders to reach a huge cliff-carved reclining Buddha glowing gold at sunset. In the rainy season, several beautiful waterfalls cascade down the hillside, creating refreshing pools and the soothing sound of falling water. A perfect spot for photos, cool breezes, and peaceful escape.';
-}
-
-.fcity-open::before {
-  content: 'Near the city of Seam Reap, bordering the immense Tonlé Sap lake, are several communities living in houses and buildings built on massive stilts. The photos here show one of those city/communities during the dry season. During wet season the Tonlé Sap lake rises 30-33 feet, and the water level can rises nearly to the top of these stilts. Transportation during wet season is entirely by boat.';
-}
