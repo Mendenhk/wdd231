@@ -47,7 +47,7 @@
 /* -------------------------25 - HEADER  ------------------------- from WDD231-not checked*/
 header {
   display: grid;
-  grid-template-columns: 24px auto 44px;
+  grid-template-columns: 44px auto 44px;
   padding: 5px 0 5px 10px;
   border: solid 1px #ddd;
   /* above: light gray */
@@ -130,6 +130,10 @@ header span {
 
 
 /* -------------------------25 -  BODY AND SECTIONS ------------------------- */
+section {
+  margin-bottom: 1rem;
+}
+
 .section-header {
   background-color: var(--Accent-color);
   text-align: center;
@@ -153,13 +157,17 @@ header span {
   padding: 5px 0;
 }
 
+.certificate-h2 {
+  margin-bottom: 0.5rem;
+}
+
 .certificate-buttons {
   display: flex;
   justify-content: space-around;
 }
 
 .course-button {
-  padding: 8px 50px;
+  padding: 8px 40px;
   background-color: var(--base-color);
 }
 
@@ -167,18 +175,20 @@ main p {
   text-align: center;
 }
 
-.img-dev {
+.about-me-div,
+.img-div {
   padding: 1rem;
 }
 
-.img-dev img {
-  max-height: 100%;
-  max-width: 100%;
+.img-div img {
+  height: 100%;
+  width: 100%;
   object-fit: contain;
 }
 
-
-/* -------------------------25 - last checked ------------------------- WDD131-not checked*/
+.about-me-div {
+  display: block;
+}
 
 body {
   margin: 1rem;
