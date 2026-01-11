@@ -237,12 +237,3 @@ footer p {
 #lastModified {
   font-size: 14px;
 }
-
-/* -------------------------25 BUTTON COLOR ANIMATIONS ------------------------- */
-animation: colorChange 3s;
-
-@keyframes colorChange {
-  100% {
-    background-color: var(--section-header);
-  }
-}
