@@ -1,41 +1,41 @@
 /* -------------------------25 - Color Scheme choices (chatGTP) ------------------------- WDD131-not checked*/
 :root {
- 
-/* Clean & Modern */
-/* Deep Navy */
-/* --base-color: #0F172A; */
-/* Soft Gray */
-/* --top-color: #E5E7EB; */
-/* Accent Blue */
-/* --Accent-color: #3B82F6; */
 
-/* Warm & Inviting (great for lifestyle, blogs, wellness) */
-/* Warm Beige */
---base-color: #F5F1EB;
-/* Terracotta */
---top-color: #C26E4A;
-/* Charcoal */
---Accent-color: #2E2E2E;
+  /* Clean & Modern */
+  /* Deep Navy */
+  /* --base-color: #0F172A; */
+  /* Soft Gray */
+  /* --top-color: #E5E7EB; */
+  /* Accent Blue */
+  /* --Accent-color: #3B82F6; */
 
-/* Bold & Playful (startup / creative energy) */
-/* Indigo #4338CA */
-/* Mint #A7F3D0 */
-/* Off-White #FAFAFA */
+  /* Warm & Inviting (great for lifestyle, blogs, wellness) */
+  /* Warm Beige */
+  --base-color: #F5F1EB;
+  /* Terracotta */
+  --top-color: #C26E4A;
+  /* Charcoal */
+  --Accent-color: #2E2E2E;
 
-/* Dark Mode Friendly (slick & modern) */
-/* Near-Black #0B0F19 */
-/* Slate Gray #1F2937 */
-/* Electric Cyan #22D3EE */
+  /* Bold & Playful (startup / creative energy) */
+  /* Indigo #4338CA */
+  /* Mint #A7F3D0 */
+  /* Off-White #FAFAFA */
 
-/* Nature-Inspired (calm & trustworthy) */
-/* Forest Green #14532D */
-/* Sage #A7C7B7 */
-/* Cream #FBF7F2 */
+  /* Dark Mode Friendly (slick & modern) */
+  /* Near-Black #0B0F19 */
+  /* Slate Gray #1F2937 */
+  /* Electric Cyan #22D3EE */
+
+  /* Nature-Inspired (calm & trustworthy) */
+  /* Forest Green #14532D */
+  /* Sage #A7C7B7 */
+  /* Cream #FBF7F2 */
 }
 
 /* -------------------------25 - SITE WIDE ------------------------- WDD131-not checked*/
 * {
-/* google font */
+  /* google font */
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -163,11 +163,19 @@ header span {
   background-color: var(--base-color);
 }
 
- main p {
-    text-align: center;
-  }
+main p {
+  text-align: center;
+}
 
-  
+.img-dev {
+  padding: 1rem;
+}
+
+.img-dev img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
 
 
 /* -------------------------25 - last checked ------------------------- WDD131-not checked*/
@@ -198,4 +206,3 @@ footer p {
 #lastModified {
   font-size: 14px;
 }
-
