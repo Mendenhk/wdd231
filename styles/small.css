@@ -163,6 +163,7 @@ h2 {
   padding: 8px 40px;
   background-color: var(--bg-color);
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .course-button.active {
@@ -181,7 +182,6 @@ h2 {
     background-color: var(--section-header);
     color: var(--white-text)
   }
-
 }
 
 main p {
