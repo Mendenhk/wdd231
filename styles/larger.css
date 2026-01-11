@@ -45,6 +45,10 @@
     grid-column: span 2;
   }
 
+  .social {
+    grid-column: span 2;
+  }
+
   .about-section {
     display: flex;
     flex-direction: column;
