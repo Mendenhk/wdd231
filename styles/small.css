@@ -168,6 +168,20 @@ h2 {
 .course-button.active {
   background-color: var(--section-header);
   color: var(--white-text);
+  animation: colorChange 3s;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: var(--bg-color);
+    color: var(--dark-text);
+  }
+
+  100% {
+    background-color: var(--section-header);
+    color: var(--white-text)
+  }
+
 }
 
 main p {
