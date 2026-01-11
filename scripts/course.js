@@ -82,9 +82,14 @@ const courses = [
 // ------------------------- COURSE BUTTON ACTIONS -------------------------
 const coursesDiv = document.getElementById('courses');
 const credits = document.getElementById('course-credits');
+// below: adds all buttons to buttons (like an array of buttons)
+const buttons = document.querySelectorAll('.course-button');
 
 const allButton = document.getElementById('all-button');
 allButton.addEventListener('click', () => {
+  //color change (added to each click button click event)
+  buttons.forEach(btn => btn.classList.remove('active'));  //removes existing class="active"-for color change
+  allButton.classList.add('active');
   let sumCredits = 0;
   coursesDiv.innerText = ``;
   for (const course of courses) {
@@ -104,6 +109,8 @@ allButton.addEventListener('click', () => {
 
 const cseButton = document.getElementById('CSE-button');
 cseButton.addEventListener('click', () => {
+  buttons.forEach(btn => btn.classList.remove('active'));  //removes existing class="active"-for color change
+  cseButton.classList.add('active');
   let sumCredits = 0;
   coursesDiv.innerText = ``;
   const filteredCourses = courses.filter((course) => {
@@ -127,6 +134,8 @@ cseButton.addEventListener('click', () => {
 
 const wddButton = document.getElementById('WDD-button');
 wddButton.addEventListener('click', () => {
+  buttons.forEach(btn => btn.classList.remove('active'));  //removes existing class="active"-for color change
+  wddButton.classList.add('active');
   let sumCredits = 0;
   coursesDiv.innerText = ``;
   const filteredCourses = courses.filter((course) => {
