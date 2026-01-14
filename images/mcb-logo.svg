@@ -1,0 +1,31 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="2" y="2" width="44" height="44" rx="8" fill="#0B6E77"/>
+
+  <!-- Sun -->
+  <circle cx="24" cy="14" r="10" fill="#F9E26B"/>
+
+  <!-- Morro Rock -->
+  <path
+    d="M10 22 C14 14, 34 14, 38 22 L38 26 L10 26 Z"
+    fill="#C47A3A"
+  />
+
+  <!-- Waves -->
+  <path
+    d="M8 28 Q14 26 20 28 T32 28 T40 28 V34 H8 Z"
+    fill="#1ECAD3"
+  />
+
+  <!-- Text -->
+  <text
+    x="24"
+    y="41"
+    text-anchor="middle"
+    font-size="12"
+    font-weight="700"
+    fill="white"
+    font-family="Arial, Helvetica, sans-serif">
+    MBC
+  </text>
+</svg>
