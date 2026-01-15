@@ -1,0 +1,240 @@
+/* -------------------------25 - LAST CHECKED -------------------------*/
+
+
+
+/* -------------------------25 - Color Scheme choices -------------------------*/
+:root {
+
+    /* backgrounds */
+    --header-section-hd: rgb(44, 39, 93);
+    --section-bg: rgb(133, 170, 194);
+    --footer: rgb(227, 243, 249);
+
+
+    /* Text */
+    --white-text: #fff;
+    --black-text: #000;
+}
+
+/* -------------------------25 - SITE WIDE ------------------------- WDD131-not checked*/
+* {
+    /* google font */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+footer {
+    margin: 0 1rem
+}
+
+/* -------------------------25 - HEADER  ------------------------- from WDD231-not checked*/
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    padding: 5px 0 5px 10px;
+    border: solid 1px #ddd;
+    /* above: light gray */
+    column-gap: 8px;
+    /* above: small gap between grid cells */
+    align-items: center;
+    /* above: pushes items to the vertical center */
+    background-color: var(--header-section-hd);
+    color: var(--white-text)
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+}
+
+/* -------------------------25 HAMBURGER ------------------------- from WDD231-not checked*/
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* above: this font is used to increase the size of "x" */
+    padding-bottom: 0.5rem;
+    /* above: vertically centers the hamburger button */
+    color: var(--white-text)
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+    color: var(--white-text)
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/* ------------------------- NAVIGATION ------------------------- */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /* all <ul>elements come with preset padding and margins, so we want to get rid of them */
+}
+
+.navigation li {
+    height: 44px;
+}
+
+.navigation a {
+    display: block;
+    /* <a> elements default to inline */
+    padding: 0.8rem 10px;
+    /* above: large enough for finger touch (check with inspect-44px), and padding L/R to match header padding */
+    color: var(--dark-text);
+    text-decoration: none;
+    border: solid 1px lightgray;
+    cursor: pointer;
+}
+
+.navigation a:hover {
+    background-color: var(--section-header);
+    color: var(--light-text);
+}
+
+/* below: wayfinding effect-light grey background for a li element with a class of "current" */
+.navigation li.current {
+    background-color: var(--bg-color);
+}
+
+
+/* -------------------------25 -  BODY AND SECTIONS ------------------------- */
+section {
+    margin-bottom: 1rem;
+}
+
+.section-header {
+    background-color: var(--section-header);
+    text-align: center;
+}
+
+.section-div {
+    background-color: var(--bg-color);
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.courses div {
+    text-align: center;
+    background-color: var(--bg-color);
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 5px 0;
+}
+
+.courses .needed {
+    background-color: var(--section-header);
+    color: var(--white-text);
+}
+
+h2 {
+    color: var(--white-text)
+}
+
+.certificate-h2 {
+    margin-bottom: 0.5rem;
+}
+
+.certificate-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.course-button {
+    padding: 8px 40px;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.course-button.active {
+    background-color: var(--section-header);
+    color: var(--white-text);
+    animation: colorChange 3s;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: var(--bg-color);
+        color: var(--dark-text);
+    }
+
+    100% {
+        background-color: var(--section-header);
+        color: var(--white-text)
+    }
+}
+
+main p {
+    text-align: center;
+}
+
+.about-me-div,
+.img-div {
+    padding: 1rem;
+}
+
+.img-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.about-me-div {
+    display: block;
+}
+
+.bottom-p {
+    padding-top: 0.5rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social a {
+    padding: 0 0.5rem;
+}
+
+/* -------------------------25 FOOTER ------------------------- */
+footer {
+    grid-column: 1/4;
+    place-items: center;
+    background-color: var(--footer);
+    color: var(--light-text);
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+#lastModified {
+    font-size: 14px;
+}
