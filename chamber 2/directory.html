@@ -1,0 +1,112 @@
+<!-- next: complete facebook meta properties -->
+<!-- take photo of morro bay -->
+<!-- create image overlay -->
+<!-- change email to hyperlink -->
+<!-- change github link to facebook hub -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-Chamber Of Commerce</title>
+  <meta name="description" content="Home page for chamber of commerce project">
+  <meta name="author" content="Kriston Mendenhall">
+
+  <!-- facebook meta's -->
+  <meta property="og:title" content="Morro Bay Chamber of Commerce">
+  <meta property="og:description" content="Chamber of commerce page for morro bay assignment-home page">
+  <!-- <meta property="og:image" content="images/mcb-chamber-commerce.webp"> -->
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:url" content="https://www.morrochamber.org">
+
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- google font links here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- style sheets and scripts here -->
+  <link rel="stylesheet" href="styles/normalization.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <img src="images/mcb-logo.svg" alt="site logo" width="48" height="48">
+    <span>Morro Bay Chamber of Commerce</span>
+    <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="image-overlay">
+      <picture class="hero">
+        <!-- <source srcset="images/morro-hero" media="(min-width: 740px)"> -->
+        <img src="images/morro-hero.webp" alt="morro-bay-small" width="400" height="200">
+      </picture>
+      <div class="overlay">
+        <!-- add content for keynote ticket overlay -->
+      </div>
+    </div>
+    <section class="home">
+      <h1>Home</h1>
+      <div class="events">
+        <h2>Events</h2>
+        <div id="events"></div>
+      </div>
+      <div class="weather">
+        <h2>Current Weather</h2>
+        <div id="weather"></div>
+      </div>
+      <div class="forecast">
+        <h2>Weather Forecast</h2>
+        <div id="forecast"></div>
+      </div>
+    </section>
+    <section id="cards" class="cards"></section>
+  </main>
+  <footer>
+    <div id="cc-address">
+      <h3>Morro Bay Chamber of Commerce</h3>
+      <p class="tagline">Stronger Together</p>
+      <ul>
+        <li><a href="mailto:info@morrochamber.org">EMAIL: info@morrochamber.org</a></li>
+        <li><a href="tel:+1-805-772-4467">PHONE: 805-772-4467</a></li>
+        <li><a href="https://www.morrochamber.org">URL: MorrowBayCC.org</a></li>
+      </ul>
+    </div>
+    <div class="social">
+      <a href="https://www.linkedin.com/company/morro-bay-chamber-of-commerce/" target="_blank"><img
+          src="images/linkedin.svg" alt="linkedin" width="44" height="44"></a>
+      <a href="https://github.com/Mendenhk/wdd231" target="_blank"><img src="images/github.svg" alt="github" width="44"
+          height="44"></a>
+      <a href="https://www.instagram.com/morrobaychamber/ target=" _blank"><img src="images/instagram.svg"
+          alt="instagram" width="44" height="44"></a>
+    </div>
+    <div id="project-info">
+      <p>WDD231 Class Project: Chamber of Commerce</p>
+      <p>Kriston Mendenhall</p>
+      <p>
+        ©️<span id="currentYear">JavaScript Year</span> Moro Bay Chamber of Commerce
+      </p>
+
+      <p id="lastModified">add last modified with JavaScript</p>
+    </div>
+  </footer>
+</body>
+
+</html>

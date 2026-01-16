@@ -1,0 +1,72 @@
+@media only screen and (min-width: 600px) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+        /* above: the margin written like this centers the contents */
+    }
+
+    header {
+        grid-template-columns: 24px auto auto;
+        /* above: removes 3rd column containing the hamburger */
+        padding: 15px 0 15px 10px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation.show {
+        border-top: none;
+        grid-column: 3/4;
+    }
+
+    /* -------------------------25 -  MAIN GRID LAYOUT ------------------------- */
+    main {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 1rem;
+    }
+
+    h1 {
+        grid-column: span 2;
+    }
+
+    .certificate-section {
+        grid-column: span 2;
+    }
+
+    .social {
+        grid-column: span 2;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-section div {
+        flex-grow: 1;
+    }
+
+    /* BUTTONS */
+    .course-button {
+        padding: 8px 70px;
+    }
+
+}
