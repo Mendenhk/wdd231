@@ -1,0 +1,56 @@
+const members = [{
+    "name": "Morro Bay Golf Course",
+    "address": "201 State Park Rd, Morro Bay, CA 93442",
+    "phone": "(805) 772-1923",
+    "URL": "https://golfmorrobay.com",
+    "image": "https://golfmorrobay.mystagingwebsite.com/wp-content/uploads/2017/03/background.png",
+    "memberLevel": 3
+}, 
+{
+    "name": "Current Networks",
+    "address": "225 S Ocean Ave, Cayucos CA",
+    "phone": "(805) 782-1005",
+    "URL": "https://www.current-networks.com",
+    "image": "https://golfmorrobay.mystagingwebsite.com/wp-content/uploads/2017/03/background.png",
+    "memberLevel": 3
+},
+{
+    "name": "Even Keel Wind",
+    "address": "2One South Wacker Drive, Suite 1500, Chicago, IL 60606",
+    "phone": "(805) 782-1005",
+    "URL": "https://evenkeelwind.invenergy.com",
+    "image": "https://golfmorrobay.mystagingwebsite.com/wp-content/uploads/2017/03/background.png",
+    "memberLevel": 3
+},
+{
+    "name": "Central Coast Community Energy",
+    "address": "1026 Palm Street San, Luis Obispo, CA 93401, USA",
+    "phone": "(877) 455-2223",
+    "URL": "https://3cenergy.org",
+    "image": "https://golfmorrobay.mystagingwebsite.com/wp-content/uploads/2017/03/background.png",
+    "memberLevel": 2
+},
+{
+    "name": "The Dough Connection",
+    "address": "913 Embarcadero St, Morro Bay, CA",
+    "phone": "(877) 693-6844",
+    "URL": "https://the-dough-connection.square.site",
+    "image": "https://golfmorrobay.mystagingwebsite.com/wp-content/uploads/2017/03/background.png",
+    "memberLevel": 1
+},
+{
+    "name": "Poppy Clothing",
+    "address": "911 Embarcadero, Morro Bay, CA 934",
+    "phone": "(805) 771-9750",
+    "URL": "https://www.poppywoman.com",
+    "image": "https://golfmorrobay.mystagingwebsite.com/wp-content/uploads/2017/03/background.png",
+    "memberLevel": 1
+},
+{
+    "name": "Under The Sea Gallery",
+    "address": "833 b, 725 Embarcadero, Morro Bay, CA 93442",
+    "phone": "(805) 772-4872",
+    "URL": "https://undertheseagallery.com",
+    "image": "https://golfmorrobay.mystagingwebsite.com/wp-content/uploads/2017/03/background.png",
+    "memberLevel": 1
+}];
