@@ -21,6 +21,7 @@
 
     .navigation {
         display: block;
+        grid-column: 3/4;
     }
 
     .navigation ul {

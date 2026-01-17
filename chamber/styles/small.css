@@ -26,11 +26,6 @@ footer {
   margin: 0 1rem
 }
 
-
-
-/* -------------------------25 - LAST CHECKED -------------------------*/
-
-
 /* -------------------------25 - HEADER  ------------------------- from WDD231-not checked*/
 header {
   display: grid;
@@ -78,10 +73,11 @@ header span {
   content: "\00D7";
 }
 
-
 /* ------------------------- NAVIGATION ------------------------- */
 .navigation {
   display: none;
+  grid-column: 1/-1;
+  text-align: center;
 }
 
 .navigation.show {
@@ -104,22 +100,24 @@ header span {
   /* <a> elements default to inline */
   padding: 0.8rem 10px;
   /* above: large enough for finger touch (check with inspect-44px), and padding L/R to match header padding */
-  color: var(--dark-text);
+  color: var(--white-text);
   text-decoration: none;
-  border: solid 1px lightgray;
+  border-top: solid 1px lightgray;
   cursor: pointer;
 }
 
 .navigation a:hover {
-  background-color: var(--section-header);
-  color: var(--light-text);
+  background-color: var(--section-bg);
 }
 
 /* below: wayfinding effect-light grey background for a li element with a class of "current" */
-.navigation li.current {
-  background-color: var(--bg-color);
+.navigation li.current a {
+  background-color: yellow;
+  color: black;
 }
 
+
+/* -------------------------25 - LAST CHECKED -------------------------*/
 
 /* -------------------------25 -  BODY AND SECTIONS ------------------------- */
 
@@ -128,7 +126,7 @@ header span {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .card {
@@ -136,23 +134,30 @@ header span {
   grid-template-columns: 1fr 2fr;
   background-color: var(--section-bg);
   color: var(--white-text);
+  border-radius: 10px;
 }
 
-.card h2 {
+.card h3 {
   text-align: center;
   grid-column: 1/-1;
 }
 
-.card p {
-  font-size: 0.9rem;
+.card .tagline {
+  font-size: 0.8rem;
+  border-bottom: solid 1px black;
+  grid-column: 1/-1;
+  padding-bottom: 0.2rem;
 }
 
-.card .tagline {
-  grid-column: 1/-1;
+.card img {
+  /* width: 100px;
+  max-width: 100px;
+  height: auto; */
+  display: block;
 }
 
 .card #contact {
-  padding: 0 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
 .card #contact p {

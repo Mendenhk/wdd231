@@ -20,7 +20,7 @@ getBusinessData();  //call to the above function
 const displayBusinesses = (businesses) => {
     businesses.forEach((business) => {
         let card = document.createElement('section');
-        let name = document.createElement('h2');
+        let name = document.createElement('h3');
         let tagline = document.createElement('p');
         let image = document.createElement('img');
         let contact = document.createElement('div');
