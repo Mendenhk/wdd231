@@ -1,29 +1,29 @@
 /* -------------------------25 - Color Scheme choices -------------------------*/
 :root {
 
-    /* backgrounds */
-    --header-section-hd: rgb(44, 39, 93);
-    --section-bg: rgb(133, 170, 194);
-    --footer: rgb(227, 243, 249);
+  /* backgrounds */
+  --header-section-hd: rgb(44, 39, 93);
+  --section-bg: rgb(133, 170, 194);
+  --footer: rgb(227, 243, 249);
 
 
-    /* Text */
-    --white-text: #fff;
-    --black-text: #000;
+  /* Text */
+  --white-text: #fff;
+  --black-text: #000;
 }
 
 /* -------------------------25 - SITE WIDE ------------------------- WDD131-not checked*/
 * {
-    /* google font */
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  /* google font */
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body,
 footer {
-    margin: 0 1rem
+  margin: 0 1rem
 }
 
 
@@ -33,91 +33,91 @@ footer {
 
 /* -------------------------25 - HEADER  ------------------------- from WDD231-not checked*/
 header {
-    display: grid;
-    grid-template-columns: 44px auto 44px;
-    padding: 5px 0 5px 10px;
-    border: solid 1px #ddd;
-    /* above: light gray */
-    column-gap: 8px;
-    /* above: small gap between grid cells */
-    align-items: center;
-    /* above: pushes items to the vertical center */
-    background-color: var(--header-section-hd);
-    color: var(--white-text)
+  display: grid;
+  grid-template-columns: 44px auto 44px;
+  padding: 5px 0 5px 10px;
+  border: solid 1px #ddd;
+  /* above: light gray */
+  column-gap: 8px;
+  /* above: small gap between grid cells */
+  align-items: center;
+  /* above: pushes items to the vertical center */
+  background-color: var(--header-section-hd);
+  color: var(--white-text)
 }
 
 header img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 header span {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 /* -------------------------25 HAMBURGER ------------------------- from WDD231-not checked*/
 .hamburger {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* above: this font is used to increase the size of "x" */
-    padding-bottom: 0.5rem;
-    /* above: vertically centers the hamburger button */
-    color: var(--white-text)
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* above: this font is used to increase the size of "x" */
+  padding-bottom: 0.5rem;
+  /* above: vertically centers the hamburger button */
+  color: var(--white-text)
 }
 
 .hamburger::before {
-    content: "\2630";
-    font-size: 2rem;
-    color: var(--white-text)
+  content: "\2630";
+  font-size: 2rem;
+  color: var(--white-text)
 }
 
 .hamburger.show::before {
-    content: "\00D7";
+  content: "\00D7";
 }
 
 
 /* ------------------------- NAVIGATION ------------------------- */
 .navigation {
-    display: none;
+  display: none;
 }
 
 .navigation.show {
-    display: block;
+  display: block;
 }
 
 .navigation ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    /* all <ul>elements come with preset padding and margins, so we want to get rid of them */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* all <ul>elements come with preset padding and margins, so we want to get rid of them */
 }
 
 .navigation li {
-    height: 44px;
+  height: 44px;
 }
 
 .navigation a {
-    display: block;
-    /* <a> elements default to inline */
-    padding: 0.8rem 10px;
-    /* above: large enough for finger touch (check with inspect-44px), and padding L/R to match header padding */
-    color: var(--dark-text);
-    text-decoration: none;
-    border: solid 1px lightgray;
-    cursor: pointer;
+  display: block;
+  /* <a> elements default to inline */
+  padding: 0.8rem 10px;
+  /* above: large enough for finger touch (check with inspect-44px), and padding L/R to match header padding */
+  color: var(--dark-text);
+  text-decoration: none;
+  border: solid 1px lightgray;
+  cursor: pointer;
 }
 
 .navigation a:hover {
-    background-color: var(--section-header);
-    color: var(--light-text);
+  background-color: var(--section-header);
+  color: var(--light-text);
 }
 
 /* below: wayfinding effect-light grey background for a li element with a class of "current" */
 .navigation li.current {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 
@@ -125,125 +125,157 @@ header span {
 
 /* keep below (chamber of commerce)*/
 /* -------------------------25 -  BUSINESS CARDS ------------------------- */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--section-bg);
+  color: var(--white-text);
+}
+
 .card h2 {
-    text-align: center;
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+.card .tagline {
+  grid-column: 1/-1;
+}
+
+.card #contact {
+  padding: 0 0.5rem;
+}
+
+.card #contact p {
+  text-align: left;
+  font-size: 0.7rem;
+  padding: 0.2rem 0;
 }
 
 /* below not checked */
 section {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .section-header {
-    background-color: var(--section-header);
-    text-align: center;
+  background-color: var(--section-header);
+  text-align: center;
 }
 
 .section-div {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .courses {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .courses div {
-    text-align: center;
-    background-color: var(--bg-color);
-    border: 1px solid black;
-    margin: 0.5rem;
-    padding: 5px 0;
+  text-align: center;
+  background-color: var(--bg-color);
+  border: 1px solid black;
+  margin: 0.5rem;
+  padding: 5px 0;
 }
 
 .courses .needed {
-    background-color: var(--section-header);
-    color: var(--white-text);
+  background-color: var(--section-header);
+  color: var(--white-text);
 }
 
 header h2 {
-    color: var(--white-text)
+  color: var(--white-text)
 }
 
 .certificate-h2 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .certificate-buttons {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .course-button {
-    padding: 8px 40px;
-    background-color: var(--bg-color);
-    cursor: pointer;
-    border-radius: 10px;
+  padding: 8px 40px;
+  background-color: var(--bg-color);
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .course-button.active {
-    background-color: var(--section-header);
-    color: var(--white-text);
-    animation: colorChange 3s;
+  background-color: var(--section-header);
+  color: var(--white-text);
+  animation: colorChange 3s;
 }
 
 @keyframes colorChange {
-    0% {
-        background-color: var(--bg-color);
-        color: var(--dark-text);
-    }
+  0% {
+    background-color: var(--bg-color);
+    color: var(--dark-text);
+  }
 
-    100% {
-        background-color: var(--section-header);
-        color: var(--white-text)
-    }
+  100% {
+    background-color: var(--section-header);
+    color: var(--white-text)
+  }
 }
 
 main p {
-    text-align: center;
+  text-align: center;
 }
 
 .about-me-div,
 .img-div {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .img-div img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .about-me-div {
-    display: block;
+  display: block;
 }
 
 .bottom-p {
-    padding-top: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .social {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .social a {
-    padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 /* -------------------------25 FOOTER ------------------------- */
 footer {
-    grid-column: 1/4;
-    place-items: center;
-    background-color: var(--footer);
-    color: var(--light-text);
-    padding: 1rem;
+  grid-column: 1/4;
+  place-items: center;
+  background-color: var(--footer);
+  color: var(--light-text);
+  padding: 1rem;
 }
 
 footer p {
-    text-align: center;
+  text-align: center;
 }
 
 #lastModified {
-    font-size: 14px;
+  font-size: 14px;
 }
