@@ -23,23 +23,28 @@ const displayBusinesses = (businesses) => {
         let name = document.createElement('h2');
         let tagline = document.createElement('p');
         let image = document.createElement('img');
-        // let email = document.createElement('p');
-        // let phone = document.createElement('p');
-        // let url = document.createElement('p');
+        let email = document.createElement('p');
+        let phone = document.createElement('p');
+        let url = document.createElement('p');
         card.setAttribute('class', 'card');
         name.innerHTML = `${business.name}`;
         tagline.textContent = `${business.tagline}`;
-        // birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
+        email.textContent = `EMAIL: ${business.email}`;
+        phone.textContent = `PHONE: ${business.phone}`;
+        url.textContent = `URL: ${business.URL}`;
+        
         image.setAttribute('src', business.image);
         image.setAttribute('alt', `${business.name} photograph`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '200');
-        image.setAttribute('length', '200');
+        image.setAttribute('width', '100');
+        image.setAttribute('length', '100');
         card.appendChild(name);
         card.appendChild(tagline);
         card.appendChild(image);
-        // card.appendChild(birthplace);
-        // card.appendChild(portrait);
+        card.appendChild(email);
+        card.appendChild(phone);
+        card.appendChild(url);
+     
         cards.appendChild(card);
     });
 }
