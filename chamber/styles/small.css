@@ -178,7 +178,6 @@ header span {
 /* -------------------------25 -  BUSINESS CARDS ------------------------- */
 .cards {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(370px, 1rem));
   gap: 0.5rem;
   margin-top: 2rem;
@@ -222,11 +221,6 @@ header span {
   padding: 0.2rem 0;
 }
 
-/* below not checked */
-
-
-
-
 /* -------------------------25 FOOTER ------------------------- */
 footer {
   margin: 1rem 0;
@@ -237,16 +231,8 @@ footer {
   padding: 1rem;
 }
 
-footer ul {
-  list-style-type: none;
-}
-
 footer p {
-  text-align: center;
-}
-
-footer a {
-  text-decoration: none;
+  text-align: left;
 }
 
 .social a {
