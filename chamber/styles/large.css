@@ -42,6 +42,11 @@
 		padding-bottom: 1rem;
 	}
 
+	.home h2 {
+		text-align: left;
+		padding-left: 0.5rem;
+	}
+
 	h1 {
 		grid-column: 1/-1;
 	}
