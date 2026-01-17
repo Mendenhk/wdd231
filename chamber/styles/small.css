@@ -37,7 +37,12 @@ header {
   align-items: center;
   /* above: pushes items to the vertical center */
   background-color: var(--header-section-hd);
-  color: var(--white-text)
+  color: var(--white-text);
+  /* code below: allows the header to not scroll and float above other content as scrolls */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+    /* keeps it above content */
 }
 
 header img {
