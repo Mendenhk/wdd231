@@ -202,7 +202,7 @@ header span {
   grid-template-columns: 1fr 2fr;
   background-color: var(--section-bg);
   color: var(--white-text);
-  border: 1px solid lightgray;
+  border: 1px solid darkgray;
   border-radius: 10px;
   padding-top: 0.3rem;
 }
