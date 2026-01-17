@@ -1,18 +1,10 @@
 @media only screen and (min-width: 600px) {
 
-	header,
-	main,
-	nav,
-	footer {
-		max-width: 900px;
-		margin: 0 auto;
-		/* above: the margin written like this centers the contents */
-	}
-
+	/* -------------------------25 - HEADER ------------------------- */
 	header {
-		grid-template-columns: 24px auto auto;
+		grid-template-columns: 48px auto auto;
 		/* above: removes 3rd column containing the hamburger */
-		padding: 15px 0 15px 10px;
+		padding: 15px 0 15px 3rem;
 	}
 
 	.hamburger {
@@ -33,7 +25,12 @@
 	}
 
 	/* -------------------------25 -  MAIN ------------------------- */
-
+	main,
+	nav {
+		max-width: 900px;
+		margin: 0 auto;
+		/* above: the margin written like this centers the contents */
+	}
 	/* -------------------------25 -  EVENTS & WEATHER SECTIONS ------------------------- */
 	.home {
 		display: grid;
@@ -54,11 +51,13 @@
 	/* -------------------------25 -  FOOTER ------------------------- */
 	footer {
 		margin-top: 1rem;
-		display: grid;
+		gap: 0;
 		grid-template-columns: 1fr 1fr 1fr;
-
 	}
 
+	#cc-address {
+		justify-self: center;
+	}
 }
 
 /* -------------------------25 -  BUSINESS CARDS ------------------------- */

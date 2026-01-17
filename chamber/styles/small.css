@@ -21,8 +21,7 @@
   padding: 0;
 }
 
-body,
-footer {
+main {
   margin: 0 1rem
 }
 
@@ -184,11 +183,12 @@ header span {
   margin-bottom: 0.5rem;
 }
 
-#events, #weather, #forecast {
+#events,
+#weather,
+#forecast {
   padding: 0.5rem
 }
 
-/* keep below (chamber of commerce)*/
 /* -------------------------25 -  BUSINESS CARDS ------------------------- */
 .cards {
   display: grid;
@@ -202,7 +202,9 @@ header span {
   grid-template-columns: 1fr 2fr;
   background-color: var(--section-bg);
   color: var(--white-text);
+  border: 1px solid lightgray;
   border-radius: 10px;
+  padding-top: 0.3rem;
 }
 
 .card h3 {
@@ -223,6 +225,10 @@ header span {
   max-width: 100px;
   height: auto; */
   display: block;
+  padding: 0.3rem;
+  border-radius: 10px;
+  justify-self: center;
+  align-self: center;
 }
 
 .card #contact {
@@ -231,22 +237,28 @@ header span {
 
 .card #contact p {
   text-align: left;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   padding: 0.2rem 0;
 }
 
 /* -------------------------25 FOOTER ------------------------- */
 footer {
+  display: grid;
+  gap: 1rem;
   margin: 1rem 0;
   grid-column: 1/4;
-  place-items: center;
   background-color: var(--footer);
   color: var(--light-text);
   padding: 1rem;
 }
 
+.social {
+  justify-self: center;
+}
+
 footer p {
   text-align: left;
+  line-height: 1.3;
 }
 
 .social a {
