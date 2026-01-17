@@ -3,7 +3,7 @@ const members = [{
     "address": "201 State Park Rd, Morro Bay, CA 93442",
     "phone": "(805) 772-1923",
     "URL": "https://golfmorrobay.com",
-    "image": "https://golfmorrobay.mystagingwebsite.com/wp-content/uploads/2017/03/background.png",
+    "image": "../images/",
     "memberLevel": 3
 }, 
 {
