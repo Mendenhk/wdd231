@@ -147,7 +147,7 @@ img {
 /* weather section */
 .weather {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .weather h2 {
