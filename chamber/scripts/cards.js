@@ -10,31 +10,34 @@ async function getBusinessData() {
     //above:  data request from JSON formated file.  await makes further code pause until data returned.
     const data = await response.json();
     //above: parses JSON to object and saves in the variable "data".  await used to pause code until finished.
-    console.table(data.companies);
-    // above: temp output test of data response.  data.companies because data is an object containing a single array of objects called prophets.  Table works best with arrays directly, not objects.
-    // displayProphets(data.prophets);
+    // console.table(data.companies);
+    // above: temp output test of data response.  data.companies because data is an object containing a single array of objects called companies.  Table works best with arrays directly, not objects.
+    displayBusinesses(data.companies);
+    //call to function below.
 }
 getBusinessData();  //call to the above function 
 
-const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
+const displayBusinesses = (businesses) => {
+    businesses.forEach((business) => {
         let card = document.createElement('section');
-        let fullName = document.createElement('h2');
-        let birthdate = document.createElement('p');
-        let birthplace = document.createElement('p');
-        let portrait = document.createElement('img');
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-        birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
-        birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
-        portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Protrait of ${prophet.name} ${prophet.lastname}`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '500');
-        portrait.setAttribute('length', '300');
-        card.appendChild(fullName);
-        card.appendChild(birthdate);
-        card.appendChild(birthplace);
-        card.appendChild(portrait);
+        let name = document.createElement('h2');
+        let tagline = document.createElement('p');
+        // let image = document.createElement('img');
+        // let email = document.createElement('p');
+        // let phone = document.createElement('p');
+        // let url = document.createElement('p');
+        name.innerHTML = `${business.name}`;
+        tagline.textContent = `${business.tagline}`;
+        // birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
+        // portrait.setAttribute('src', prophet.imageurl);
+        // portrait.setAttribute('alt', `Protrait of ${prophet.name} ${prophet.lastname}`);
+        // portrait.setAttribute('loading', 'lazy');
+        // portrait.setAttribute('width', '500');
+        // portrait.setAttribute('length', '300');
+        card.appendChild(name);
+        card.appendChild(tagline);
+        // card.appendChild(birthplace);
+        // card.appendChild(portrait);
         cards.appendChild(card);
     });
 }
