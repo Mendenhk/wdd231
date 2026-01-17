@@ -1,4 +1,3 @@
-
 /* -------------------------25 - Color Scheme choices -------------------------*/
 :root {
 
@@ -123,6 +122,12 @@ header span {
 
 
 /* -------------------------25 -  BODY AND SECTIONS ------------------------- */
+/* keep below (chamber of commerce)*/
+.card h2 {
+    text-align: center;
+}
+
+/* below not checked */
 section {
     margin-bottom: 1rem;
 }

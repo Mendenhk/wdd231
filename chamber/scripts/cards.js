@@ -26,6 +26,7 @@ const displayBusinesses = (businesses) => {
         // let email = document.createElement('p');
         // let phone = document.createElement('p');
         // let url = document.createElement('p');
+        card.setAttribute('class', 'card');
         name.innerHTML = `${business.name}`;
         tagline.textContent = `${business.tagline}`;
         // birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
