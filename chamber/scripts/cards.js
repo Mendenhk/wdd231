@@ -51,3 +51,9 @@ const displayBusinesses = (businesses) => {
         cards.appendChild(card);
     });
 }
+
+// ---------------- BUTTON FUNCTION ----------------
+const listCardButton = document.querySelector('#listOrCards');
+listCardButton.addEventListener('click'), () => {
+    listCardButton.toggle('list');
+}
