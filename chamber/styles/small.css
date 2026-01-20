@@ -121,8 +121,6 @@ header span {
 }
 
 
-/* -------------------------25 - LAST CHECKED -------------------------*/
-
 /* -------------------------25 -  BODY AND SECTIONS ------------------------- */
 .hero img {
   display: block;
@@ -197,6 +195,14 @@ header span {
 }
 
 /* -------------------------25 -  BUSINESS CARDS ------------------------- */
+.cardButton::before {
+  content: "view as list";
+}
+
+.cardButton.list::before {
+  content: "view as cards";
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));

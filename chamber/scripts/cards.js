@@ -4,6 +4,7 @@
 const businessData = 'data/members.json';
 //above: JSON array of objects containing business information
 const cards = document.getElementById('cards');
+let businesses = [];  //allows global use
 
 async function getBusinessData() {
   const response = await fetch(businessData);
@@ -12,14 +13,16 @@ async function getBusinessData() {
   //above: parses JSON to object and saves in the variable "data".  await used to pause code until finished.
   // console.table(data.companies);
   // above: temp output test of data response.  data.companies because data is an object containing a single array of objects called companies.  Table works best with arrays directly, not objects.
-  displayBusinesses(data.companies);
+  businesses = data.companies;
+  displayBusinesses(businesses);
   //call to function below.
 }
 getBusinessData();  //call to the above function 
 
 const displayBusinesses = (businesses) => {
+  cards.innerHTML = ''; //clears div
   if (cards.classList.contains('list')) {
-
+    console.log('hello world');
   }
   else {
     businesses.forEach((business) => {
@@ -61,4 +64,6 @@ const displayBusinesses = (businesses) => {
 const listCardButton = document.querySelector('#listOrCards');
 listCardButton.addEventListener('click', () => {
   cards.classList.toggle('list');
+  listCardButton.classList.toggle('list');
+  displayBusinesses(businesses);
 });
