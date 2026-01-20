@@ -28,9 +28,9 @@ const myTemperature = document.querySelector('#temperature');
 const myGraphic = document.querySelector('#graphic');
 
 const myKey = "b880fde6b814b0cab73283eb5f8c824b";
-const myLat = "42.91";
-const myLon = "-76.80";
-const url = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&units=imperial&appid=${myKey}`;
+const myLat = "35.37";
+const myLon = "-120.85";
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&units=imperial&appid=${myKey}`;
 
 async function apiFetch() {
   try {
@@ -55,9 +55,9 @@ function displayResults(data) {
   myTown.innerHTML = `City: ${data.name}`;
   myDescription.innerHTML = `description: ${data.weather[0].description}`;
   myTemperature.innerHTML = `Temperature: ${data.main.temp} &degF`;
-  const iconsrc = `https:/openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   myGraphic.setAttribute('src', iconsrc);
-  myGraphic.setAttribute('alt', weather[0].description);
+  myGraphic.setAttribute('alt', data.weather[0].description);
 }
 
 apiFetch();
