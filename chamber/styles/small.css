@@ -194,6 +194,56 @@ header span {
   padding: 0.5rem
 }
 
+/*-------------------------25 JOIN US SECTION------------------------- */
+.join-section {
+  background-color: var(--section-bg);
+  display: flex;
+  flex-direction: column;
+  color: var(--white-text);
+}
+
+.join-picture {
+  position: relative;
+}
+
+.join-picture img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.join-picture h2 {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.join-button-div {
+  text-align: center;
+  padding: 20px;
+}
+
+.join-button-div h3 {
+  font-size: 1.5rem;
+  padding-top: 40px
+}
+
+.join-button-div p {
+  padding-top: 40px
+}
+
+.join-button-div button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1.6rem;
+  margin: 40px 0;
+}
+
+
+
+
 /* -------------------------25 -  BUSINESS CARDS ------------------------- */
 .cardButton::before {
   content: "view as list";
