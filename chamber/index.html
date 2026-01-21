@@ -1,0 +1,137 @@
+<!-- next: complete facebook meta properties -->
+<!-- finish adding company taglines -->
+<!-- create image overlay -->
+<!-- change email to hyperlink -->
+<!-- change github link to facebook hub -->
+<!-- add images for company webpages -->
+<!-- add CSS for cards -->
+<!-- reduce size of current weather text -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory-Chamber Of Commerce</title>
+    <meta name="description"
+        content="directory page for chamber of commerce project containing events, weather, and key business owners">
+    <meta name="author" content="Kriston Mendenhall">
+
+    <!-- facebook meta's -->
+    <meta property="og:title" content="Morro Bay Chamber of Commerce">
+    <meta property="og:description" content="Chamber of commerce page for morro bay assignment-home page">
+    <meta property="og:image" content="https://mendenhk.github.io/wdd231/chamber/images/mcb-chamber-image.webp.html">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta property="og:url" content="https://www.morrochamber.org">
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- google font links here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- style sheets and scripts here -->
+    <link rel="stylesheet" href="styles/normalization.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/cards.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/mcb-logo.svg" alt="site logo" width="48" height="48">
+        <span>Morro Bay Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-page">
+        <div class="image-overlay">
+            <picture class="hero">
+                <source srcset="images/morro-hero-large.webp" media="(min-width: 740px)">
+                <img src="images/morro-hero-small.webp" alt="morro-bay-small" width="400" height="200">
+            </picture>
+            <div class="overlay">
+                <p>Keynote Tickets</p>
+                <!-- add content for keynote ticket overlay.  Change above. -->
+            </div>
+        </div>
+        <section class="home">
+            <h1>Home</h1>
+            <div class="events">
+                <h2>Events</h2>
+                <div id="events">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, et?</p>
+                </div>
+            </div>
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path
+                        d="M485.6 49.2C490.5 51.2 494.1 55.6 495.1 60.8L512 144L595.2 160.8C600.4 161.9 604.7 165.4 606.8 170.3C608.9 175.2 608.3 180.8 605.4 185.2L558.5 255.9L605.4 326.6C608.3 331 608.9 336.6 606.8 341.5C604.7 346.4 600.4 350 595.2 351L533 363.7C521.1 355 507.9 348.1 493.6 343.3C491.1 330.6 486.8 318.6 480.9 307.6C490.4 292.7 496 275 496 255.9C496 202.9 453 159.9 400 159.9C352.1 159.9 312.4 195 305.2 240.8C278.7 220.5 245.7 208.3 209.8 207.9L194.7 185.2C191.8 180.8 191.2 175.2 193.3 170.3C195.4 165.4 199.7 161.8 204.9 160.8L288 144L304.8 60.8C305.9 55.6 309.4 51.3 314.3 49.2C319.2 47.1 324.8 47.7 329.2 50.6L400 97.6L470.7 50.7C475.1 47.8 480.7 47.2 485.6 49.3zM448 256C448 259.8 447.6 263.5 446.7 267.1C425 250.1 397.7 240 368 240C363.4 240 358.9 240.2 354.5 240.7C360.9 221.7 378.9 208 400 208C426.5 208 448 229.5 448 256zM128 576C75 576 32 533 32 480C32 437.5 59.6 401.4 97.9 388.8C96.6 382.1 96 375.1 96 368C96 306.1 146.1 256 208 256C251.1 256 288.5 280.3 307.2 316C321.9 298.9 343.7 288 368 288C412.2 288 448 323.8 448 368C448 373.5 447.4 378.8 446.4 384C446.9 384 447.5 384 448 384C501 384 544 427 544 480C544 533 501 576 448 576L128 576z" />
+                </svg>
+                <div id="weather">
+                    <p id="temp">75 degreesF</p>
+                    <p id="conditions">Partly Cloudy</p>
+                    <p id="high">High: 85 deg</p>
+                    <p id="low">Low: 52 deg</p>
+                    <p id="humidity">Humidity: 34%</p>
+                    <p id="sunrise">Sunrise: 7:30am</p>
+                    <p id="sunset">Sunset: 9:59pm</p>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast">
+                    <p id="today">Today: 90F</p>
+                    <p id="tomorrow">Wednesday: 89F</p>
+                    <p id="two-days">Thrusday: 69F</p>
+                </div>
+            </div>
+        </section>
+        <button class="cardButton" id="listOrCards"></button>
+        <section id="cards" class="cards"></section>
+    </main>
+    <footer>
+        <div id="cc-address">
+            <h3>Morro Bay Chamber of Commerce</h3>
+            <p>695 Harbor St</p>
+            <p>Morro Bay, CA 93442</p>
+            <p>info@morrochamber.org</p>
+            <p>(805) 772-4467</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/company/morro-bay-chamber-of-commerce/" target="_blank"><img
+                    src="images/linkedin.svg" alt="linkedin" width="44" height="44"></a>
+            <a href="https://www.facebook.com/morro.chamber/" target="_blank"><img src="images/facebook.svg"
+                    alt="facebook" width="44" height="44"></a>
+            <a href="https://www.instagram.com/morrobaychamber/" target="_blank"><img src="images/instagram.svg"
+                    alt="instagram" width="44" height="44"></a>
+        </div>
+        <div id="project-info">
+            <p>WDD231 Class Project: Chamber of Commerce</p>
+            <p>Kriston Mendenhall</p>
+            <p>
+                ©️<span id="currentYear">JavaScript Year</span> Moro Bay Chamber of Commerce
+            </p>
+
+            <p id="lastModified">add last modified with JavaScript</p>
+        </div>
+    </footer>
+</body>
+
+</html>
