@@ -225,7 +225,7 @@ header span {
 }
 
 .join-section {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .join-button-div {
@@ -253,6 +253,10 @@ header span {
 
 
 /* -------------------------25 -  BUSINESS CARDS ------------------------- */
+.cardButton {
+  margin-top: 0.5rem;
+}
+
 .cardButton::before {
   content: "view as list";
 }
