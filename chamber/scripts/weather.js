@@ -85,14 +85,19 @@ async function apiFetchForecast() {
 // -------------------- DISPLAYING FORECAST DATA ------------------
 
 function displayForecast(data) {
-    const timestampTomorrow = data.list[1].dt;
-    const riseDate = new Date(timestampTomorrow * 1000);
-    const tomorrow = riseDate.toLocaleTimeString("en-US", {
+    const timestampTwoDays = data.list[16].dt;
+    const twoDaysDate = new Date(timestampTwoDays * 1000);
+    const twoDays = twoDaysDate.toLocaleDateString("en-US", {
         weekday: "long"
     });
-    myToday.innerHTML = `Today: ${data.list[0].main.temp} &degF`;
-    myTomorrow.innerHTML = `${tomorrow}: ${data.list[1].main.temp} &degF`;
-    myTwoDays.innerHTML = `Two Days: ${data.list[3].main.temp} &degF`;
+    const timestampThreeDays = data.list[24].dt;
+    const threeDaysDate = new Date(timestampThreeDays * 1000);
+    const threeDays = threeDaysDate.toLocaleDateString("en-US", {
+        weekday: "long"
+    });
+    myToday.innerHTML = `Tomorrow: ${data.list[8].main.temp_max} &degF`;
+    myTomorrow.innerHTML = `${twoDays}: ${data.list[16].main.temp_max} &degF`;
+    myTwoDays.innerHTML = `${threeDays}: ${data.list[24].main.temp_max} &degF`;
 }
 
 apiFetchForecast();
