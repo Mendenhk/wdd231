@@ -12,7 +12,7 @@
   --black-text: #000;
 }
 
-/* -------------------------25 - SITE WIDE ------------------------- WDD131-not checked*/
+/* -------------------------25 - SITE WIDE ------------------------- */
 * {
   /* google font */
   font-family: 'Roboto', sans-serif;
@@ -25,7 +25,7 @@
   margin: 0 1rem;
 }
 
-/* -------------------------25 - HEADER  ------------------------- from WDD231-not checked*/
+/* -------------------------25 - HEADER  ------------------------- */
 header {
   display: grid;
   grid-template-columns: 44px auto 44px;
