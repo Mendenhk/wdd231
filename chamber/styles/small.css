@@ -137,7 +137,11 @@ header span {
 } */
 
 /* -------------------------25 -  EVENTS & WEATHER SECTIONS ------------------------- */
-.home h2 {
+.events-weather {
+  margin-top: 2rem;
+}
+
+.events-weather h2 {
   background-color: var(--header-section-hd);
   color: var(--white-text);
   text-align: center;
@@ -220,6 +224,10 @@ header span {
   transform: translate(-50%, -50%);
 }
 
+.join-section {
+  margin-top: 2rem;
+}
+
 .join-button-div {
   text-align: center;
   padding: 20px;
@@ -227,7 +235,7 @@ header span {
 
 .join-button-div h3 {
   font-size: 1.5rem;
-  padding-top: 40px
+  padding-top: 30px
 }
 
 .join-button-div p {

@@ -33,21 +33,21 @@
   }
 
   /* -------------------------25 -  EVENTS & WEATHER SECTIONS ------------------------- */
-  .home {
+  .events-weather {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 0.5rem;
     padding-bottom: 1rem;
   }
 
-  .home h2 {
+  .events-weather h2 {
     text-align: left;
     padding-left: 0.5rem;
   }
 
-  h1 {
+  /* h1 {
     grid-column: 1/-1;
-  }
+  } */
 
   /*-------------------------25 JOIN US SECTION------------------------- */
   .join-section {
