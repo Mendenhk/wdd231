@@ -37,12 +37,12 @@ function displaySpotlightMembers(members) {
   selectedMembers.forEach((member) => {
     let card = document.createElement('section');
     let name = document.createElement('h3');
-    let logo = document.createElement('logo');
+    let logo = document.createElement('img');
   //   let contact = document.createElement('div');
   //   let email = document.createElement('p');
   //   let phone = document.createElement('p');
   //   let url = document.createElement('p');
-    card.setAttribute('class', 'card');
+    card.setAttribute('class', 'sCard');
     name.innerHTML = `${member.name}`;
     logo.setAttribute('src', member.logo);
     logo.setAttribute('alt', `${member.name} logo`);

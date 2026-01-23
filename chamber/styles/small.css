@@ -333,6 +333,56 @@ header span {
   text-align: left;
 }
 
+/* -------------------------25 SPOTLIGHT CARDS ------------------------- */
+
+.spotlightCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.sCard {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--section-bg);
+  color: var(--white-text);
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  padding-top: 0.3rem;
+}
+
+.spotlightCards h2 {
+  color: red;
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.sCard h3 {
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.sCard logo {
+  display: block;
+  width: 100px;
+  height: auto;
+  /* padding: 0.3rem; */
+  /* border-radius: 10px; */
+  justify-self: center;
+  align-self: center;
+}
+
+/* .card #contact {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+} */
+
+/* .card #contact p {
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 0.2rem 0;
+} */
+
 /* -------------------------25 FOOTER ------------------------- */
 footer {
   display: grid;
