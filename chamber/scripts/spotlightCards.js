@@ -34,46 +34,41 @@ function displaySpotlightMembers(members) {
     // console.log(spotlightMembers);
     console.log(selectedMembers);
   }
-  
   selectedMembers.forEach((member) => {
-    
-  });
-  //   let card = document.createElement('section');
-  //   let name = document.createElement('h3');
-  //   let tagline = document.createElement('p');
-  //   let image = document.createElement('img');
+    let card = document.createElement('section');
+    let name = document.createElement('h3');
+    let logo = document.createElement('logo');
   //   let contact = document.createElement('div');
   //   let email = document.createElement('p');
   //   let phone = document.createElement('p');
   //   let url = document.createElement('p');
-  //   card.setAttribute('class', 'card');
-  //   name.innerHTML = `${member.name}`;
-  //   tagline.textContent = `${member.tagline}`;
-  //   tagline.setAttribute('class', 'tagline')
+    card.setAttribute('class', 'card');
+    name.innerHTML = `${member.name}`;
+    logo.setAttribute('src', member.logo);
+    logo.setAttribute('alt', `${member.name} logo`);
+    logo.setAttribute('loading', 'lazy');
+    logo.setAttribute('width', '48');
+    logo.setAttribute('length', '48');
   //   email.textContent = `EMAIL: ${member.email}`;
   //   phone.textContent = `PHONE: ${member.phone}`;
   //   url.textContent = `URL: ${member.URL}`;
-  //   image.setAttribute('src', member.image);
-  //   image.setAttribute('alt', `${member.name} photograph`);
-  //   image.setAttribute('loading', 'lazy');
-  //   image.setAttribute('width', '100');
-  //   image.setAttribute('length', '100');
   //   contact.setAttribute('id', 'contact')
   //   contact.appendChild(email);
   //   contact.appendChild(phone);
   //   contact.appendChild(url);
-  //   card.appendChild(name);
-  //   card.appendChild(tagline);
-  //   card.appendChild(image);
+    card.appendChild(name);
+    card.appendChild(logo);
   //   card.appendChild(contact);
 
-  //   spotlightCards.appendChild(card);
+    spotlightCards.appendChild(card);
   // });
 // }
 
 // getBusinessData().then(() => {
 //   displaySpotlightMembers(businesses);
 // });
+  });
+  
 }
 
 
