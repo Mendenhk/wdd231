@@ -4,8 +4,9 @@ const businessData = 'data/members.json';
 //above: JSON array of objects containing business information
 const spotlightCards = document.getElementById('spotlightCards');
 let businesses = [];  //allows global use
+// import { getBusinessData } from "./cards.js";
 
-async function getBusinessData() {
+async function getBusinessData(displayFunction) {
   const response = await fetch(businessData);
   //above:  data request from JSON formated file.  await makes further code pause until data returned.
   const data = await response.json();
@@ -13,10 +14,10 @@ async function getBusinessData() {
   // console.table(data.companies);
   // above: temp output test of data response.  data.companies because data is an object containing a single array of objects called companies.  Table works best with arrays directly, not objects.
   businesses = data.companies;
-  displaySpotlightMembers(businesses);
+  displayFunction(businesses);
   //call to function below.
 }
-getBusinessData();  //call to the above function 
+getBusinessData(displaySpotlightMembers);  //call to the above function 
 
 
 // ---------------- DISPLAYING SPOTLIGHT BUSINESS CARDS ----------------
@@ -26,7 +27,7 @@ function displaySpotlightMembers(members) {
   const selectedMembers = [];
   //below: returns a random interger between 0 and the length of the spotlightMembers array minus 1
   for (let i = 0; i < 2; i++) {
-  // creates an array of 2 unique random spotlight members
+    // creates an array of 2 unique random spotlight members
     const randInt = getRandomInt(0, spotlightMembers.length - 1);
     console.log(randInt);
     selectedMembers.push(spotlightMembers[randInt]);
@@ -38,10 +39,10 @@ function displaySpotlightMembers(members) {
     let card = document.createElement('section');
     let name = document.createElement('h3');
     let logo = document.createElement('img');
-  //   let contact = document.createElement('div');
-  //   let email = document.createElement('p');
-  //   let phone = document.createElement('p');
-  //   let url = document.createElement('p');
+    //   let contact = document.createElement('div');
+    //   let email = document.createElement('p');
+    //   let phone = document.createElement('p');
+    //   let url = document.createElement('p');
     card.setAttribute('class', 'sCard');
     name.innerHTML = `${member.name}`;
     logo.setAttribute('src', member.logo);
@@ -49,30 +50,30 @@ function displaySpotlightMembers(members) {
     logo.setAttribute('loading', 'lazy');
     logo.setAttribute('width', '48');
     logo.setAttribute('length', '48');
-  //   email.textContent = `EMAIL: ${member.email}`;
-  //   phone.textContent = `PHONE: ${member.phone}`;
-  //   url.textContent = `URL: ${member.URL}`;
-  //   contact.setAttribute('id', 'contact')
-  //   contact.appendChild(email);
-  //   contact.appendChild(phone);
-  //   contact.appendChild(url);
+    //   email.textContent = `EMAIL: ${member.email}`;
+    //   phone.textContent = `PHONE: ${member.phone}`;
+    //   url.textContent = `URL: ${member.URL}`;
+    //   contact.setAttribute('id', 'contact')
+    //   contact.appendChild(email);
+    //   contact.appendChild(phone);
+    //   contact.appendChild(url);
     card.appendChild(name);
     card.appendChild(logo);
-  //   card.appendChild(contact);
+    //   card.appendChild(contact);
 
     spotlightCards.appendChild(card);
-  // });
-// }
+    // });
+    // }
 
-// getBusinessData().then(() => {
-//   displaySpotlightMembers(businesses);
-// });
+    // getBusinessData().then(() => {
+    //   displaySpotlightMembers(businesses);
+    // });
   });
-  
+
 }
 
 
 // general function for choosing a number between a minimum number and a maximum number:
-function getRandomInt(min, max) {  
-return Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }

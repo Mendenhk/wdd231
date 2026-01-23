@@ -5,7 +5,7 @@ const businessData = 'data/members.json';
 const cards = document.getElementById('cards');
 let businesses = [];  //allows global use
 
-async function getBusinessData() {
+export async function getBusinessData(displayFunction) {
   const response = await fetch(businessData);
   //above:  data request from JSON formated file.  await makes further code pause until data returned.
   const data = await response.json();
@@ -13,12 +13,12 @@ async function getBusinessData() {
   // console.table(data.companies);
   // above: temp output test of data response.  data.companies because data is an object containing a single array of objects called companies.  Table works best with arrays directly, not objects.
   businesses = data.companies;
-  displayBusinesses(businesses);
+  displayFunction(businesses);
   //call to function below.
 }
-getBusinessData();  //call to the above function 
+getBusinessData(displayBusinesses);  //call to the above function 
 
-const displayBusinesses = (businesses) => {
+function displayBusinesses(businesses) {
   cards.innerHTML = ''; //clears div
   if (cards.classList.contains('list')) {
     businesses.forEach((business) => {
@@ -75,7 +75,7 @@ const displayBusinesses = (businesses) => {
       image.setAttribute('alt', `${business.name} photograph`);
       image.setAttribute('loading', 'lazy');
       image.setAttribute('width', '100');
-      image.setAttribute('length', '100');
+      image.setAttribute('height', '100');
       contact.setAttribute('id', 'contact')
       contact.appendChild(email);
       contact.appendChild(phone);
@@ -103,44 +103,44 @@ listCardButton.addEventListener('click', () => {
 // const spotlightCards = document.getElementById('spotlightCards');
 
 // function displaySpotlightMembers(members) {
-  // const spotlightMembers = members.filter(member => member.memberLevel === 3 || member.memberLevel === );
-  // const selectedMembers = [];
-  // while (selectedMembers.length < 3 && spotlightMembers.length > 0) {
-  //   const randomIndex = Math.floor(Math.random() * spotlightMembers.length);
-  //   selectedMembers.push(spotlightMembers.splice(randomIndex, 1)[0]);
-  // }
-  // selectedMembers.forEach((member) => {
-  //   let card = document.createElement('section');
-  //   let name = document.createElement('h3');
-  //   let tagline = document.createElement('p');
-  //   let image = document.createElement('img');
-  //   let contact = document.createElement('div');
-  //   let email = document.createElement('p');
-  //   let phone = document.createElement('p');
-  //   let url = document.createElement('p');
-  //   card.setAttribute('class', 'card');
-  //   name.innerHTML = `${member.name}`;
-  //   tagline.textContent = `${member.tagline}`;
-  //   tagline.setAttribute('class', 'tagline')
-  //   email.textContent = `EMAIL: ${member.email}`;
-  //   phone.textContent = `PHONE: ${member.phone}`;
-  //   url.textContent = `URL: ${member.URL}`;
-  //   image.setAttribute('src', member.image);
-  //   image.setAttribute('alt', `${member.name} photograph`);
-  //   image.setAttribute('loading', 'lazy');
-  //   image.setAttribute('width', '100');
-  //   image.setAttribute('length', '100');
-  //   contact.setAttribute('id', 'contact')
-  //   contact.appendChild(email);
-  //   contact.appendChild(phone);
-  //   contact.appendChild(url);
-  //   card.appendChild(name);
-  //   card.appendChild(tagline);
-  //   card.appendChild(image);
-  //   card.appendChild(contact);
+// const spotlightMembers = members.filter(member => member.memberLevel === 3 || member.memberLevel === );
+// const selectedMembers = [];
+// while (selectedMembers.length < 3 && spotlightMembers.length > 0) {
+//   const randomIndex = Math.floor(Math.random() * spotlightMembers.length);
+//   selectedMembers.push(spotlightMembers.splice(randomIndex, 1)[0]);
+// }
+// selectedMembers.forEach((member) => {
+//   let card = document.createElement('section');
+//   let name = document.createElement('h3');
+//   let tagline = document.createElement('p');
+//   let image = document.createElement('img');
+//   let contact = document.createElement('div');
+//   let email = document.createElement('p');
+//   let phone = document.createElement('p');
+//   let url = document.createElement('p');
+//   card.setAttribute('class', 'card');
+//   name.innerHTML = `${member.name}`;
+//   tagline.textContent = `${member.tagline}`;
+//   tagline.setAttribute('class', 'tagline')
+//   email.textContent = `EMAIL: ${member.email}`;
+//   phone.textContent = `PHONE: ${member.phone}`;
+//   url.textContent = `URL: ${member.URL}`;
+//   image.setAttribute('src', member.image);
+//   image.setAttribute('alt', `${member.name} photograph`);
+//   image.setAttribute('loading', 'lazy');
+//   image.setAttribute('width', '100');
+//   image.setAttribute('length', '100');
+//   contact.setAttribute('id', 'contact')
+//   contact.appendChild(email);
+//   contact.appendChild(phone);
+//   contact.appendChild(url);
+//   card.appendChild(name);
+//   card.appendChild(tagline);
+//   card.appendChild(image);
+//   card.appendChild(contact);
 
-  //   spotlightCards.appendChild(card);
-  // });
+//   spotlightCards.appendChild(card);
+// });
 // }
 
 // getBusinessData().then(() => {
