@@ -1,3 +1,4 @@
+//cards.js-for the member directory webp
 // ---------------- FETCHING AND DISPLAYING BUSINESS CARD DATA ----------------
 const businessData = 'data/members.json';
 //above: JSON array of objects containing business information
@@ -99,10 +100,10 @@ listCardButton.addEventListener('click', () => {
 
 // ---------------- SPOTLIGHT BUSINESS CARDS ----------------
 // Check all of the following code for correctness
-const spotlightCards = document.getElementById('spotlightCards');
+// const spotlightCards = document.getElementById('spotlightCards');
 
-function displaySpotlightMembers(members) {
-  // const spotlightMembers = members.filter(member => member.membershipLevel === 'Gold' || member.membershipLevel === 'Silver');
+// function displaySpotlightMembers(members) {
+  // const spotlightMembers = members.filter(member => member.memberLevel === 3 || member.memberLevel === );
   // const selectedMembers = [];
   // while (selectedMembers.length < 3 && spotlightMembers.length > 0) {
   //   const randomIndex = Math.floor(Math.random() * spotlightMembers.length);
@@ -138,9 +139,9 @@ function displaySpotlightMembers(members) {
   //   card.appendChild(image);
   //   card.appendChild(contact);
 
-    spotlightCards.appendChild(card);
-  });
-}
+  //   spotlightCards.appendChild(card);
+  // });
+// }
 
 // getBusinessData().then(() => {
 //   displaySpotlightMembers(businesses);
