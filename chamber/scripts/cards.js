@@ -5,7 +5,7 @@ const businessData = 'data/members.json';
 const cards = document.getElementById('cards');
 let businesses = [];  //allows global use
 
-export async function getBusinessData(displayFunction) {
+async function getBusinessData(displayFunction) {
   const response = await fetch(businessData);
   //above:  data request from JSON formated file.  await makes further code pause until data returned.
   const data = await response.json();

@@ -4,7 +4,6 @@ const businessData = 'data/members.json';
 //above: JSON array of objects containing business information
 const spotlightCards = document.getElementById('spotlightCards');
 let businesses = [];  //allows global use
-// import { getBusinessData } from "./cards.js";
 
 async function getBusinessData(displayFunction) {
   const response = await fetch(businessData);
