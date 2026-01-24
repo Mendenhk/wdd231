@@ -38,28 +38,36 @@ function displaySpotlightMembers(members) {
     let card = document.createElement('section');
     let name = document.createElement('h3');
     let logo = document.createElement('img');
-    //   let contact = document.createElement('div');
-    //   let email = document.createElement('p');
-    //   let phone = document.createElement('p');
-    //   let url = document.createElement('p');
+    let phone = document.createElement('p');
+    let contact = document.createElement('div');
+    let address = document.createElement('p');
+    let url = document.createElement('p');
+    let status = document.createElement('p');
     card.setAttribute('class', 'sCard');
     name.innerHTML = `${member.name}`;
     logo.setAttribute('src', member.logo);
     logo.setAttribute('alt', `${member.name} logo`);
-    logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('width', '48');
-    logo.setAttribute('length', '48');
-    //   email.textContent = `EMAIL: ${member.email}`;
-    //   phone.textContent = `PHONE: ${member.phone}`;
-    //   url.textContent = `URL: ${member.URL}`;
-    //   contact.setAttribute('id', 'contact')
-    //   contact.appendChild(email);
-    //   contact.appendChild(phone);
-    //   contact.appendChild(url);
+    logo.setAttribute('width', '100px');
+    logo.setAttribute('length', '100px');
+    phone.textContent = `${member.phone}`;
+    address.textContent = `${member.address}`;
+    url.textContent = `${member.URL}`;
+    if (member.memberLevel === 3) {
+      status.textContent = "Gold Status Member";
+      status.setAttribute('class', 'gold')
+    }
+    if (member.memberLevel === 2) {
+      status.textContent = "Silver Status Member";
+      status.setAttribute('class', 'silver')
+    }
+    contact.setAttribute('id', 'contact')
+    contact.appendChild(phone);
+    contact.appendChild(address);
+    contact.appendChild(url);
     card.appendChild(name);
     card.appendChild(logo);
-    //   card.appendChild(contact);
-
+    card.appendChild(contact);
+    card.appendChild(status);
     spotlightCards.appendChild(card);
     // });
     // }
