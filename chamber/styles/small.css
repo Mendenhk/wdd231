@@ -347,6 +347,10 @@ header span {
   padding: 15px 0;
 }
 
+#contact a.list {
+  color: blue;
+}
+
 .card #contact a:hover {
   cursor: pointer;
 }

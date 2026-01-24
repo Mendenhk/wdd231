@@ -39,6 +39,7 @@ function displayBusinesses(businesses) {
       url.textContent = `URL: ${business.URLName}`;
       url.setAttribute('href', business.URL);
       url.setAttribute('target', '_blank');
+      url.setAttribute('class', 'list');
       // image.setAttribute('src', business.image);
       // image.setAttribute('alt', `${business.name} photograph`);
       // image.setAttribute('loading', 'lazy');
