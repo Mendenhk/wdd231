@@ -291,6 +291,10 @@ header span {
   height: 44px;
 }
 
+.card-button:hover {
+  cursor: pointer;
+}
+
 .card-button::before {
   content: "view as list";
 }
