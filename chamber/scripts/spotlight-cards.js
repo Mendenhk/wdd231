@@ -2,7 +2,7 @@
 // ---------------- FETCHING BUSINESS CARD DATA ----------------
 const businessData = 'data/members.json';
 //above: JSON array of objects containing business information
-const spotlightCards = document.getElementById('spotlightCards');
+const spotlightCards = document.getElementById('spotlight-cards');
 let businesses = [];  //allows global use
 
 async function getBusinessData(displayFunction) {
