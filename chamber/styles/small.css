@@ -269,16 +269,29 @@ header span {
 
 
 /* -------------------------25 -  BUSINESS CARDS ------------------------- */
-.cardButton {
-  margin-top: 0.5rem;
-  padding: 11px 0;
+.card-button-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  height: 44px;
 }
 
-.cardButton::before {
+.card-button-div h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.card-button {
+  height: 44px;
+}
+
+.card-button::before {
   content: "view as list";
 }
 
-.cardButton.list::before {
+.card-button.list::before {
   content: "view as cards";
 }
 
@@ -362,7 +375,7 @@ header span {
   padding-top: 1rem;
 }
 
-.cards.list h3 {
+.cards.list h2 {
   text-align: left;
 }
 
