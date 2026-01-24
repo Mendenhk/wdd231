@@ -23,7 +23,7 @@ function displayBusinesses(businesses) {
   if (cards.classList.contains('list')) {
     businesses.forEach((business) => {
       let card = document.createElement('section');
-      let name = document.createElement('h3');
+      let name = document.createElement('h2');
       // let tagline = document.createElement('p');
       // let image = document.createElement('img');
       let contact = document.createElement('div');
@@ -60,7 +60,7 @@ function displayBusinesses(businesses) {
   else {
     businesses.forEach((business) => {
       let card = document.createElement('section');
-      let name = document.createElement('h3');
+      let name = document.createElement('h2');
       let tagline = document.createElement('p');
       let image = document.createElement('img');
       let contact = document.createElement('div');

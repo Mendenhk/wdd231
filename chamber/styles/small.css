@@ -130,14 +130,6 @@ header span {
   height: 100%;
 }
 
-/* .cards {
-  max-width: 800px;
-  margin: 0 auto;
-  place-items: center;
-  justify-content: center;
-  padding: 1rem;
-} */
-
 /*-------------------------25 JOIN US SECTION------------------------- */
 .join-section {
   background-color: var(--section-bg);
@@ -306,7 +298,8 @@ header span {
   padding-top: 0.3rem;
 }
 
-.card h3 {
+.card h2 {
+  font-size: 1.1rem;
   text-align: center;
   grid-column: 1/-1;
 }
