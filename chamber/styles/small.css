@@ -382,6 +382,12 @@ header span {
   border-radius: 20px;
 }
 
+/* selecting only one image because it has white lettering */
+.sCard img[src*="golf"] {
+  background-color: darkgray;
+  /* darker background for white logo */
+}
+
 .sCard #contact {
   padding: 0.3rem 0.5rem 0.3rem 0.5rem;
   height: 90px;
