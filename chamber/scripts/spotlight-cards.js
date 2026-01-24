@@ -71,12 +71,7 @@ function displaySpotlightMembers(members) {
     card.appendChild(contact);
     card.appendChild(status);
     spotlightCards.appendChild(card);
-    // });
-    // }
 
-    // getBusinessData().then(() => {
-    //   displaySpotlightMembers(businesses);
-    // });
   });
 
 }

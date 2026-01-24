@@ -240,6 +240,7 @@ header span {
 #graphic {
   grid-column: 1/2;
   width: 100%;
+  height: auto;
 }
 
 .weather p {
