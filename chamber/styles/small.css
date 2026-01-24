@@ -353,7 +353,7 @@ header span {
 
 /* -------------------------25 SPOTLIGHT CARDS ------------------------- */
 
-.spotlightCards {
+.spotlight-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   gap: 0.5rem;
@@ -370,7 +370,7 @@ header span {
   padding-top: 0.3rem;
 }
 
-.spotlightCards h2 {
+.spotlight-cards h2 {
   color: var(--black-text);
   text-align: center;
   grid-column: 1/-1;
