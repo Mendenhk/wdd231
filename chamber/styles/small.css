@@ -213,8 +213,13 @@ header span {
   background-color: var(--footer);
   border: 1px solid black;
   position: absolute;
-  bottom: 20px;
-  right: 20px
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 1.4rem;
+  padding: 0.5rem 0.5rem;
+  width: 500px;
+  text-align: center;
 }
 
 .directory-overlay {
@@ -223,7 +228,7 @@ header span {
   font-weight: bolder;
   top: 15px;
   left: 50%;
-  transform: translate(-50%, 0)
+  transform: translate(-50%, 0);
 }
 
 
