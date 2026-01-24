@@ -53,6 +53,7 @@ function displaySpotlightMembers(members) {
     address.textContent = `${member.address}`;
     url.textContent = `${member.URLName}`;
     url.setAttribute('href', member.URL);
+    url.setAttribute('target', '_blank');
     if (member.memberLevel === 3) {
       status.textContent = "Gold Status Member";
       status.setAttribute('class', 'gold')

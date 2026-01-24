@@ -38,6 +38,7 @@ function displayBusinesses(businesses) {
       phone.textContent = `PHONE: ${business.phone}`;
       url.textContent = `URL: ${business.URLName}`;
       url.setAttribute('href', business.URL);
+      url.setAttribute('target', '_blank');
       // image.setAttribute('src', business.image);
       // image.setAttribute('alt', `${business.name} photograph`);
       // image.setAttribute('loading', 'lazy');
@@ -78,6 +79,7 @@ function displayBusinesses(businesses) {
       image.setAttribute('width', '100');
       image.setAttribute('height', '100');
       url.setAttribute('href', business.URL);
+      url.setAttribute('target', '_blank');
       contact.setAttribute('id', 'contact');
       contact.appendChild(email);
       contact.appendChild(phone);
