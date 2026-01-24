@@ -41,7 +41,7 @@ function displaySpotlightMembers(members) {
     let phone = document.createElement('p');
     let contact = document.createElement('div');
     let address = document.createElement('p');
-    let url = document.createElement('p');
+    let url = document.createElement('a');
     let status = document.createElement('p');
     card.setAttribute('class', 'sCard');
     name.innerHTML = `${member.name}`;
@@ -51,7 +51,8 @@ function displaySpotlightMembers(members) {
     logo.setAttribute('length', '100px');
     phone.textContent = `${member.phone}`;
     address.textContent = `${member.address}`;
-    url.textContent = `${member.URL}`;
+    url.textContent = `${member.URLName}`;
+    url.setAttribute('href', member.URL);
     if (member.memberLevel === 3) {
       status.textContent = "Gold Status Member";
       status.setAttribute('class', 'gold')

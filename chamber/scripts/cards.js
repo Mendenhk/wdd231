@@ -29,14 +29,15 @@ function displayBusinesses(businesses) {
       let contact = document.createElement('div');
       let email = document.createElement('p');
       let phone = document.createElement('p');
-      let url = document.createElement('p');
+      let url = document.createElement('a');
       card.setAttribute('class', 'card');
       name.innerHTML = `${business.name}`;
       // tagline.textContent = `${business.tagline}`;
       // tagline.setAttribute('class', 'tagline')
       email.textContent = `EMAIL: ${business.email}`;
       phone.textContent = `PHONE: ${business.phone}`;
-      url.textContent = `URL: ${business.URL}`;
+      url.textContent = `URL: ${business.URLName}`;
+      url.setAttribute('href', business.URL);
       // image.setAttribute('src', business.image);
       // image.setAttribute('alt', `${business.name} photograph`);
       // image.setAttribute('loading', 'lazy');
@@ -63,20 +64,21 @@ function displayBusinesses(businesses) {
       let contact = document.createElement('div');
       let email = document.createElement('p');
       let phone = document.createElement('p');
-      let url = document.createElement('p');
+      let url = document.createElement('a');
       card.setAttribute('class', 'card');
       name.innerHTML = `${business.name}`;
       tagline.textContent = `${business.tagline}`;
       tagline.setAttribute('class', 'tagline')
       email.textContent = `EMAIL: ${business.email}`;
       phone.textContent = `PHONE: ${business.phone}`;
-      url.textContent = `URL: ${business.URL}`;
+      url.textContent = `URL: ${business.URLName}`;
       image.setAttribute('src', business.image);
       image.setAttribute('alt', `${business.name} photograph`);
       image.setAttribute('loading', 'lazy');
       image.setAttribute('width', '100');
       image.setAttribute('height', '100');
-      contact.setAttribute('id', 'contact')
+      url.setAttribute('href', business.URL);
+      contact.setAttribute('id', 'contact');
       contact.appendChild(email);
       contact.appendChild(phone);
       contact.appendChild(url);

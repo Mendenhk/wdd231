@@ -334,10 +334,21 @@ header span {
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
-.card #contact p {
+.card #contact p,
+.card #contact a {
   text-align: left;
   font-size: 0.8rem;
   padding: 0.2rem 0;
+}
+
+.card #contact a {
+  text-decoration: none;
+  color: yellow;
+  padding: 15px 0;
+}
+
+.card #contact a:hover {
+  cursor: pointer;
 }
 
 /* -------------------------25 CARDS IN LIST VIEW ------------------------- */
