@@ -427,10 +427,17 @@ header span {
   height: 90px;
 }
 
-.sCard #contact p {
+.sCard #contact p,
+.sCard #contact a {
   text-align: left;
   font-size: 0.8rem;
   padding: 0.2rem 0;
+}
+
+.sCard #contact a {
+  color: yellow;
+  text-decoration: none;
+  padding: 15px 0;
 }
 
 .sCard .gold {
