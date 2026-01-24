@@ -32,6 +32,11 @@
     /* above: the margin written like this centers the contents */
   }
 
+  .directory-overlay {
+    font-size: 1.5rem;
+    top: 20px;
+  }
+
   /* -------------------------25 -  EVENTS & WEATHER SECTIONS ------------------------- */
   .events-weather {
     display: grid;

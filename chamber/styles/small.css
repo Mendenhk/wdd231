@@ -222,8 +222,9 @@ header span {
 
 .directory-overlay {
   position: absolute;
-  font-size: 1.5rem;
-  top: 20px;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  top: 15px;
   left: 50%;
   transform: translate(-50%, 0)
 }
