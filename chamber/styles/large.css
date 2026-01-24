@@ -32,9 +32,17 @@
     /* above: the margin written like this centers the contents */
   }
 
+    .overlay {
+      font-size: 1.4rem;
+      padding: 0.5rem 0.5rem;
+      width: 500px;
+      text-align: center;
+    }
+
   .directory-overlay {
     font-size: 1.5rem;
     top: 20px;
+    width: 400px;
   }
 
   /* -------------------------25 -  EVENTS & WEATHER SECTIONS ------------------------- */
