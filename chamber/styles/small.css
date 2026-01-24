@@ -245,6 +245,7 @@ header span {
 .weather p {
   line-height: 1.5rem;
   grid-column: 2/3;
+  font-size: 0.9rem;
 }
 
 .forecast p {
