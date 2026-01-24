@@ -380,6 +380,7 @@ header span {
   align-self: center;
   background-color: var(--footer);
   border-radius: 20px;
+  margin-left: 0.5rem;
 }
 
 /* selecting only one image because it has white lettering */
