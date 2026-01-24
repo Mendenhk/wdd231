@@ -143,6 +143,7 @@ header span {
   display: flex;
   flex-direction: column;
   color: var(--white-text);
+  margin-top: 0.5rem;
 }
 
 .join-picture {
@@ -161,10 +162,6 @@ header span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.join-section {
-  margin-top: 0.5rem;
 }
 
 .join-button-div {
