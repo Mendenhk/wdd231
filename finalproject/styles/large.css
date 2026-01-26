@@ -1,0 +1,107 @@
+@media only screen and (min-width: 600px) {
+
+  /* -------------------------25 - HEADER ------------------------- */
+  header {
+    grid-template-columns: 48px auto auto;
+    /* above: removes 3rd column containing the hamburger */
+    padding: 15px 0 15px 3rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    grid-column: 3/4;
+  }
+
+  .navigation ul {
+    display: flex;
+  }
+
+  .navigation a {
+    border: none;
+  }
+
+  /* -------------------------25 -  MAINSECTION ------------------------- */
+  .main-page,
+  nav {
+    max-width: 900px;
+    margin: 0 auto;
+    /* above: the margin written like this centers the contents */
+  }
+
+  .overlay {
+    font-size: 1.4rem;
+    padding: 0.5rem 0.5rem;
+    width: 500px;
+    text-align: center;
+  }
+
+  .directory-overlay {
+    font-size: 1.5rem;
+    top: 20px;
+    width: 400px;
+  }
+
+  /* -------------------------25 -  EVENTS & WEATHER SECTIONS ------------------------- */
+  .events-weather {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .events-weather h2 {
+    text-align: left;
+    padding-left: 0.5rem;
+  }
+
+  /* h1 {
+    grid-column: 1/-1;
+  } */
+
+  /*-------------------------25 JOIN US SECTION------------------------- */
+  .join-section {
+    /* background-color: var(--section-bg); */
+    flex-direction: row;
+    /* color: var(--white-text); */
+  }
+
+  .join-picture {
+    height: 400px;
+    /* 400 to match img height */
+  }
+
+  .join-picture img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .join-button-div h3,
+  .join-button-div p {
+    padding-top: 60px;
+  }
+
+  .join-button-div button {
+    margin-top: 60px;
+  }
+
+
+  /* -------------------------25 -  BUSINESS CARDS ------------------------- */
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* -------------------------25 -  FOOTER ------------------------- */
+  footer {
+    margin-top: 1rem;
+    gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #cc-address {
+    justify-self: center;
+  }
+}
