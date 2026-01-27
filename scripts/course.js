@@ -104,7 +104,7 @@ allButton.addEventListener('click', () => {
     dialogBox.appendChild(closeButton);  //kriston test
     if (course.completed) {
       courseItem.textContent = `✔️${course.subject}${course.number}`;
-      courseItem.setAttribute('id', 'infoButton'); //kriston test
+      courseItem.setAttribute('class', 'openButton'); //kriston test
       courseItem.appendChild(dialogBox) //kriston test
       sumCredits += course.credits;
     }
@@ -170,3 +170,7 @@ wddButton.addEventListener('click', () => {
   credits.innerText = sumCredits;
 });
 
+const openButton = document.querySelector('.openButton');  //kriston test
+openButton.addEventListener('click', () => {
+  modal.showModal();
+}); //kriston test
