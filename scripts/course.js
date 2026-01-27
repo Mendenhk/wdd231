@@ -79,7 +79,7 @@ const courses = [
 ]
 
 
-// ------------------------- COURSE BUTTON ACTIONS -------------------------
+// --------------- COURSE BUTTON ACTIONS ---------------
 const coursesDiv = document.getElementById('courses');
 const credits = document.getElementById('course-credits');
 // below: adds all buttons to buttons (like an array of buttons)
