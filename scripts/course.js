@@ -94,8 +94,18 @@ allButton.addEventListener('click', () => {
   coursesDiv.innerText = ``;
   for (const course of courses) {
     const courseItem = document.createElement('div');
+    const dialogBox = document.createElement('dialog');//kriston test
+    const dialogText = document.createElement('p');  //kriston test
+    const closeButton = document.createElement('button');  //kriston test
+    dialogBox.setAttribute('id', 'dialogBox'); //kriston test
+    closeButton.innerText = 'close'; //kriston test
+    closeButton.setAttribute('id', 'closeButton'); //kriston test
+    dialogBox.appendChild(dialogText);  //kriston text
+    dialogBox.appendChild(closeButton);  //kriston test
     if (course.completed) {
       courseItem.textContent = `✔️${course.subject}${course.number}`;
+      courseItem.setAttribute('id', 'infoButton'); //kriston test
+      courseItem.appendChild(dialogBox) //kriston test
       sumCredits += course.credits;
     }
     else {
