@@ -1,4 +1,5 @@
 <!-- add javaScript for Join Now button -->
+<!-- center footer information -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -83,24 +84,28 @@
             title="Your business"></label>
 
         <h3>Membership Level</h3>
-        <label><input type="radio" name="membership" value="NP" checked> NP Membership (non-profit)</label>
+        <label><input type="radio" name="membership" value="NP" checked required> NP Membership (non-profit)</label>
         <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
         <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
         <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
 
+        <label>Business/Organization description<textarea name="description" title="Business description"></textarea>
+        </label>
 
-        <h3>Date and Location</h3>
-        <label>Date <input type="date" name="date" required></label>
+        <input type="hidden" name="timestamp" id="timestamp">
 
-        <label>Location
+        <!-- <h3>Date and Location</h3>
+        <label>Date <input type="date" name="date" required></textarea></label> -->
+
+        <!-- <label>Location
           <select name="location" required>
             <option value="">None</option>
             <option value="Payson">Payson</option>
             <option value="Orem">Orem</option>
             <option value="Provo City Center">Provo City Center</option>
-        </label>
+        </label> -->
 
-        <input type="submit" value="Schedule An Appointment">
+        <input type="submit" value="Become a Member">
       </form>
     </div>
     <h1>Home</h1>
