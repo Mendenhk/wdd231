@@ -492,26 +492,25 @@ header span {
   color: #3D405B;
 } */
 
-/* form {
+form {
   margin: 1rem 2%;
 
   label {
     display: block;
-    font-size: .8rem;
-    color: purple;
+    /* font-size: .8rem; */
+    /* color: purple; */
     padding-top: .2rem;
-  } */
+  }
 
-/* h3 {
-    font-size: .9rem;
+  h1 {
+    font-size: 1.7rem;
     color: #E07A5F;
     margin: 1.5rem 0 .2rem 0;
     border-bottom: 1px solid #eee;
-  } */
+  }
 
-/* input[type=text],
+  input[type=text],
   input[type=tel],
-  input[type=date],
   input[type=email],
   select {
     display: block;
@@ -524,22 +523,33 @@ header span {
     font-size: 1rem;
     color: #3D405B;
     width: 250px;
-  } */
+  }
 
-/* input:required {
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    legend {
+      font-size: 1rem;
+      padding-bottom: 0.2rem;
+    }
+  }
+
+  input:required {
     border-left-color: #d70000;
-  } */
+  }
 
-/* input:focus {
+  /* input:focus {
     border-left-color: black;
     outline: none;
   } */
 
-/* input:required:valid {
+  input:required:valid {
     border-left-color: green;
-  } */
+  }
 
-/* input[type=submit] {
+  input[type=submit] {
     border: none;
     text-align: center;
     background-color: #3D405B;
@@ -548,10 +558,10 @@ header span {
     padding: .75rem 1.5rem;
     margin: 2rem 0;
     font-size: 1.2rem;
-    -webkit-appearance: none;
-    appearance: none;
-  } */
-/* } */
+    /* -webkit-appearance: none; */
+    /* appearance: none; */
+  }
+}
 
 /* input:-webkit-autofill {
   -webkit-text-fill-color: #3D405B;

@@ -1,5 +1,5 @@
 <!-- add javaScript for Join Now button -->
-<!-- center footer information -->
+<!--  change form colors to match website -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,9 +68,8 @@
       </div>
     </div>
     <div class="form-div">
-      <h1>Membership Form</h1>
-
       <form method="GET" action="thankyou.html" class="designOne">
+        <h1>Membership Form</h1>
         <label>First Name <input type="text" name="first" required autocomplete="given-name"
             title="Your First Name"></label>
         <label>Last Name <input type="text" name="last" required autocomplete="family-name"
@@ -85,11 +84,25 @@
         <label>Business/Organization Name<input type="text" name="business" required autocomplete="organization"
             title="Your business"></label>
 
-        <h3>Membership Level</h3>
-        <label><input type="radio" name="membership" value="NP" checked required> NP Membership (non-profit)</label>
-        <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
-        <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
-        <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+        <fieldset>
+          <legend>Membership Level</legend>
+          <label>
+            <input type="radio" name="membership" value="NP" required>
+            NP Membership (non-profit)
+          </label>
+          <label>
+            <input type="radio" name="membership" value="Bronze">
+            Bronze Membership
+          </label>
+          <label>
+            <input type="radio" name="membership" value="Silver">
+            Silver Membership
+          </label>
+          <label>
+            <input type="radio" name="membership" value="Gold">
+            Gold Membership
+          </label>
+        </fieldset>
 
         <label>Business/Organization description<textarea name="description" title="Business description"></textarea>
         </label>
