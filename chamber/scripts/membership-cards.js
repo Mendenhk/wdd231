@@ -10,3 +10,4 @@
 //   <p>Proxy ${myInfo.get('ordinance')} on ${myInfo.get('date')} in the ${myInfo.get('location')} Temple</p>
 //   <p>Your Phone: ${myInfo.get('phone')}</p>
 //   <p>Your email is: ${myInfo.get('email')}</p>`;
+import { membershipLevels } from "../data/membership";
