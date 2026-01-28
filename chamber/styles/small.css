@@ -124,6 +124,7 @@ header span {
 
 /* -------------------------25 -  BODY AND SECTIONS ------------------------- */
 .hero img,
+.join-hero img,
 .directory-hero img {
   display: block;
   width: 100%;
