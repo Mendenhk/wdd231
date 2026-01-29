@@ -19,7 +19,7 @@ async function getBusinessData(displayFunction) {
 getBusinessData(displaySpotlightMembers);  //call to the above function 
 
 
-// ---------------- DISPLAYING SPOTLIGHT BUSINESS CARDS ----------------
+// ----------- DISPLAYING SPOTLIGHT BUSINESS CARDS -----------
 
 function displaySpotlightMembers(members) {
   const spotlightMembers = members.filter(member => member.memberLevel === 3 || member.memberLevel === 2);
