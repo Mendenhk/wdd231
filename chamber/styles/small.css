@@ -122,7 +122,7 @@ header span {
 }
 
 
-/* -------------------------25 -  BODY AND SECTIONS ------------------------- */
+/* --------------------20 -  BODY AND SECTIONS -------------------- */
 .hero img,
 .join-hero img,
 .directory-hero img {
@@ -131,7 +131,7 @@ header span {
   height: 100%;
 }
 
-/*-------------------------25 JOIN US SECTION------------------------- */
+/*--------------------20 JOIN US SECTION-------------------- */
 .join-section {
   background-color: var(--section-bg);
   display: flex;
@@ -572,6 +572,13 @@ form {
     font-size: 1.2rem;
     /* -webkit-appearance: none; */
     /* appearance: none; */
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: yellow;
+    color: var(--black-text);
+    border: 1px solid var(--black-text);
   }
 }
 
