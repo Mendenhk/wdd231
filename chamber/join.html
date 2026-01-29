@@ -69,52 +69,53 @@
         <!-- add content for keynote ticket overlay.  Change above. -->
       </div>
     </div>
-    <div class="form-div">
-      <form method="GET" action="thankyou.html" class="designOne">
-        <h1>Membership Form</h1>
-        <label>First Name *<input type="text" name="first" required autocomplete="given-name"
-            title="Your First Name"></label>
-        <label>Last Name *<input type="text" name="last" required autocomplete="family-name"
-            title="Your Last Name"></label>
-        <label>Organizational Title *<input type="text" name="title" required autocomplete="organization-title"
-            title="Your organizational title" pattern="^[A-Za-z\- ]{7,}$"></label>
-        <!-- the "pattern" above allows only letters, hyphens, spaces and a maximum of 7 characters. -->
-        <label>Email *<input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
-            autocomplete="email"></label>
-        <label>Cell Phone *<input type="tel" name="phone" autocomplete="tel" required title="A Phone Number with dashes"
-            placeholder="555-555-5555"></label>
-        <label>Business/Organization Name *<input type="text" name="business" required autocomplete="organization"
-            title="Your business"></label>
+    <div class="form-cards-div">
+      <div class="form-div">
+        <form method="GET" action="thankyou.html" class="designOne">
+          <h1>Membership Form</h1>
+          <label>First Name *<input type="text" name="first" required autocomplete="given-name"
+              title="Your First Name"></label>
+          <label>Last Name *<input type="text" name="last" required autocomplete="family-name"
+              title="Your Last Name"></label>
+          <label>Organizational Title *<input type="text" name="title" required autocomplete="organization-title"
+              title="Your organizational title" pattern="^[A-Za-z\- ]{7,}$"></label>
+          <!-- the "pattern" above allows only letters, hyphens, spaces and a maximum of 7 characters. -->
+          <label>Email *<input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+              autocomplete="email"></label>
+          <label>Cell Phone *<input type="tel" name="phone" autocomplete="tel" required
+              title="A Phone Number with dashes" placeholder="555-555-5555"></label>
+          <label>Business/Organization Name *<input type="text" name="business" required autocomplete="organization"
+              title="Your business"></label>
 
-        <fieldset>
-          <legend>Membership Level *</legend>
-          <label>
-            <input type="radio" name="membership" value="NP" required>
-            NP Membership (non-profit)
-          </label>
-          <label>
-            <input type="radio" name="membership" value="Bronze">
-            Bronze Membership
-          </label>
-          <label>
-            <input type="radio" name="membership" value="Silver">
-            Silver Membership
-          </label>
-          <label>
-            <input type="radio" name="membership" value="Gold">
-            Gold Membership
-          </label>
-        </fieldset>
+          <fieldset>
+            <legend>Membership Level *</legend>
+            <label>
+              <input type="radio" name="membership" value="NP" required>
+              NP Membership (non-profit)
+            </label>
+            <label>
+              <input type="radio" name="membership" value="Bronze">
+              Bronze Membership
+            </label>
+            <label>
+              <input type="radio" name="membership" value="Silver">
+              Silver Membership
+            </label>
+            <label>
+              <input type="radio" name="membership" value="Gold">
+              Gold Membership
+            </label>
+          </fieldset>
 
-        <label>Business/Organization description<textarea name="description" title="Business description"></textarea>
-        </label>
+          <label>Business/Organization description<textarea name="description" title="Business description"></textarea>
+          </label>
 
-        <input type="hidden" name="timestamp" id="timestamp">
+          <input type="hidden" name="timestamp" id="timestamp">
 
-        <!-- <h3>Date and Location</h3>
+          <!-- <h3>Date and Location</h3>
         <label>Date <input type="date" name="date" required></textarea></label> -->
 
-        <!-- <label>Location
+          <!-- <label>Location
           <select name="location" required>
             <option value="">None</option>
             <option value="Payson">Payson</option>
@@ -122,43 +123,13 @@
             <option value="Provo City Center">Provo City Center</option>
         </label> -->
 
-        <input type="submit" value="Apply for Membership">
-      </form>
+          <input type="submit" value="Apply for Membership">
+        </form>
+      </div>
+      <section id="level-cards" class="level-cards">
+        <h2>Membership Levels</h2>
+      </section>
     </div>
-
-    <!-- <section class="events-weather">
-      <h2 class="updates-h2">Community Updates</h2>
-      <div class="events">
-        <h2>Events</h2>
-        <div id="events">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, et?</p>
-        </div>
-      </div>
-      <div class="weather">
-        <h2>Current Weather</h2>
-        <img id="graphic" src="images/cloud-sun-solid-full.svg" alt="Weather icon" width="50" height="50">
-        <div id="weather">
-          <p id="temperature"></p>
-          <p id="description"></p>
-          <p id="high"></p>
-          <p id="low"></p>
-          <p id="humidity"></p>
-          <p id="sunrise"></p>
-          <p id="sunset"></p>
-        </div>
-      </div>
-      <div class="forecast">
-        <h2>Weather Forecast</h2>
-        <div id="forecast">
-          <p id="today">today: 90F</p>
-          <p id="tomorrow">wed: 89F</p>
-          <p id="two-days">thur 69F</p>
-        </div>
-      </div>
-    </section> -->
-    <section id="level-cards-section" class="level-cards-section">
-      <h2>Membership Levels</h2>
-    </section>
 
     <section id="spotlight-cards" class="spotlight-cards">
       <h2>Member Spotlight</h2>

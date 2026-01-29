@@ -478,14 +478,18 @@ header span {
   border-bottom-right-radius: 10px;
 }
 
-/* --------------------20 MEMBERSHIP LEVEL CARDS -------------------- */
-
-/* .spotlight-cards {
+/* -----------------17 MEMBERSHIP LEVEL CARDS ----------------- */
+.form-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  gap: 0.5rem;
-  margin-top: 0.2rem;
-} */
+}
+
+.level-cards {
+  padding-left: 2rem;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); */
+  /* gap: 0.5rem; */
+  /* margin-top: 0.2rem; */
+}
 
 /* .sCard {
   display: grid;
@@ -497,11 +501,12 @@ header span {
   padding-top: 0.3rem;
 } */
 
-/* .spotlight-cards h2 {
-  color: var(--black-text);
-  text-align: center;
-  grid-column: 1/-1;
-} */
+.level-cards h2 {
+  font-size: 1.7rem;
+  color: #E07A5F;
+  margin: 1.5rem 0 .2rem 0;
+  border-bottom: 1px solid #eee;
+}
 
 /* .sCard h3 {
   text-align: center;
@@ -525,7 +530,7 @@ header span {
 /* selecting only one image because it has white lettering */
 /* .sCard img[src*="golf"] {
   background-color: darkgray; */
-  /* darker background for white logo */
+/* darker background for white logo */
 /* } */
 
 /* .sCard #contact {

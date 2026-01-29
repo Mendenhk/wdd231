@@ -22,7 +22,7 @@ displayMembershipLevels(membershipLevels);
 // ----------- DISPLAYING MEMBERSHIP LEVEL CARDS -----------
 
 function displayMembershipLevels(levels) {
-  const levelsSection = document.querySelector('#level-cards-section');
+  const levelsSection = document.querySelector('#level-cards');
   //   const spotlightMembers = members.filter(member => member.memberLevel === 3 || member.memberLevel === 2);
   //   const selectedMembers = [];
   //   //below: returns a random interger between 0 and the length of the spotlightMembers array minus 1
