@@ -28,11 +28,11 @@ function displaySpotlightMembers(members) {
   for (let i = 0; i < 2; i++) {
     // creates an array of 2 unique random spotlight members
     const randInt = getRandomInt(0, spotlightMembers.length - 1);
-    console.log(randInt);
+    // console.log(randInt);
     selectedMembers.push(spotlightMembers[randInt]);
     spotlightMembers.splice(randInt, 1);
     // console.log(spotlightMembers);
-    console.log(selectedMembers);
+    // console.log(selectedMembers);
   }
   selectedMembers.forEach((member) => {
     let card = document.createElement('section');

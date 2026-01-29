@@ -1,4 +1,5 @@
 import { membershipLevels } from "../data/membership.js";
+console.log(membershipLevels);
 
 //membership level Cards.js for the join webpage
 // // ---------------- FETCHING BUSINESS CARD DATA ----------------
@@ -40,7 +41,6 @@ function displayMembershipLevels(levels) {
     let cost = document.createElement('p');
     let benefits = document.createElement('div');
     card.setAttribute('class', 'mCard');
-    title.innerHTML = `${level.name}`;
     if (level.memberLevel === "NP") {
       card.setAttribute('id', 'np')
     }
@@ -53,6 +53,14 @@ function displayMembershipLevels(levels) {
     if (level.memberLevel === "Gold") {
       card.setAttribute('id', 'gold')
     }
+    title.innerHTML = `${level.title}`;
+    cost.innerHTML = `Yearly Cost: $${level.cost}`;
+    let benefitList = `<p>Benefits:</p>`;
+    level.benefits.forEach((line) => {
+      const listLine = `<li>${line}</li>`;
+      benefitList += listLine;
+    });
+    benefits.innerHTML = benefitList;
     card.appendChild(title);
     card.appendChild(cost);
     card.appendChild(benefits);
