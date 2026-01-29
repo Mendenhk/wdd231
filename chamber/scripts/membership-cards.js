@@ -1,20 +1,27 @@
-//all of the below is copied from another .js
-// const getString = window.location.search;
-// console.log(getString);
-
-// const myInfo = new URLSearchParams(getString);
-// console.log(myInfo);
-
-// document.querySelector('#results').innerHTML = `
-//   <p>Appointment for ${myInfo.get('first')} ${myInfo.get('last')} </p> 
-//   <p>Proxy ${myInfo.get('ordinance')} on ${myInfo.get('date')} in the ${myInfo.get('location')} Temple</p>
-//   <p>Your Phone: ${myInfo.get('phone')}</p>
-//   <p>Your email is: ${myInfo.get('email')}</p>`;
 import { membershipLevels } from "../data/membership.js";
 
-// ----------- DISPLAYING SPOTLIGHT BUSINESS CARDS -----------
+//membership level Cards.js for the join webpage
+// // ---------------- FETCHING BUSINESS CARD DATA ----------------
+// const businessData = 'data/members.json';
+// //above: JSON array of objects containing business information
+// const spotlightCards = document.getElementById('spotlight-cards');
+// let businesses = [];  //allows global use
 
-function displaySpotlightMembers(members) {
+// async function getBusinessData(displayFunction) {
+//   const response = await fetch(businessData);
+//   //above:  data request from JSON formated file.  await makes further code pause until data returned.
+//   const data = await response.json();
+//   //above: parses JSON to object and saves in the variable "data".  await used to pause code until finished.
+//   // console.table(data.companies);
+//   // above: temp output test of data response.  data.companies because data is an object containing a single array of objects called companies.  Table works best with arrays directly, not objects.
+//   businesses = data.companies;
+displayMembershipLevels(membershipLevels);
+//call to function below.
+
+// ----------- DISPLAYING MEMBERSHIP LEVEL CARDS -----------
+
+function displayMembershipLevels(levels) {
+  const levelsSection = document.querySelector('#level-cards-section');
   //   const spotlightMembers = members.filter(member => member.memberLevel === 3 || member.memberLevel === 2);
   //   const selectedMembers = [];
   //   //below: returns a random interger between 0 and the length of the spotlightMembers array minus 1
@@ -27,45 +34,31 @@ function displaySpotlightMembers(members) {
   //     // console.log(spotlightMembers);
   //     console.log(selectedMembers);
   //   }
-  //   selectedMembers.forEach((member) => {
-  //     let card = document.createElement('section');
-  //     let name = document.createElement('h3');
-  //     let logo = document.createElement('img');
-  //     let phone = document.createElement('p');
-  //     let contact = document.createElement('div');
-  //     let address = document.createElement('p');
-  //     let url = document.createElement('a');
-  //     let status = document.createElement('p');
-  //     card.setAttribute('class', 'sCard');
-  //     name.innerHTML = `${member.name}`;
-  //     logo.setAttribute('src', member.logo);
-  //     logo.setAttribute('alt', `${member.name} logo`);
-  //     logo.setAttribute('width', '100px');
-  //     logo.setAttribute('length', '100px');
-  //     phone.textContent = `${member.phone}`;
-  //     address.textContent = `${member.address}`;
-  //     url.textContent = `${member.URLName}`;
-  //     url.setAttribute('href', member.URL);
-  //     url.setAttribute('target', '_blank');
-  //     if (member.memberLevel === 3) {
-  //       status.textContent = "Gold Status Member";
-  //       status.setAttribute('class', 'gold')
-  //     }
-  //     if (member.memberLevel === 2) {
-  //       status.textContent = "Silver Status Member";
-  //       status.setAttribute('class', 'silver')
-  //     }
-  //     contact.setAttribute('id', 'contact')
-  //     contact.appendChild(phone);
-  //     contact.appendChild(address);
-  //     contact.appendChild(url);
-  //     card.appendChild(name);
-  //     card.appendChild(logo);
-  //     card.appendChild(contact);
-  //     card.appendChild(status);
-  //     spotlightCards.appendChild(card);
+  levels.forEach((level) => {
+    let card = document.createElement('section');
+    let title = document.createElement('h3');
+    let cost = document.createElement('p');
+    let benefits = document.createElement('div');
+    card.setAttribute('class', 'mCard');
+    title.innerHTML = `${level.name}`;
+    if (level.memberLevel === "NP") {
+      card.setAttribute('id', 'np')
+    }
+    if (level.memberLevel === "Bronze") {
+      card.setAttribute('id', 'bronze')
+    }
+    if (level.memberLevel === "Silver") {
+      card.setAttribute('id', 'silver')
+    }
+    if (level.memberLevel === "Gold") {
+      card.setAttribute('id', 'gold')
+    }
+    card.appendChild(title);
+    card.appendChild(cost);
+    card.appendChild(benefits);
+    levelsSection.appendChild(card);
 
-  //   });
+  });
 
 }
 
