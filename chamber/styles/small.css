@@ -491,15 +491,14 @@ header span {
   /* margin-top: 0.2rem; */
 }
 
-/* .sCard {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.mCard {
   background-color: var(--section-bg);
   color: var(--white-text);
   border: 1px solid darkgray;
   border-radius: 10px;
   padding-top: 0.3rem;
-} */
+  margin-top: 0.5rem;
+}
 
 .level-cards h2 {
   font-size: 1.7rem;
@@ -508,30 +507,20 @@ header span {
   border-bottom: 1px solid #eee;
 }
 
-/* .sCard h3 {
+.mCard h3 {
   text-align: center;
   grid-column: 1/-1;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid white;
-} */
+}
 
-/* .sCard img {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 0.3rem;
-  justify-self: center;
-  align-self: center;
-  background-color: var(--footer);
-  border-radius: 20px;
-  margin-left: 0.5rem;
-} */
+.mCard div {
+  padding: 0.5rem;
+}
 
-/* selecting only one image because it has white lettering */
-/* .sCard img[src*="golf"] {
-  background-color: darkgray; */
-/* darker background for white logo */
-/* } */
+/* .mCard li {
+  margin-left: 1rem;
+} */
 
 /* .sCard #contact {
   padding: 0.3rem 0.5rem 0.3rem 0.5rem;

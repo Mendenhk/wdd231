@@ -39,7 +39,9 @@ function displayMembershipLevels(levels) {
     let card = document.createElement('section');
     let title = document.createElement('h3');
     let cost = document.createElement('p');
-    let benefits = document.createElement('div');
+    let costBenefits = document.createElement('div');
+    let benefitsList = document.createElement('ul');
+    let listItem = document.createElement('li');
     card.setAttribute('class', 'mCard');
     if (level.memberLevel === "NP") {
       card.setAttribute('id', 'np')
@@ -55,15 +57,14 @@ function displayMembershipLevels(levels) {
     }
     title.innerHTML = `${level.title}`;
     cost.innerHTML = `Yearly Cost: $${level.cost}`;
-    let benefitList = `<p>Benefits:</p>`;
     level.benefits.forEach((line) => {
-      const listLine = `<li>${line}</li>`;
-      benefitList += listLine;
+      listItem.innerHTML = line;
+      benefitsList.appendChild(listItem);
     });
-    benefits.innerHTML = benefitList;
+    costBenefits.appendChild(cost);
+    costBenefits.appendChild(benefitsList);
     card.appendChild(title);
-    card.appendChild(cost);
-    card.appendChild(benefits);
+    card.appendChild(costBenefits);
     levelsSection.appendChild(card);
 
   });
