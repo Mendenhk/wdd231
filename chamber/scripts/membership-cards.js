@@ -38,10 +38,11 @@ function displayMembershipLevels(levels) {
   levels.forEach((level) => {
     let card = document.createElement('section');
     let title = document.createElement('h3');
+    let benefits = document.createElement('div');
     let cost = document.createElement('p');
-    let costBenefits = document.createElement('div');
-    let benefitsList = document.createElement('ul');
-    let listItem = document.createElement('li');
+    let benefitText = document.createElement('p');
+    let benefitUL = document.createElement('ul');
+    let benefitButton = document.createElement('button');
     card.setAttribute('class', 'mCard');
     if (level.memberLevel === "NP") {
       card.setAttribute('id', 'np')
@@ -57,14 +58,21 @@ function displayMembershipLevels(levels) {
     }
     title.innerHTML = `${level.title}`;
     cost.innerHTML = `Yearly Cost: $${level.cost}`;
+    benefitText.innerHTML = 'Benefits:';
+    let benefitList = ``;
     level.benefits.forEach((line) => {
-      listItem.innerHTML = line;
-      benefitsList.appendChild(listItem);
+      const listLine = `<li>${line}</li>`;
+      benefitList += listLine;
     });
-    costBenefits.appendChild(cost);
-    costBenefits.appendChild(benefitsList);
+    benefitUL.innerHTML = benefitList;
+    benefitButton.innerHTML = 'more info';
+    benefitButton.setAttribute('id', 'info-button');
+    benefits.appendChild(cost);
+    benefits.appendChild(benefitText)
+    benefits.appendChild(benefitUL);
     card.appendChild(title);
-    card.appendChild(costBenefits);
+    card.appendChild(benefits);
+    card.appendChild(benefitButton);
     levelsSection.appendChild(card);
 
   });
