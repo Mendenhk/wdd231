@@ -493,7 +493,8 @@ header span {
 
 .mCard {
   display: grid;
-  grid-template-columns: 2fr 1fr;;
+  grid-template-columns: 2fr 1fr;
+  ;
   background-color: var(--section-bg);
   color: var(--white-text);
   border: 1px solid darkgray;
@@ -534,6 +535,7 @@ header span {
   height: 44px;
   align-self: center;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 /* .sCard #contact {
