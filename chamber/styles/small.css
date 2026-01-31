@@ -810,6 +810,41 @@ form {
   border-radius: 6px;
 } */
 
+/* --------------------20 THANK YOU PAGE -------------------- */
+/* fieldset */
+.thanks {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem;
+}
+
+.thanks legend {
+  font-size: 1.3rem;
+}
+
+.thanks H1 {
+  font-size: 1.5rem;
+}
+
+.thanks-btn {
+  height: 44px;
+  width: 200px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 0.3rem;
+}
+
+
 /* -------------------------25 FOOTER ------------------------- */
 footer {
   display: grid;
