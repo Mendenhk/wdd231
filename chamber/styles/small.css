@@ -739,7 +739,7 @@ form fieldset {
   margin: 0.1rem 0 1rem 0;
 }
 
-legend {
+form legend {
   font-size: 1rem;
   padding-bottom: 0.2rem;
 }
