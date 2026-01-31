@@ -172,11 +172,18 @@ header span {
   padding-top: 40px
 }
 
-.join-button-div button {
-  padding: 15px 30px;
+#join-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footer);
+  width: 200px;
+  height: 60px;
+  border: 1px solid black;
   border-radius: 30px;
-  font-size: 1.6rem;
-  margin: 40px 0;
+  font-size: 1.8rem;
+  margin: 60px auto;
+  text-decoration: none;
 }
 
 /* -------------------------25 -  EVENTS & WEATHER SECTIONS ------------------------- */
@@ -740,7 +747,7 @@ form {
     border-left-color: #555;
     font-size: 1rem;
     color: #3D405B;
-    width: 250px;
+    width: 300px;
   }
 
   input::placeholder {
@@ -762,7 +769,7 @@ form {
     display: block;
     margin: 0.1rem 0 1rem 0;
     height: 3rem;
-    width: 250px;
+    width: 300px;
   }
 
   input:required {
@@ -784,7 +791,7 @@ form {
     background-color: #3D405B;
     color: white;
     border-radius: 1rem;
-    padding: .75rem 1.5rem;
+    padding: .75rem 3.2rem;
     margin: 1rem 0;
     font-size: 1.2rem;
     /* -webkit-appearance: none; */
@@ -831,6 +838,11 @@ form {
 .thanks H1 {
   font-size: 1.5rem;
 }
+
+#join-timestamp {
+  font-size: 0.8rem;
+}
+
 
 /* .thanks-btn {
   height: 44px;

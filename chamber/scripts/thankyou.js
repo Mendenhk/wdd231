@@ -14,3 +14,8 @@ document.querySelector('#results').innerHTML = `
   <p>Business: ${myInfo.get('business')}</p>
   <p>Business Description: ${myInfo.get('description')}</p>
   <p>Membership Level: ${myInfo.get('membership')}</p>`;
+
+const timestamp = myInfo.get("timestamp");
+const date = new Date(Number(timestamp));
+document.querySelector('#join-timestamp').innerHTML = `<br>
+  timestamp: ${date}`;
