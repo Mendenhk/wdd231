@@ -29,16 +29,16 @@ function displayMembershipLevels(levels) {
     // let benefitUL = document.createElement('ul');
     let benefitButton = document.createElement('button');
     card.setAttribute('class', 'mCard');
-    if (level.memberLevel === "NP") {
+    if (level.memberLevel === "np") {
       card.setAttribute('id', 'np')
     }
-    if (level.memberLevel === "Bronze") {
+    if (level.memberLevel === "bronze") {
       card.setAttribute('id', 'bronze')
     }
-    if (level.memberLevel === "Silver") {
+    if (level.memberLevel === "silver") {
       card.setAttribute('id', 'silver')
     }
-    if (level.memberLevel === "Gold") {
+    if (level.memberLevel === "gold") {
       card.setAttribute('id', 'gold')
     }
     title.innerHTML = `${level.title}`;
@@ -75,9 +75,7 @@ const closeButton = document.querySelector('#dialog-box button');
 closeButton.addEventListener('click', () => dialogBox.close());
 
 function showStuff(x) {
-  // const closeButton = document.createElement('button');
-  // closeButton.innerHTML = "Close";
-  // closeButton.addEventListener('click', () => dialogBox.close());
+  dialogBox.setAttribute('class', x.memberLevel);
   myTitle.innerHTML = x.title;
   myCost.innerHTML = `Yearly Cost: $${x.cost}`;
   myBenefits.innerHTML = 'Benefits:';
@@ -87,7 +85,5 @@ function showStuff(x) {
     benefitList += listLine;
   });
   myBenefitsList.innerHTML = benefitList;
-  // dialogBox.appendChild(closeButton);
   dialogBox.showModal();
-
 }

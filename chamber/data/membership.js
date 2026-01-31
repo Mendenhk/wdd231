@@ -1,7 +1,7 @@
 export const membershipLevels = [
   {
     title: "Non-Profit Membership",
-    memberLevel: "NP",
+    memberLevel: "np",
     cost: 0,
     benefits: [
       "Business listing on directory",
@@ -11,7 +11,7 @@ export const membershipLevels = [
   },
   {
     title: "Bronze Membership",
-    memberLevel: "Bronze",
+    memberLevel: "bronze",
     cost: 150,
     benefits: [
       "All Non-Profit benefits",
@@ -22,7 +22,7 @@ export const membershipLevels = [
   },
   {
     title: "Silver Membership",
-    memberLevel: "Silver",
+    memberLevel: "silver",
     cost: 300,
     benefits: [
       "All Bronze benefits",
@@ -34,7 +34,7 @@ export const membershipLevels = [
   },
   {
     title: "Gold Membership",
-    memberLevel: "Gold",
+    memberLevel: "gold",
     cost: 500,
     benefits: [
       "All Silver benefits",

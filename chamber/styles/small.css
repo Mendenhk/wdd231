@@ -491,8 +491,7 @@ header span {
   /* margin-top: 0.2rem; */
 }
 
-.mCard,
-#dialog-box {
+.mCard {
   background-color: var(--section-bg);
   color: var(--white-text);
   border: 1px solid darkgray;
@@ -502,8 +501,24 @@ header span {
 }
 
 #dialog-box {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+#dialog-box.np::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+#dialog-box.bronze::backdrop {
+  background-color: rgb(205 127 50 / 50%);
+}
+
+#dialog-box.silver::backdrop {
+  background-color: rgb(192 192 192/ 50%);
+}
+
+#dialog-box.gold::backdrop {
+  background-color: rgb(212 175 55 / 50%);
 }
 
 .level-cards h2 {
@@ -513,15 +528,22 @@ header span {
   border-bottom: 1px solid #eee;
 }
 
-.mCard h3,
-#dialog-box h2 {
+.mCard h3 {
   text-align: center;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid white;
+  animation: glowNP 4s linear forwards;
+}
+
+@keyframes glowNP {
+  0%, 50% {background-color: var(--section-bg);
+    color: var(--white-text);}
+  25%, 100% {background-color: gold;
+    color: var(--black-text);}
 }
 
 #dialog-box h2 {
-  grid-column: 1/-1;
+  padding: 0.3rem 0 0 0.3rem;
 }
 
 #dialog-box div {
@@ -537,8 +559,7 @@ header span {
   padding-top: 0.5rem;
 }
 
-.mCard button,
-#dialog-box button {
+.mCard button {
   display: block;
   width: 120px;
   height: 44px;
@@ -546,14 +567,24 @@ header span {
   cursor: pointer;
 }
 
+#dialog-box button {
+  width: 120px;
+  height: 44px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 0.5rem;
+}
+
 .mCard button {
   margin: 5px auto 5px auto;
 }
 
-#dialog-box button {
+/* #dialog-box button {
   align-self: center;
-  margin: 1rem;
-}
+  margin: 1rem; */
+/* } */
 
 /* .sCard #contact {
   padding: 0.3rem 0.5rem 0.3rem 0.5rem;
