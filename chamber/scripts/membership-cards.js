@@ -52,6 +52,7 @@ function displayMembershipLevels(levels) {
     benefitUL.innerHTML = benefitList;
     benefitButton.innerHTML = 'more info';
     benefitButton.setAttribute('id', 'open-button');
+    benefitButton.addEventListener('click', () => functionCall(x))
     benefits.appendChild(cost);
     benefits.appendChild(benefitText)
     benefits.appendChild(benefitUL);
@@ -68,6 +69,10 @@ function displayMembershipLevels(levels) {
 const openButton = document.querySelector('#open-button');
 const dialogBox = document.querySelector('#dialog-box');
 const closeButton = document.querySelector('#dialog-box button');
+const myTitle = document.querySelector('#dialog-box H2');
+const myCost = document.querySelector('#my-cost');
+const myBenefits = document.querySelector('my-benefits');
+const myBenefitsList = document.querySelector('#dialog-box ul');
 
 openButton.addEventListener('click', () => {
   dialogBox.showModal();
