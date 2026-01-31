@@ -11,4 +11,6 @@ document.querySelector('#results').innerHTML = `
   <p>Title: ${myInfo.get('title')}</p>
   <p>email: ${myInfo.get('email')}</p>
   <p>Phone: ${myInfo.get('phone')}</p>
+  <p>Business: ${myInfo.get('business')}</p>
+  <p>Business Description: ${myInfo.get('description')}</p>
   <p>Membership Level: ${myInfo.get('membership')}</p>`;

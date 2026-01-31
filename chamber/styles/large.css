@@ -95,7 +95,7 @@
   /* --------------------20 THANK YOU PAGE -------------------- */
   /* fieldset */
   .thanks {
-    margin: 3rem;
+    margin: 3rem auto;
   }
 
   .thanks legend {
