@@ -532,14 +532,6 @@ header span {
   text-align: center;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid white;
-  animation: glowNP 4s linear forwards;
-}
-
-@keyframes glowNP {
-  0%, 50% {background-color: var(--section-bg);
-    color: var(--white-text);}
-  25%, 100% {background-color: gold;
-    color: var(--black-text);}
 }
 
 #dialog-box h2 {
@@ -625,6 +617,83 @@ header span {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 } */
+
+/* --------------------20 JOIN PAGE ANIMATIONS -------------------- */
+#gold h3 {
+  animation: glowGold 4s linear forwards;
+}
+
+@keyframes glowGold {
+
+  0%,
+  50% {
+    background-color: var(--section-bg);
+    color: var(--white-text);
+  }
+
+  25%,
+  100% {
+    background-color: gold;
+    color: var(--black-text);
+  }
+}
+
+#silver h3 {
+  animation: glowSilver 4s linear forwards;
+}
+
+@keyframes glowSilver {
+
+  0%,
+  50% {
+    background-color: var(--section-bg);
+    color: var(--white-text);
+  }
+
+  25%,
+  100% {
+    background-color: silver;
+    color: var(--black-text);
+  }
+}
+
+#bronze h3 {
+  animation: glowBronze 4s linear forwards;
+}
+
+@keyframes glowBronze {
+
+  0%,
+  50% {
+    background-color: var(--section-bg);
+    color: var(--white-text);
+  }
+
+  25%,
+  100% {
+    background-color: rgb(205, 127, 50);
+    color: var(--black-text);
+  }
+}
+
+#np h3 {
+  animation: glowNP 4s linear forwards;
+}
+
+@keyframes glowNP {
+
+  0%,
+  50% {
+    background-color: var(--section-bg);
+    color: var(--white-text);
+  }
+
+  25%,
+  100% {
+    background-color: var(--footer);
+    color: var(--black-text);
+  }
+}
 
 /* --------------------20 FORM/JOIN PAGE -------------------- */
 /* all of the following is from the last form assignment */
