@@ -1,23 +1,8 @@
 import { membershipLevels } from "../data/membership.js";
 console.log(membershipLevels);
 
-//membership level Cards.js for the join webpage
-// // ---------------- FETCHING BUSINESS CARD DATA ----------------
-// const businessData = 'data/members.json';
-// //above: JSON array of objects containing business information
-// const spotlightCards = document.getElementById('spotlight-cards');
-// let businesses = [];  //allows global use
 
-// async function getBusinessData(displayFunction) {
-//   const response = await fetch(businessData);
-//   //above:  data request from JSON formated file.  await makes further code pause until data returned.
-//   const data = await response.json();
-//   //above: parses JSON to object and saves in the variable "data".  await used to pause code until finished.
-//   // console.table(data.companies);
-//   // above: temp output test of data response.  data.companies because data is an object containing a single array of objects called companies.  Table works best with arrays directly, not objects.
-//   businesses = data.companies;
 displayMembershipLevels(membershipLevels);
-//call to function below.
 
 // ----------- DISPLAYING MEMBERSHIP LEVEL CARDS -----------
 
@@ -79,8 +64,4 @@ function displayMembershipLevels(levels) {
 
 }
 
-
-// // general function for choosing a number between a minimum number and a maximum number:
-// function getRandomInt(min, max) {
-//   return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
+// ---------------- MODAL FUNCTIONS ----------------
