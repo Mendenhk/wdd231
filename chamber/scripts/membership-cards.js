@@ -23,7 +23,7 @@ function displayMembershipLevels(levels) {
   levels.forEach((level) => {
     let card = document.createElement('section');
     let title = document.createElement('h3');
-    let benefits = document.createElement('div');
+    // let benefits = document.createElement('div');
     // let cost = document.createElement('p');
     // let benefitText = document.createElement('p');
     // let benefitUL = document.createElement('ul');
@@ -50,14 +50,14 @@ function displayMembershipLevels(levels) {
     //   benefitList += listLine;
     // });
     // benefitUL.innerHTML = benefitList;
-    benefitButton.innerHTML = 'more info';
+    benefitButton.innerHTML = 'Learn More';
     benefitButton.setAttribute('id', 'open-button');
     benefitButton.addEventListener('click', () => showStuff(level));
     // benefits.appendChild(cost);
     // benefits.appendChild(benefitText)
     // benefits.appendChild(benefitUL);
     card.appendChild(title);
-    card.appendChild(benefits);
+    // card.appendChild(benefits);
     card.appendChild(benefitButton);
     levelsSection.appendChild(card);
 
@@ -83,7 +83,7 @@ function showStuff(x) {
   dialogBox.showModal();
   myCost.innerHTML = `Yearly Cost: $${x.cost}`;
   myBenefits.innerHTML = 'Benefits:';
-  let benefitList = `hello`;
+  let benefitList = ``;
   x.benefits.forEach((line) => {
     const listLine = `<li>${line}</li>`;
     benefitList += listLine;

@@ -478,7 +478,7 @@ header span {
   border-bottom-right-radius: 10px;
 }
 
-/* -----------------17 MEMBERSHIP LEVEL CARDS ----------------- */
+/* --------------14 MEMBERSHIP LEVEL CARDS AND MODAL-------------- */
 .form-cards-div {
   display: grid;
 }
@@ -491,10 +491,8 @@ header span {
   /* margin-top: 0.2rem; */
 }
 
-.mCard {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  ;
+.mCard,
+#dialog-box {
   background-color: var(--section-bg);
   color: var(--white-text);
   border: 1px solid darkgray;
@@ -503,6 +501,12 @@ header span {
   margin-top: 0.5rem;
 }
 
+#dialog-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* check */
 .level-cards h2 {
   font-size: 1.7rem;
   color: #E07A5F;
@@ -510,32 +514,46 @@ header span {
   border-bottom: 1px solid #eee;
 }
 
-.mCard h3 {
+.mCard h3,
+#dialog-box h2 {
   text-align: center;
-  grid-column: 1/-1;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid white;
 }
 
-.mCard div {
+#dialog-box h2 {
+  grid-column: 1/-1;
+}
+
+#dialog-box div {
   padding: 0.5rem;
   font-size: 0.9rem;
 }
 
-.mCard ul {
+#dialog-box ul {
   margin-left: 1rem;
 }
 
-.mCard p:nth-of-type(2) {
+#dialog-box p:nth-of-type(2) {
   padding-top: 0.5rem;
 }
 
-.mCard button {
-  width: 100px;
+.mCard button,
+#dialog-box button {
+  display: block;
+  width: 120px;
   height: 44px;
-  align-self: center;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.mCard button {
+  margin: 5px auto 5px auto;
+}
+
+#dialog-box button {
+  align-self: center;
+  margin: 1rem;
 }
 
 /* .sCard #contact {
