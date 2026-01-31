@@ -24,9 +24,9 @@ function displayMembershipLevels(levels) {
     let card = document.createElement('section');
     let title = document.createElement('h3');
     let benefits = document.createElement('div');
-    let cost = document.createElement('p');
-    let benefitText = document.createElement('p');
-    let benefitUL = document.createElement('ul');
+    // let cost = document.createElement('p');
+    // let benefitText = document.createElement('p');
+    // let benefitUL = document.createElement('ul');
     let benefitButton = document.createElement('button');
     card.setAttribute('class', 'mCard');
     if (level.memberLevel === "NP") {
@@ -42,20 +42,20 @@ function displayMembershipLevels(levels) {
       card.setAttribute('id', 'gold')
     }
     title.innerHTML = `${level.title}`;
-    cost.innerHTML = `Yearly Cost: $${level.cost}`;
-    benefitText.innerHTML = 'Benefits:';
-    let benefitList = ``;
-    level.benefits.forEach((line) => {
-      const listLine = `<li>${line}</li>`;
-      benefitList += listLine;
-    });
-    benefitUL.innerHTML = benefitList;
+    // cost.innerHTML = `Yearly Cost: $${level.cost}`;
+    // benefitText.innerHTML = 'Benefits:';
+    // let benefitList = ``;
+    // level.benefits.forEach((line) => {
+    //   const listLine = `<li>${line}</li>`;
+    //   benefitList += listLine;
+    // });
+    // benefitUL.innerHTML = benefitList;
     benefitButton.innerHTML = 'more info';
     benefitButton.setAttribute('id', 'open-button');
-    benefitButton.addEventListener('click', () => functionCall(x))
-    benefits.appendChild(cost);
-    benefits.appendChild(benefitText)
-    benefits.appendChild(benefitUL);
+    benefitButton.addEventListener('click', () => showStuff(level));
+    // benefits.appendChild(cost);
+    // benefits.appendChild(benefitText)
+    // benefits.appendChild(benefitUL);
     card.appendChild(title);
     card.appendChild(benefits);
     card.appendChild(benefitButton);
@@ -65,19 +65,28 @@ function displayMembershipLevels(levels) {
 
 }
 
-// ---------------- MODAL FUNCTIONS ----------------
+// ---------------- MODAL CONSTANTS AND FUNCTIONS ----------------
 const openButton = document.querySelector('#open-button');
 const dialogBox = document.querySelector('#dialog-box');
 const closeButton = document.querySelector('#dialog-box button');
 const myTitle = document.querySelector('#dialog-box H2');
 const myCost = document.querySelector('#my-cost');
-const myBenefits = document.querySelector('my-benefits');
+const myBenefits = document.querySelector('#my-benefits');
 const myBenefitsList = document.querySelector('#dialog-box ul');
-
-openButton.addEventListener('click', () => {
-  dialogBox.showModal();
-});
 
 closeButton.addEventListener('click', () => {
   dialogBox.close();
 });
+
+function showStuff(x) {
+  myTitle.innerHTML = x.title;
+  dialogBox.showModal();
+  myCost.innerHTML = `Yearly Cost: $${x.cost}`;
+  myBenefits.innerHTML = 'Benefits:';
+  let benefitList = `hello`;
+  x.benefits.forEach((line) => {
+    const listLine = `<li>${line}</li>`;
+    benefitList += listLine;
+  });
+  myBenefitsList.innerHTML = benefitList;
+}
