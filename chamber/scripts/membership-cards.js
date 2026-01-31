@@ -51,7 +51,7 @@ function displayMembershipLevels(levels) {
     // });
     // benefitUL.innerHTML = benefitList;
     benefitButton.innerHTML = 'Learn More';
-    benefitButton.setAttribute('id', 'open-button');
+    // benefitButton.setAttribute('id', 'open-button');
     benefitButton.addEventListener('click', () => showStuff(level));
     // benefits.appendChild(cost);
     // benefits.appendChild(benefitText)
@@ -66,21 +66,19 @@ function displayMembershipLevels(levels) {
 }
 
 // ---------------- MODAL CONSTANTS AND FUNCTIONS ----------------
-const openButton = document.querySelector('#open-button');
 const dialogBox = document.querySelector('#dialog-box');
-const closeButton = document.querySelector('#dialog-box button');
 const myTitle = document.querySelector('#dialog-box H2');
 const myCost = document.querySelector('#my-cost');
 const myBenefits = document.querySelector('#my-benefits');
 const myBenefitsList = document.querySelector('#dialog-box ul');
-
-closeButton.addEventListener('click', () => {
-  dialogBox.close();
-});
+// const closeButton = document.querySelector('#dialog-box button');
+// closeButton.addEventListener('click', () => dialogBox.close());
 
 function showStuff(x) {
+  const closeButton = document.createElement('button');
+  closeButton.innerHTML = "Close";
+  closeButton.addEventListener('click', () => dialogBox.close());
   myTitle.innerHTML = x.title;
-  dialogBox.showModal();
   myCost.innerHTML = `Yearly Cost: $${x.cost}`;
   myBenefits.innerHTML = 'Benefits:';
   let benefitList = ``;
@@ -89,4 +87,7 @@ function showStuff(x) {
     benefitList += listLine;
   });
   myBenefitsList.innerHTML = benefitList;
+  // dialogBox.appendChild(closeButton);
+  dialogBox.showModal();
+
 }

@@ -273,7 +273,7 @@ header span {
 
 
 
-/* -------------------------25 -  BUSINESS CARDS ------------------------- */
+/* --------------------20 -  BUSINESS CARDS -------------------- */
 .card-button-div {
   display: flex;
   justify-content: space-between;
@@ -506,7 +506,6 @@ header span {
   grid-template-columns: 2fr 1fr;
 }
 
-/* check */
 .level-cards h2 {
   font-size: 1.7rem;
   color: #E07A5F;

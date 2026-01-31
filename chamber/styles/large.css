@@ -45,7 +45,7 @@
     width: 400px;
   }
 
-  /* -------------------------25 -  EVENTS & WEATHER SECTIONS ------------------------- */
+  /* ---------------15 -  EVENTS & WEATHER SECTIONS --------------- */
   .events-weather {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -88,6 +88,9 @@
     margin-top: 60px;
   }
 
+  dialog {
+    margin: auto;
+  }
 
   /* --------------------20 -  BUSINESS CARDS -------------------- */
   .cards {
