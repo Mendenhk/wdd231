@@ -51,7 +51,7 @@ function displayMembershipLevels(levels) {
     });
     benefitUL.innerHTML = benefitList;
     benefitButton.innerHTML = 'more info';
-    benefitButton.setAttribute('id', 'info-button');
+    benefitButton.setAttribute('id', 'open-button');
     benefits.appendChild(cost);
     benefits.appendChild(benefitText)
     benefits.appendChild(benefitUL);
@@ -65,3 +65,14 @@ function displayMembershipLevels(levels) {
 }
 
 // ---------------- MODAL FUNCTIONS ----------------
+const openButton = document.querySelector('#open-button');
+const dialogBox = document.querySelector('#dialog-box');
+const closeButton = document.querySelector('#dialog-box button');
+
+openButton.addEventListener('click', () => {
+  dialogBox.showModal();
+});
+
+closeButton.addEventListener('click', () => {
+  dialogBox.close();
+});
