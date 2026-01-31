@@ -503,7 +503,6 @@ header span {
   color: var(--white-text);
   border: 1px solid darkgray;
   border-radius: 10px;
-  padding-top: 0.3rem;
   margin-top: 0.5rem;
 }
 
@@ -513,7 +512,8 @@ header span {
 }
 
 #dialog-box.np::backdrop {
-  background-color: rgb(0 0 0 / 50%);
+  background-color: rgb(135 206 235 / 50%);
+  /* border-top-right-radius: 10px; */
 }
 
 #dialog-box.bronze::backdrop {
@@ -537,8 +537,10 @@ header span {
 
 .mCard h3 {
   text-align: center;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
   border-bottom: 1px solid white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 #dialog-box h2 {
