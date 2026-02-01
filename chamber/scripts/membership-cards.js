@@ -8,25 +8,9 @@ displayMembershipLevels(membershipLevels);
 
 function displayMembershipLevels(levels) {
   const levelsSection = document.querySelector('#level-cards');
-  //   const spotlightMembers = members.filter(member => member.memberLevel === 3 || member.memberLevel === 2);
-  //   const selectedMembers = [];
-  //   //below: returns a random interger between 0 and the length of the spotlightMembers array minus 1
-  //   for (let i = 0; i < 2; i++) {
-  //     // creates an array of 2 unique random spotlight members
-  //     const randInt = getRandomInt(0, spotlightMembers.length - 1);
-  //     console.log(randInt);
-  //     selectedMembers.push(spotlightMembers[randInt]);
-  //     spotlightMembers.splice(randInt, 1);
-  //     // console.log(spotlightMembers);
-  //     console.log(selectedMembers);
-  //   }
   levels.forEach((level) => {
     let card = document.createElement('section');
     let title = document.createElement('h3');
-    // let benefits = document.createElement('div');
-    // let cost = document.createElement('p');
-    // let benefitText = document.createElement('p');
-    // let benefitUL = document.createElement('ul');
     let benefitButton = document.createElement('button');
     card.setAttribute('class', 'mCard');
     if (level.memberLevel === "np") {
