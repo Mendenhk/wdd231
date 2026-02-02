@@ -2,15 +2,15 @@
 :root {
 
   /* backgrounds */
-  --header-section-hd: rgb(44, 39, 93);
+  --header-section-hd: #F2B5C4;
   --section-bg: rgb(70, 127, 129);
   --footer: rgb(227, 243, 249);
   --section-faded: rgba(227, 243, 249, 0.5);
 
 
   /* Text */
-  --white-text: #fff;
-  --black-text: #000;
+  --white-text: #FAF7F5;
+  --black-text: #333333;
 }
 
 /* -------------------------25 - SITE WIDE ------------------------- */
@@ -22,9 +22,13 @@
   padding: 0;
 }
 
+
 .main-page {
-  margin: 0 1rem;
+  /* temporary-return to margin: 0 1rem when go to working web page */
+  padding: 1rem;
+  /* margin: 0 1rem; */
 }
+
 
 /* -------------------------25 - HEADER  ------------------------- */
 header {
