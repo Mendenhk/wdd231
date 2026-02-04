@@ -1,0 +1,100 @@
+{
+  "companies": [
+    {
+      "name": "Morro Bay Golf Course",
+      "tagline": "Affordable golf at its finest!",
+      "address": "201 State Park Rd, Morro Bay, CA 93442",
+      "email": "Joel@golfmorrobay.com",
+      "phone": "(805) 772-1923",
+      "URLName": "golfmorrobay.com",
+      "URL": "https://golfmorrobay.com",
+      "image": "images/morro-golf.webp",
+      "logo": "https://golfmorrobay.com/wp-content/uploads/2016/02/morrobay_logo.png",
+      "memberLevel": 3
+    },
+    {
+      "name": "Current Networks",
+      "tagline": "Innovate. Connect. Thrive.",
+      "address": "225 S Ocean Ave, Cayucos CA",
+      "email": "sales@current-networks.com",
+      "phone": "(805) 782-1005",
+      "URLName": "current-networks.com",
+      "URL": "https://current-networks.com",
+      "logo": "https://current-networks.com/wp-content/uploads/2017/11/leftright-851x315-transparent-72dpi.png",
+      "image": "images/current-networks.webp",
+      "memberLevel": 3
+    },
+    {
+      "name": "Even Keel Wind",
+      "tagline": "Powering California's Coast",
+      "address": "2One South Wacker Drive, Suite 1500, Chicago, IL 60606",
+      "email": "media@invenergy.com",
+      "phone": "(805) 782-1005",
+      "URLName": "evenkeelwind.invenergy.com",
+      "URL": "https://evenkeelwind.invenergy.com",
+      "image": "images/even-keel-wind.webp",
+      "logo": "https://images.contentstack.io/v3/assets/blt1b4c58e01961ab11/blt9e256a2379253ba7/680a55e730ddbd5194a0bef9/Even_Keel_Wind_Logo_-_Horizontal_-_Web.png?branch=production",
+      "memberLevel": 2
+    },
+    {
+      "name": "Central Coast Community Energy",
+      "tagline": "Power for Good",
+      "address": "1026 Palm Street San, Luis Obispo, CA 93401, USA",
+      "email": "SouthSupport@3CE.org",
+      "phone": "(877) 455-2223",
+      "URLName": "3cenergy.org",
+      "URL": "https://3cenergy.org",
+      "image": "images/central-coast-community-energy.webp",
+      "logo": "https://3cenergy.org/wp-content/uploads/2024/10/ccce-color-web-4.png",
+      "memberLevel": 2
+    },
+    {
+      "name": "The Dough Connection",
+      "tagline": "Safe to eat, small batch cookie dough",
+      "address": "913 Embarcadero St, Morro Bay, CA",
+      "email": "thedoughconnection805@gmail.com",
+      "phone": "(877) 693-6844",
+      "URLName": "the-dough-connection.square.site",
+      "URL": "https://the-dough-connection.square.site",
+      "image": "images/the-dough-connection.webp",
+      "logo": "https://golfmorrobay.com/wp-content/uploads/2016/02/morrobay_logo.png",
+      "memberLevel": 1
+    },
+    {
+      "name": "Poppy Clothing",
+      "tagline": "Fashion for Every Body",
+      "address": "911 Embarcadero, Morro Bay, CA 934",
+      "email": "online@poppywoman.com",
+      "phone": "(805) 771-9750",
+      "URLName": "poppywoman.com",
+      "URL": "https://www.poppywoman.com",
+      "image": "images/poppy-clothing.webp",
+      "logo": "https://golfmorrobay.com/wp-content/uploads/2016/02/morrobay_logo.png",
+      "memberLevel": 1
+    },
+    {
+      "name": "Under The Sea Gallery",
+      "tagline": "Find What you Love, Love What You Find...",
+      "address": "833 b, 725 Embarcadero, Morro Bay, CA 93442",
+      "email": "online@poppywoman.com",
+      "phone": "(805) 772-4872",
+      "URLName": "undertheseagallery.com",
+      "URL": "https://undertheseagallery.com",
+      "image": "images/under-sea-gallery.webp",
+      "logo": "https://golfmorrobay.com/wp-content/uploads/2016/02/morrobay_logo.png",
+      "memberLevel": 1
+    }
+    {
+      "name": "Under The Sea Gallery",
+      "tagline": "Find What you Love, Love What You Find...",
+      "address": "833 b, 725 Embarcadero, Morro Bay, CA 93442",
+      "email": "online@poppywoman.com",
+      "phone": "(805) 772-4872",
+      "URLName": "undertheseagallery.com",
+      "URL": "https://undertheseagallery.com",
+      "image": "images/under-sea-gallery.webp",
+      "logo": "https://golfmorrobay.com/wp-content/uploads/2016/02/morrobay_logo.png",
+      "memberLevel": 1
+    }
+  ]
+}
