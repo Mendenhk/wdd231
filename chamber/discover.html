@@ -11,3 +11,103 @@ events - city wide yard sale, mar 20-22
 events - morro bay kite festival, apr 24-26
 Hearst Castle (30 miles north) -->
 <!-- hearst castle -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover-Chamber Of Commerce</title>
+  <meta name="description"
+    content="discover page for chamber of commerce project containing local attractions and events">
+  <meta name="author" content="Kriston Mendenhall">
+
+  <!-- facebook meta's -->
+  <meta property="og:title" content="Morro Bay Chamber of Commerce">
+  <meta property="og:description" content="Chamber of commerce page for morro bay assignment-home page">
+  <meta property="og:image" content="https://mendenhk.github.io/wdd231/chamber/images/mcb-chamber-image.webp.html">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta property="og:url" content="https://www.morrochamber.org">
+
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- google font links here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- style sheets and scripts here -->
+  <link rel="stylesheet" href="styles/normalization.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <!-- last looked at -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/cards.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <img src="images/mcb-logo.svg" alt="site logo" width="48" height="48">
+    <span>Morro Bay Chamber of Commerce</span>
+    <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li  class="current"><a href="#">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-page">
+    <div class="discover-image-overlay">
+      <picture class="discover-hero">
+        <source srcset="images/discover-hero.webp" media="(min-width: 740px)">
+        <img src="images/discover-hero.webp" alt="morro-bay-shopping" width="400" height="200">
+      </picture>
+      <div class="directory-overlay">
+        <p>Looking for something to do?</p>
+        <!-- add content for keynote ticket overlay.  Change above. -->
+      </div>
+    </div>
+    <div class="card-button-div">
+      <h1>Member Directory</h1>
+      <button class="card-button" id="listOrCards"></button>
+    </div>
+    <section id="cards" class="cards"></section>
+  </main>
+  <footer>
+    <div id="cc-address">
+      <p>Morro Bay Chamber of Commerce</p>
+      <p>695 Harbor St</p>
+      <p>Morro Bay, CA 93442</p>
+      <p>info@morrochamber.org</p>
+      <p>(805) 772-4467</p>
+    </div>
+    <div class="social">
+      <a href="https://www.linkedin.com/company/morro-bay-chamber-of-commerce/" target="_blank"><img
+          src="images/linkedin.svg" alt="linkedin" width="44" height="44"></a>
+      <a href="https://www.facebook.com/morro.chamber/" target="_blank"><img src="images/facebook.svg" alt="facebook"
+          width="44" height="44"></a>
+      <a href="https://www.instagram.com/morrobaychamber/" target="_blank"><img src="images/instagram.svg"
+          alt="instagram" width="44" height="44"></a>
+    </div>
+    <div id="project-info">
+      <p>WDD231 Class Project: Chamber of Commerce</p>
+      <p>Kriston Mendenhall</p>
+      <p>
+        ©️<span id="currentYear">JavaScript Year</span> Moro Bay Chamber of Commerce
+      </p>
+
+      <p id="lastModified">add last modified with JavaScript</p>
+    </div>
+  </footer>
+</body>
+
+</html>
