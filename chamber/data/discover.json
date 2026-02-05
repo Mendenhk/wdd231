@@ -29,7 +29,7 @@
     {
       "name": "Morro Bay Restaurants",
       "tagline": "Powering California's Coast",
-      "address": "1185 Embarcadero, Morro Bay, CA  93442",
+      "address": "1185 Embarcadero, Morro Bay, CA 93442",
       "description": "Here you will find the freshest ocean-to-table cuisine made from daily caught local seafood, including oysters from Morro Bay’s two sustainable oyster farms",
       "email": "media@invenergy.com",
       "phone": "(805) 782-1005",
@@ -90,14 +90,15 @@
       "image": "images/discover-hike.webp",
       "logo": "https://golfmorrobay.com/wp-content/uploads/2016/02/morrobay_logo.png",
       "memberLevel": 1
-    }
+    },
     {
-      "name": "Under The Sea Gallery",
+      "name": "Hearst Castle",
       "tagline": "Find What you Love, Love What You Find...",
-      "address": "833 b, 725 Embarcadero, Morro Bay, CA 93442",
+      "address": "8750 Hearst Castle Road, San Simeon, CA 93452",
+      "description": "From experiencing what life was like as a guest of W. R. Hearst to exploring his personal collection of rare and ancient works of art, encounter the majesty and beauty of this historical treasure first-hand with a guided Hearst Castle tour.",
       "email": "online@poppywoman.com",
       "phone": "(805) 772-4872",
-      "URLName": "undertheseagallery.com",
+      "URLName": "discover-hearst-castle.com",
       "URL": "https://undertheseagallery.com",
       "image": "images/under-sea-gallery.webp",
       "logo": "https://golfmorrobay.com/wp-content/uploads/2016/02/morrobay_logo.png",
