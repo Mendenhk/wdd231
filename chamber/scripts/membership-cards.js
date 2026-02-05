@@ -26,22 +26,9 @@ function displayMembershipLevels(levels) {
       card.setAttribute('id', 'gold')
     }
     title.innerHTML = `${level.title}`;
-    // cost.innerHTML = `Yearly Cost: $${level.cost}`;
-    // benefitText.innerHTML = 'Benefits:';
-    // let benefitList = ``;
-    // level.benefits.forEach((line) => {
-    //   const listLine = `<li>${line}</li>`;
-    //   benefitList += listLine;
-    // });
-    // benefitUL.innerHTML = benefitList;
     benefitButton.innerHTML = 'Learn More';
-    // benefitButton.setAttribute('id', 'open-button');
     benefitButton.addEventListener('click', () => showStuff(level));
-    // benefits.appendChild(cost);
-    // benefits.appendChild(benefitText)
-    // benefits.appendChild(benefitUL);
     card.appendChild(title);
-    // card.appendChild(benefits);
     card.appendChild(benefitButton);
     levelsSection.appendChild(card);
 
