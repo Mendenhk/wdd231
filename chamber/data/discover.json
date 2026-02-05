@@ -1,18 +1,17 @@
-{
-  "discoverMorro": [
-    {
-      "name": "Morro Bay Golf Course",
-      "tagline": "Affordable golf at its finest!",
-      "address": "201 State Park Rd, Morro Bay, CA 93442",
-      "description": "Affordable golf at its finest!",
-      "email": "Joel@golfmorrobay.com",
-      "phone": "(805) 772-1923",
-      "URLName": "golfmorrobay.com",
-      "URL": "https://golfmorrobay.com",
-      "image": "images/discover-golf.webp",
-      "logo": "https://golfmorrobay.com/wp-content/uploads/2016/02/morrobay_logo.png",
-      "memberLevel": 3
-    },
+export const discoverMorro = [
+  {
+    "name": "Morro Bay Golf Course",
+    "tagline": "Affordable golf at its finest!",
+    "address": "201 State Park Rd, Morro Bay, CA 93442",
+    "description": "Affordable golf at its finest!",
+    "email": "Joel@golfmorrobay.com",
+    "phone": "(805) 772-1923",
+    "URLName": "golfmorrobay.com",
+    "URL": "https://golfmorrobay.com",
+    "image": "images/discover-golf.webp",
+    "logo": "https://golfmorrobay.com/wp-content/uploads/2016/02/morrobay_logo.png",
+    "memberLevel": 3
+  },
     {
       "name": "Embarcadero Street Shopping",
       "tagline": "Innovate. Connect. Thrive.",
@@ -104,5 +103,4 @@
       "logo": "https://golfmorrobay.com/wp-content/uploads/2016/02/morrobay_logo.png",
       "memberLevel": 1
     }
-  ]
-}
+  ];
