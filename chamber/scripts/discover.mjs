@@ -1,10 +1,10 @@
-import { discoverMorro } from '../data/discover.mjs';
+import { discoverMorro } from '../data/discover-data.mjs';
 console.log(discoverMorro);
 
 
 // ----------- FUNCTION FOR DISPLAYING DISCOVER CARDS -----------
 function displayDiscoverCards(places) {
-  const discoverSection = document.querySelector('#discover-cards');
+  const discoverSection = document.querySelector('#discover-cards-section');
   places.forEach((level) => {
     let dCard = document.createElement('section');
     let myName = document.createElement('h2');
@@ -12,7 +12,6 @@ function displayDiscoverCards(places) {
     let myAddress = document.createElement('p');
     let myCity = document.createElement('p');
     let myDescription = document.createElement('p');
-    // let benefitButton = document.createElement('button');
     dCard.setAttribute('class', 'dCard');
     myName.innerHTML = `${level.name}`;
     myPhoto.setAttribute('src', level.image);

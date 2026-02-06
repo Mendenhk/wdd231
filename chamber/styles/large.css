@@ -112,6 +112,32 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  /* --------------------20 DISCOVER PAGE CARDS -------------------- */
+  .dCard {
+    display: grid;
+    grid-template-areas:
+      "photo"
+      "name"
+      "address"
+      "city"
+      "description";
+  }
+  .dCard img {
+    grid-area: photo;
+  }
+  .dCard h2 {
+    grid-area: name;
+  }
+  .dCard p:first-of-type {
+    grid-area: address;
+  }
+  .dCard p:nth-of-type(2) {
+    grid-area: city;
+  }
+  .dCard p:last-of-type {
+    grid-area: description;
+  }
+
   /* -------------------------25 -  FOOTER ------------------------- */
   footer {
     margin-top: 1rem;
