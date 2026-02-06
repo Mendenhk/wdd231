@@ -32,3 +32,4 @@ function displayDiscoverCards(places) {
 }
 
 displayDiscoverCards(discoverMorro);
+

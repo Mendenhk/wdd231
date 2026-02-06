@@ -7,3 +7,4 @@ const lastModified = document.querySelector("#lastModified");
 lastModified.innerHTML = `Last Modification: ${document.getElementById("lastModified").innerHTML = document.lastModified}`;
 
 
+// ----------- STORING DISPLAYING THE TIME VISITED -----------
