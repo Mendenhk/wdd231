@@ -129,7 +129,7 @@ header span {
 .discover-hero img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /*--------------------20 JOIN US SECTION-------------------- */
@@ -863,7 +863,6 @@ footer {
   margin: 1rem 0;
   grid-column: 1/4;
   background-color: var(--footer);
-  color: var(--light-text);
   padding: 1rem;
 }
 
