@@ -33,3 +33,12 @@ function displayDiscoverCards(places) {
 
 displayDiscoverCards(discoverMorro);
 
+let welcomeP = document.querySelector('#welcomeBack');
+const msToDays = 86400000;
+let currentTime = new Date();
+const lastVisited = localStorage.getItem('visited');
+console.log(lastVisited);
+if (lastVisited === null) {
+  welcomeP.innerHTML = "Welcome! Let us know if you have any questions."
+}
+else if ()

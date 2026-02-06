@@ -649,6 +649,12 @@ header span {
   z-index: 1;
 }
 
+/* --------------------20 DISCOVER PAGE TIME -------------------- */
+
+#welcomeBack {
+  margin-top: 0.3rem;
+  text-align: center;
+}
 
 /* --------------------20 JOIN PAGE ANIMATIONS -------------------- */
 #gold h3 {
