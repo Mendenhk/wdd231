@@ -122,6 +122,16 @@
     gap: 0.5rem;
   }
 
+  .dCard figure {
+    width: 200px;
+    height: auto;
+  }
+
+  .dCard button {
+    top: 180px;
+    left: 50px
+  }
+
   /* -------------------------25 -  FOOTER ------------------------- */
   footer {
     margin-top: 1rem;
