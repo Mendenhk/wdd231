@@ -6,4 +6,21 @@
       "photo description";
   }
 
+  .dCard figure {
+    width: 300px;
+    height: auto;
+  }
+
+  .dCard button {
+    bottom: 20px;
+    right: 10px;
+  }
+
+  .dCard {
+    h2,
+    address,
+    p {
+      margin-left: 0.5rem;
+    }
+  }
 }

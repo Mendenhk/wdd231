@@ -589,6 +589,7 @@ header span {
 
 #discover-cards-section {
   display: grid;
+  gap: 0.5rem;
 }
 
 .dCard {
@@ -607,12 +608,14 @@ header span {
 .dCard figure {
   padding-bottom: 0.5rem;
   grid-area: photo;
+  position: relative;
 }
 
 .dCard img {
   width: 100%;
   height: auto;
   border-radius: 5px;
+
 }
 
 .dCard h2 {
@@ -631,6 +634,19 @@ header span {
   padding: 0.3rem;
   border-radius: 5px;
   grid-area: description;
+}
+
+.dCard button {
+  background-color: var(--footer);
+  opacity: 0.9;
+  cursor: pointer;
+  height: 44px;
+  width: 100px;
+  border-radius: 22px;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  z-index: 1;
 }
 
 
