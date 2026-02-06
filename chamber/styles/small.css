@@ -580,9 +580,12 @@ header span {
 }
 
 /* --------------------20 DISCOVER PAGE CARDS -------------------- */
+#discover-h1 {
+  padding-bottom: 0.5rem;
+}
+
 #discover-cards-section {
-  /* display: grid; */
-  background-color: red;
+  display: grid;
 }
 
 /* .level-cards {
@@ -595,11 +598,11 @@ header span {
 
 .dCard {
   background-color: var(--section-bg);
-  color: var(--white-text);
   border: 1px solid darkgray;
   border-radius: 10px;
   margin-top: 0.5rem;
   display: grid;
+  padding: 0.5rem;
   grid-template-areas:
     "name"
     "photo"
@@ -607,74 +610,37 @@ header span {
     "description";
 }
 
-.dCard img {
+.dCard figure {
+  padding-bottom: 0.5rem;
   grid-area: photo;
 }
 
+.dCard img {
+  width: 100%;
+  height: auto;
+}
+
 .dCard h2 {
+  /* font-size: 1.7rem; */
+  /* margin: 1.5rem 0 .2rem 0; */
+  color: var(--white-text);
+  padding-bottom: 0.5rem;
   grid-area: name;
 }
 
-.dCard p:first-of-type {
+.dCard address {
+  color: var(--white-text);
+  padding-bottom: 0.5rem;
   grid-area: address;
 }
 
-.dCard p:last-of-type {
+.dCard p {
+  background-color: var(--footer);
+  color: var(--black-text);
+  padding: 0.3rem;
+  border-radius: 5px;
   grid-area: description;
 }
-
-
-
-/* .level-cards h2 {
-  font-size: 1.7rem;
-  color: #a25844;
-  margin: 1.5rem 0 .2rem 0;
-  border-bottom: 1px solid #eee;
-} */
-
-/* .mCard h3 {
-  text-align: center;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid white;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-} */
-
-/* #dialog-box h2 {
-  padding: 0.3rem 0 0 0.3rem;
-} */
-
-/* #dialog-box div {
-  padding: 0.5rem;
-  font-size: 0.9rem;
-} */
-
-/* #dialog-box ul {
-  margin-left: 1rem;
-} */
-
-/* #dialog-box p:nth-of-type(2) {
-  padding-top: 0.5rem;
-} */
-
-/* .mCard button {
-  display: block;
-  width: 120px;
-  height: 44px;
-  border-radius: 20px;
-  cursor: pointer;
-  margin: 5px auto 5px auto;
-} */
-
-/* #dialog-box button {
-  width: 120px;
-  height: 44px;
-  border-radius: 20px;
-  cursor: pointer;
-  margin-left: 50%;
-  transform: translate(-50%, 0);
-  margin-bottom: 0.5rem;
-} */
 
 
 /* --------------------20 JOIN PAGE ANIMATIONS -------------------- */
