@@ -17,13 +17,11 @@ function displayDiscoverCards(places) {
     myPhoto.setAttribute('src', level.image);
     myPhoto.setAttribute('alt', level.name);
     myPhoto.setAttribute('loading', 'lazy');
-    myAddress.innerHTML = `${level.address}`;
-    myCity.innerHTML = `${level.city}`;
+    myAddress.innerHTML = `${level.address}<br>${level.city}`;
     myDescription.innerHTML = `${level.description}`;
     dCard.appendChild(myName);
     dCard.append(myPhoto);
     dCard.appendChild(myAddress);
-    dCard.appendChild(myCity);
     dCard.appendChild(myDescription);
     discoverSection.appendChild(dCard);
   });
