@@ -115,6 +115,11 @@
   /* --------------------20 DISCOVER PAGE CARDS -------------------- */
   #discover-cards-section {
     grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .dCard {
+    gap: 0.5rem;
   }
 
   /* -------------------------25 -  FOOTER ------------------------- */

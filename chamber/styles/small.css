@@ -595,7 +595,6 @@ header span {
   background-color: var(--section-bg);
   border: 1px solid darkgray;
   border-radius: 10px;
-  margin-top: 0.5rem;
   display: grid;
   padding: 0.5rem;
   grid-template-areas:
@@ -618,13 +617,11 @@ header span {
 
 .dCard h2 {
   color: var(--white-text);
-  padding-bottom: 0.5rem;
   grid-area: name;
 }
 
 .dCard address {
   color: var(--white-text);
-  padding-bottom: 0.5rem;
   grid-area: address;
 }
 
