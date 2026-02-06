@@ -125,7 +125,8 @@ header span {
 /* --------------------20 -  BODY AND SECTIONS -------------------- */
 .hero img,
 .join-hero img,
-.directory-hero img {
+.directory-hero img,
+.discover-hero img {
   display: block;
   width: 100%;
   height: 100%;
@@ -206,7 +207,8 @@ header span {
 }
 
 .image-overlay,
-.directory-image-overlay {
+.directory-image-overlay,
+.discover-image-overlay {
   position: relative;
 }
 
@@ -579,6 +581,7 @@ header span {
   margin-bottom: 0.5rem;
 }
 
+
 /* --------------------20 DISCOVER PAGE CARDS -------------------- */
 #discover-h1 {
   padding-bottom: 0.5rem;
@@ -587,14 +590,6 @@ header span {
 #discover-cards-section {
   display: grid;
 }
-
-/* .level-cards {
-  padding-left: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  gap: 0.5rem;
-  margin-top: 0.2rem;
-} */
 
 .dCard {
   background-color: var(--section-bg);
@@ -618,11 +613,10 @@ header span {
 .dCard img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .dCard h2 {
-  /* font-size: 1.7rem; */
-  /* margin: 1.5rem 0 .2rem 0; */
   color: var(--white-text);
   padding-bottom: 0.5rem;
   grid-area: name;

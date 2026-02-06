@@ -3,7 +3,7 @@ export const discoverMorro = [
     "name": "Morro Bay Golf Course",
     "address": "201 State Park Rd",
     "city": "Morro Bay, CA 93442",
-    "description": "Affordable golf at its finest!",
+    "description": "Morro Bay Golf Course is a storied “must play” for avid golf groups. Called the “Poor man’s Pebble Beach,” the course’s terrain is hilly and the putting is challenging, but the payoff is quite grand, with ocean and bay views on all 18 holes.",
     "image": "images/discover-golf.webp"
   },
   {
