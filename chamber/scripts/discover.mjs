@@ -33,12 +33,27 @@ function displayDiscoverCards(places) {
 
 displayDiscoverCards(discoverMorro);
 
-let welcomeP = document.querySelector('#welcomeBack');
-const msToDays = 86400000;
-let currentTime = new Date();
-const lastVisited = localStorage.getItem('visited');
-console.log(lastVisited);
-if (lastVisited === null) {
-  welcomeP.innerHTML = "Welcome! Let us know if you have any questions."
+const welcomeElement = document.querySelector('#welcomeBack');
+const msOneDay = 86400000;
+const twoDaysAgo = 1770261000000;
+const twoHoursAgo = 1770253800000;
+const msDateNow = Date.now();
+//above: stores date as a millisecond number
+
+const storedValue = localStorage.getItem('visited');
+// console.log(storedValue);
+if (storedValue !== null) {
+  localStorage.setItem('visited', msDateNow);
+  // console.log(`not null: ${localStorage.getItem('visited')}`);
+  // console.log(`not null: ${Date(localStorage.getItem('visited'))}`);
+  if ((msDateNow - storedValue) < msOneDay) {
+    welcomeElement.innerHTML = 'Back so soon! Awesome!';
+  } else {
+    const days = Math.floor((msDateNow - storedValue) / msOneDay);
+    welcomeElement.innerHTML = `You last visited ${days} days ago.`;
+  }
+} else {
+  localStorage.setItem('visited', msDateNow);
+  // console.log(`null: ${localStorage.getItem('visited')}`);
+  welcomeElement.innerHTML = "Welcome! Let us know if you have any questions."
 }
-else if ()
