@@ -632,6 +632,7 @@ header span {
   background-color: var(--footer);
   color: var(--black-text);
   padding: 0.3rem;
+  margin-top: 0.3rem;
   border-radius: 5px;
   grid-area: description;
 }

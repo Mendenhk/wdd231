@@ -35,8 +35,8 @@ displayDiscoverCards(discoverMorro);
 
 const welcomeElement = document.querySelector('#welcomeBack');
 const msOneDay = 86400000;
-const twoDaysAgo = 1770261000000;
-const twoHoursAgo = 1770253800000;
+// const twoDaysAgo = 1770261000000;
+// const twoHoursAgo = 1770253800000;
 const msDateNow = Date.now();
 //above: stores date as a millisecond number
 

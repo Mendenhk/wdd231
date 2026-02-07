@@ -24,7 +24,7 @@
     border: none;
   }
 
-  /* -------------------------25 -  MAINSECTION ------------------------- */
+  /* --------------------20 -  MAINSECTION -------------------- */
   .main-page,
   nav {
     max-width: 900px;
@@ -62,7 +62,7 @@
     grid-column: 1/-1;
   } */
 
-  /*-------------------------25 JOIN US SECTION------------------------- */
+  /*--------------------20 JOIN US SECTION-------------------- */
   .join-section {
     /* background-color: var(--section-bg); */
     flex-direction: row;
@@ -130,6 +130,14 @@
   .dCard button {
     top: 140px;
     left: 50px
+  }
+
+  .dCard img {
+    transition: transform 0.5s ease;
+  }
+
+  .dCard img:hover {
+    transform: scale(1.1);
   }
 
   /* -------------------------25 -  FOOTER ------------------------- */
