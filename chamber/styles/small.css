@@ -784,11 +784,6 @@ input:required {
   border-left-color: #d70000;
 }
 
-/* input:focus {
-    border-left-color: black;
-    outline: none;
-  } */
-
 input:required:valid {
   border-left-color: green;
 }
@@ -824,17 +819,6 @@ form legend {
   padding-bottom: 0.2rem;
 }
 
-/* input:-webkit-autofill {
-  -webkit-text-fill-color: #3D405B;
-} */
-
-/* #results {
-  background-color: #F4F1DE;
-  padding: 0 1rem;
-  border: 1px solid #E07A5F;
-  border-radius: 6px;
-} */
-
 /* --------------------20 THANK YOU PAGE -------------------- */
 /* fieldsetElement */
 .thanks {
@@ -860,20 +844,6 @@ form legend {
 #join-timestamp {
   font-size: 0.8rem;
 }
-
-
-/* .thanks-btn {
-  height: 44px;
-  width: 200px;
-  font-size: 1.4rem;
-  cursor: pointer;
-  background-color: lightgray;
-  border: 1px solid black;
-  border-radius: 10px;
-  text-decoration: none;
-  text-align: center;
-  padding-top: 0.3rem;
-} */
 
 
 /* -------------------------25 FOOTER ------------------------- */
