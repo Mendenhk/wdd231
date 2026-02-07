@@ -16,11 +16,9 @@
     right: 10px;
   }
 
-  .dCard {
-    h2,
-    address,
-    p {
-      margin-left: 0.5rem;
-    }
+  .dCard h2,
+  .dCard address,
+  .dCard p {
+    margin-left: 0.5rem;
   }
 }
