@@ -1,4 +1,4 @@
-/* -------------------------25 - Color Scheme choices -------------------------*/
+/* --------------------20 - Color Scheme choices --------------------*/
 :root {
 
   /* backgrounds */
@@ -24,9 +24,7 @@
 
 
 .main-page {
-  /* temporary-return to margin: 0 1rem when go to working web page */
   padding: 1rem;
-  /* margin: 0 1rem; */
 }
 
 
@@ -135,7 +133,7 @@ header span {
 }
 
 /*-------------------------25 JOIN US SECTION------------------------- */
-.join-section {
+.about {
   background-color: var(--section-bg);
   display: flex;
   flex-direction: column;
@@ -143,17 +141,17 @@ header span {
   margin-top: 0.5rem;
 }
 
-.join-picture {
+.about-picture {
   position: relative;
 }
 
-.join-picture img {
+.about-picture img {
   width: 100%;
   height: auto;
   max-width: 500px;
 }
 
-.join-picture p {
+.about-picture p {
   font-size: 50px;
   position: absolute;
   top: 50%;
@@ -161,40 +159,33 @@ header span {
   transform: translate(-50%, -50%);
 }
 
-.join-button-div {
+.about-div {
   text-align: center;
   padding: 20px;
 }
 
-.join-button-div h2 {
+.about-div h2 {
   font-size: 1.5rem;
   padding-top: 30px
 }
 
-.join-button-div p {
+.about-div p {
   padding-top: 40px
 }
 
-.join-button-div button {
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-size: 1.6rem;
-  margin: 40px 0;
-}
-
 /* -------------------------25 -  EVENTS & WEATHER SECTIONS ------------------------- */
-.events-weather {
+.categories-section {
   margin-top: 2rem;
 }
 
-.events-weather .updates-h2 {
+.categories-section .elegant-h2 {
   color: var(--black-text);
   background-color: var(--white-text);
   text-align: center;
   grid-column: 1/-1;
 }
 
-.events-weather h2 {
+.categories-section h2 {
   background-color: var(--header-section-hd);
   color: var(--white-text);
   text-align: center;
@@ -260,7 +251,7 @@ header span {
   padding: 0.5rem 0;
 }
 
-.events,
+.elegant-nails,
 .weather,
 .forecast {
   background-color: var(--section-bg);
@@ -268,7 +259,7 @@ header span {
   margin-bottom: 0.5rem;
 }
 
-#events,
+#elegant,
 #weather,
 #forecast {
   padding: 0.5rem

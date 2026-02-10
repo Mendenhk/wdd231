@@ -46,14 +46,14 @@
   }
 
   /* -------------------------25 -  EVENTS & WEATHER SECTIONS ------------------------- */
-  .events-weather {
+  .categories-section {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 0.5rem;
     padding-bottom: 1rem;
   }
 
-  .events-weather h2 {
+  .categories-section h2 {
     text-align: left;
     padding-left: 0.5rem;
   }
@@ -63,29 +63,25 @@
   } */
 
   /*-------------------------25 JOIN US SECTION------------------------- */
-  .join-section {
+  .about {
     /* background-color: var(--section-bg); */
     flex-direction: row;
     /* color: var(--white-text); */
   }
 
-  .join-picture {
+  .about-picture {
     height: 400px;
     /* 400 to match img height */
   }
 
-  .join-picture img {
+  .about-picture img {
     width: 400px;
     height: 400px;
   }
 
-  .join-button-div h3,
-  .join-button-div p {
+  .about-div h2,
+  .about-div p {
     padding-top: 60px;
-  }
-
-  .join-button-div button {
-    margin-top: 60px;
   }
 
 
