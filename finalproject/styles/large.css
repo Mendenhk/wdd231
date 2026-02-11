@@ -24,12 +24,11 @@
     border: none;
   }
 
-  /* -------------------------25 -  MAINSECTION ------------------------- */
+  /* --------------------20 MAINSECTION -------------------- */
   .main-page,
   nav {
     max-width: 900px;
     margin: 0 auto;
-    /* above: the margin written like this centers the contents */
   }
 
   .overlay {
@@ -45,7 +44,7 @@
     width: 400px;
   }
 
-  /* --------------------20 -  NAILS SECTIONS -------------------- */
+  /* --------------------20 NAILS SECTIONS -------------------- */
   .nails-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -62,7 +61,7 @@
     grid-column: 1/-1;
   } */
 
-  /*-------------------------25 JOIN US SECTION------------------------- */
+  /*--------------------25 JOIN US SECTION-------------------- */
   .about {
     /* background-color: var(--section-bg); */
     flex-direction: row;
@@ -85,12 +84,12 @@
   }
 
 
-  /* -------------------------25 -  BUSINESS CARDS ------------------------- */
+  /* --------------------20 BUSINESS CARDS -------------------- */
   .cards {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
-  /* -------------------------25 -  FOOTER ------------------------- */
+  /* -------------------------25 FOOTER ------------------------- */
   footer {
     margin-top: 1rem;
     gap: 0;

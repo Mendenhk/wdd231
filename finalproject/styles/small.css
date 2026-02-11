@@ -3,9 +3,11 @@
 
   /* backgrounds */
   --header-section-hd: #F2B5C4;
-  --section-bg: rgb(70, 127, 129);
-  --footer: rgb(227, 243, 249);
+  /* --section-bg: #6F6468; */
+  --section-bg: #FAF7F5;
+  --footer: #E6E6E6;
   --section-faded: rgba(227, 243, 249, 0.5);
+  --border: rgb(70 127 129);
 
 
   /* Text */
@@ -124,7 +126,7 @@ header span {
 }
 
 
-/* -------------------------25 -  BODY AND SECTIONS ------------------------- */
+/* --------------------20 -  BODY AND SECTIONS -------------------- */
 .hero img,
 .directory-hero img {
   display: block;
@@ -132,13 +134,14 @@ header span {
   height: 100%;
 }
 
-/*-------------------------25 JOIN US SECTION------------------------- */
+/*--------------------20 INDEX - JOIN US SECTION-------------------- */
 .about {
   background-color: var(--section-bg);
   display: flex;
   flex-direction: column;
-  color: var(--white-text);
+  color: var(--black-text);
   margin-top: 0.5rem;
+  border: 1px solid var(--footer);
 }
 
 .about-picture {
@@ -166,14 +169,14 @@ header span {
 
 .about-div h2 {
   font-size: 1.5rem;
-  padding-top: 30px
+  padding-top: 30px;
 }
 
 .about-div p {
   padding-top: 40px
 }
 
-/* ---------------15 - NAILS SECTIONS & MODAL --------------- */
+/* ---------------15 INDEX - NAILS SECTIONS & MODAL --------------- */
 .nails-section {
   margin-top: 2rem;
 }
@@ -184,6 +187,12 @@ header span {
   text-align: center;
   font-size: 1.7rem;
   grid-column: 1/-1;
+  padding: 0.2rem 0;
+  border: 1px solid var(--footer);
+}
+
+.nails-section > div {
+  background-color: var(--border);
 }
 
 .nails-section .button-div {
@@ -211,6 +220,28 @@ header span {
   margin: 0.2rem 0.4rem 0.2rem 0;
   color: var(--white-text);
   cursor: pointer;
+}
+
+#dialog-box {
+  background-color: var(--section-bg);
+  color: var(--black-text);
+  width: 25rem;
+  padding: 0.5rem;
+}
+
+#dialog-box::backdrop {
+  background-color: rgba(242, 181, 196, 0.4);
+}
+
+#dialog-box p {
+  padding-bottom: 0.5rem;
+}
+
+#dialog-box button {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 1px solid lightgray;
+  margin: 0 auto;
 }
 
 .image-overlay,
@@ -256,7 +287,7 @@ header span {
 
 
 
-/* -------------------------25 -  BUSINESS CARDS ------------------------- */
+/* --------------------20 - BUSINESS CARDS -------------------- */
 .card-button-div {
   display: flex;
   justify-content: space-between;
@@ -354,7 +385,7 @@ header span {
   cursor: pointer;
 }
 
-/* -------------------------25 CARDS IN LIST VIEW ------------------------- */
+/* --------------------20 CARDS IN LIST VIEW -------------------- */
 .cards.list {
   display: block;
 }
@@ -371,7 +402,7 @@ header span {
   text-align: left;
 }
 
-/* -------------------------25 SPOTLIGHT CARDS ------------------------- */
+/* --------------------20 SPOTLIGHT CARDS -------------------- */
 
 .spotlight-cards {
   display: grid;

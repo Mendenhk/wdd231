@@ -20,7 +20,7 @@ function displayCategories(nailTypes) {
     myImage.setAttribute('alt', `${nailType.imageAlt}`)
     myTitle.innerHTML = `${nailType.title}`;
     modalButton.innerHTML = 'Learn More >>';
-    modalButton.addEventListener('click', () => showStuff(nailTypes));
+    modalButton.addEventListener('click', () => showStuff(nailType));
     myDiv.appendChild(myTitle);
     myDiv.appendChild(modalButton);
     myCard.appendChild(myImage);
@@ -33,16 +33,16 @@ function displayCategories(nailTypes) {
 // ---------------- MODAL CONSTANTS AND FUNCTIONS ----------------
 const dialogBox = document.querySelector('#dialog-box');
 const dialogTitle = document.querySelector('#dialog-box H3');
-// const myCost = document.querySelector('#my-cost');
+const dialogDetails = document.querySelector('#dialog-box p');
 // const myBenefits = document.querySelector('#my-benefits');
 // const myBenefitsList = document.querySelector('#dialog-box ul');
-// const closeButton = document.querySelector('#dialog-box button');
-// closeButton.addEventListener('click', () => dialogBox.close());
+const closeButton = document.querySelector('#dialog-box button');
+closeButton.addEventListener('click', () => dialogBox.close());
 
 function showStuff(x) {
   // dialogBox.setAttribute('class', x.memberLevel);
-  // myTitle.innerHTML = x.title;
-  // myCost.innerHTML = `Yearly Cost: $${x.cost}`;
+  dialogTitle.innerHTML = `${x.category}`;
+  dialogDetails.innerHTML = `${x.details}`;
   // myBenefits.innerHTML = 'Benefits:';
   // let benefitList = ``;
   // x.benefits.forEach((line) => {
