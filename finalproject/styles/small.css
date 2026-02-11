@@ -185,16 +185,32 @@ header span {
   grid-column: 1/-1;
 }
 
-.nails-section h2 {
+.nails-section .button-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: var(--header-section-hd);
   color: var(--white-text);
-  text-align: center;
-  padding: 0.2rem;
 }
 
 .nails-section img {
   width: 100%;
   height: auto;
+}
+
+.nails-section h3 {
+  text-align: center;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+.nails-section button {
+  border: white 2px solid;
+  border-radius: 22px;
+  background-color: var(--header-section-hd);
+  margin: 0.2rem 0.4rem 0.2rem 0;
+  color: var(--white-text);
+  cursor: pointer;
 }
 
 .image-overlay,
