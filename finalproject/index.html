@@ -42,7 +42,7 @@
   <!-- last checked -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/dates.js" defer></script>
-  <script src="scripts/spotlight-cards.js" defer></script>
+  <script src="scripts/index.js" type="module"></script>
 </head>
 
 <body>
@@ -88,7 +88,7 @@
         <!-- <button id="join-button">Join Now</button> -->
       </div>
     </section>
-    <section class="nails-section">
+    <section class="nails-section" id="nails-section">
       <h2 class="elegant-h2">Our Nail Categories</h2>
       <div class="elegant-nails">
         <img src="images/home-elegant.webp" alt="elegant nails" width="200" height="200">
@@ -118,11 +118,8 @@
       <h3></h3>
 
 
-        <!-- last checked -->
-        <p id="my-cost">Yearly Cost</p>
-        <p id="my-benefits">Benefits: </p>
-        <ul></ul>
-      </div>
+      <!-- last checked -->
+      <p></p>
       <button>Close</button>
     </dialog>
     <section id="spotlight-cards" class="spotlight-cards">
@@ -162,7 +159,7 @@
 <!-- Video presentation: -->
 <!-- sticky header -->
 <!-- directory behavior (current page, :hover, large and mall screen) -->
-<!-- Home page modal -->
+<!-- Home page modal: nail categories created from javaScript so modal buttons could be added that accessed a data file.  Imported to image.mjs as a module which is then improted as a script.  clicking learn more opens a model which is created with DOM and event listener... -->
 <!-- full home vs small screen home -->
 <!-- see though learn more modal buttons -->
 

@@ -1,4 +1,30 @@
 // ---------------- MODAL CONSTANTS AND FUNCTIONS ----------------
+import { categories } from '../data/categories.mjs';
+console.log(categories);
+
+
+displayCategories(categories);
+
+// ----------- DISPLAYING MEMBERSHIP LEVEL CARDS -----------
+
+function displayCategories(nailTypes) {
+  const levelsSection = document.querySelector('#nails-section');
+  nailTypes.forEach((nailType) => {
+  //   let card = document.createElement('section');
+  //   let title = document.createElement('h3');
+  //   let benefitButton = document.createElement('button');
+  //   card.setAttribute('class', 'mCard');
+  //   title.innerHTML = `${level.title}`;
+  //   benefitButton.innerHTML = 'Learn More';
+  //   benefitButton.addEventListener('click', () => showStuff(level));
+  //   card.appendChild(title);
+  //   card.appendChild(benefitButton);
+  //   levelsSection.appendChild(card);
+  });
+
+}
+
+// ---------------- MODAL CONSTANTS AND FUNCTIONS ----------------
 const dialogBox = document.querySelector('#dialog-box');
 const myTitle = document.querySelector('#dialog-box H2');
 const myCost = document.querySelector('#my-cost');
