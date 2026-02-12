@@ -39,7 +39,7 @@
 
 <body>
   <header>
-    <img src="images/mcb-logo.svg" alt="site logo" width="48" height="48">
+    <img src="images/logo.svg" alt="site logo" width="48" height="48">
     <span>Morro Bay Chamber of Commerce</span>
     <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
     <nav id="nav-bar" class="navigation">
@@ -52,22 +52,24 @@
     </nav>
   </header>
   <main class="main-page">
-    <div class="directory-image-overlay">
-      <picture class="directory-hero">
-        <source srcset="images/morro-dir-hero.webp" media="(min-width: 740px)">
-        <img src="images/morro-dir-hero.webp" alt="morro-bay-shopping" width="400" height="200">
+    <div class="design-image-overlay">
+      <picture class="design-hero">
+        <source srcset="images/styles-hero.webp" media="(min-width: 740px)">
+        <img src="images/styles-hero.webp" alt="nail styles business" width="400" height="200">
       </picture>
-      <div class="directory-overlay">
-        <p>Supporting Local Businesses</p>
-        <!-- add content for keynote ticket overlay.  Change above. -->
+      <div class="designs-overlay">
+        <p>Our Design Styles</p>
       </div>
     </div>
-    <div class="card-button-div">
-      <h1>Member Directory</h1>
-      <button class="card-button" id="listOrCards"></button>
-    </div>
-    <section id="cards" class="cards"></section>
+
+    <!-- last checked -->
+    <section class="designs-section">
+      <h1>Our Deigns</h1>
+      <div id="cards" class="cards"></div>
+    </section>
   </main>
+
+
   <footer>
     <div id="cc-address">
       <p>Morro Bay Chamber of Commerce</p>

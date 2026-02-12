@@ -128,7 +128,7 @@ header span {
 
 /* --------------------20 -  BODY AND SECTIONS -------------------- */
 .hero img,
-.directory-hero img {
+.design-hero img {
   display: block;
   width: 100%;
   height: 100%;
@@ -245,7 +245,7 @@ header span {
 }
 
 .image-overlay,
-.directory-image-overlay {
+.design-image-overlay {
   position: relative;
 }
 
@@ -262,7 +262,7 @@ header span {
   text-align: center;
 }
 
-.directory-overlay {
+.designs-overlay {
   position: absolute;
   font-size: 0.9rem;
   font-weight: bolder;
@@ -288,7 +288,7 @@ header span {
 
 
 /* --------------------20 - BUSINESS CARDS -------------------- */
-.card-button-div {
+.designs-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -297,25 +297,9 @@ header span {
   height: 44px;
 }
 
-.card-button-div h1 {
+.designs-section h1 {
   margin: 0;
   padding: 0;
-}
-
-.card-button {
-  height: 44px;
-}
-
-.card-button:hover {
-  cursor: pointer;
-}
-
-.card-button::before {
-  content: "view as list";
-}
-
-.card-button.list::before {
-  content: "view as cards";
 }
 
 .cards {
@@ -383,23 +367,6 @@ header span {
 
 .card #contact a:hover {
   cursor: pointer;
-}
-
-/* --------------------20 CARDS IN LIST VIEW -------------------- */
-.cards.list {
-  display: block;
-}
-
-.cards.list .card {
-  display: block;
-  background-color: var(--white-text);
-  color: var(--black-text);
-  border: none;
-  padding-top: 1rem;
-}
-
-.cards.list h2 {
-  text-align: left;
 }
 
 /* --------------------20 SPOTLIGHT CARDS -------------------- */
