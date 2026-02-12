@@ -1,13 +1,15 @@
-// ---------------- FETCHING AND DISPLAYING BUSINESS CARD DATA ----------------
-const businessData = 'data/members.json';
+// ---------------- FETCHING AND DISPLAYING NAILS CARD DATA ----------------
+const nailsData = 'data/nails-styles.json';
 const cards = document.getElementById('cards');
-let businesses = [];  //allows global use
+let nailStyles = [];  
+//above list outside function allows for global use
 
-async function getBusinessData(displayFunction) {
-  const response = await fetch(businessData);
+// last checked
+async function getNailStyles(displayFunction) {
+  const response = await fetch(nailsData);
   const data = await response.json();
-  businesses = data.companies;
-  displayFunction(businesses);
+  nailStyles = data.nails;
+  displayFunction(nailsStyles);
 }
 getBusinessData(displayBusinesses);  //call to the above function 
 
