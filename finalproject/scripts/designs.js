@@ -1,24 +1,27 @@
 // ---------------- FETCHING AND DISPLAYING NAILS CARD DATA ----------------
-const nailsData = './data/nails-styles.json';
+const nailsData = 'data/nail-styles.json';
 
 // last checked
 const cards = document.getElementById('cards');
 let nailStyles = [];  
 //above list outside function allows for global use
 
-async function getNailsData(displayFunction) {
-  const response = await fetch(nailsData);
-  console.log(response);
-  const data = await response.json();
-  nailStyles = data.nails;
-  displayFunction(nailStyles);
+async function getNailsData() {
+  try {
+    const response = await fetch(nailsData);
+    if (!response.ok) throw new Error('Fetch failed');
+    const data = await response.json();
+    displayNails(data.nails);
+  } catch (error) {
+    console.error(error);
+  }
 }
-getNailsData(displayNails);  //call to the above function 
+getNailsData();  //call to the above function 
 
 function displayNails(nails) {
   cards.innerHTML = ''; //clears div
-  if (cards.classList.contains('list')) {
-    businesses.forEach((business) => {
+//   if (cards.classList.contains('list')) {
+//     nails.forEach((business) => {
     //   let card = document.createElement('section');
     //   let name = document.createElement('h2');
     //   // let tagline = document.createElement('p');
@@ -51,12 +54,12 @@ function displayNails(nails) {
     //   // card.appendChild(image);
     //   card.appendChild(contact);
 
-      cards.appendChild(card);
-    });
-  }
-  else {
-    businesses.forEach((business) => {
-    //   let card = document.createElement('section');
+//       cards.appendChild(card);
+//     });
+//   }
+//   else {
+//     businesses.forEach((business) => {
+//       let card = document.createElement('section');
     //   let name = document.createElement('h2');
     //   let tagline = document.createElement('p');
     //   let image = document.createElement('img');
@@ -87,7 +90,7 @@ function displayNails(nails) {
     //   card.appendChild(image);
     //   card.appendChild(contact);
 
-      cards.appendChild(card);
-    });
-  }
+    //   cards.appendChild(card);
+    // });
+//   }
 }
