@@ -1,19 +1,21 @@
 // ---------------- FETCHING AND DISPLAYING NAILS CARD DATA ----------------
-const nailsData = 'data/nails-styles.json';
+const nailsData = './data/nails-styles.json';
+
+// last checked
 const cards = document.getElementById('cards');
 let nailStyles = [];  
 //above list outside function allows for global use
 
-// last checked
-async function getNailStyles(displayFunction) {
+async function getNailsData(displayFunction) {
   const response = await fetch(nailsData);
+  console.log(response);
   const data = await response.json();
   nailStyles = data.nails;
-  displayFunction(nailsStyles);
+  displayFunction(nailStyles);
 }
-getBusinessData(displayBusinesses);  //call to the above function 
+getNailsData(displayNails);  //call to the above function 
 
-function displayBusinesses(businesses) {
+function displayNails(nails) {
   cards.innerHTML = ''; //clears div
   if (cards.classList.contains('list')) {
     businesses.forEach((business) => {
