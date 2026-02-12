@@ -1,0 +1,136 @@
+{
+  "nails": [
+    {
+      "name": "butterflies",
+      "image": "images/playful-butterflies.webp",
+      "URL": "images/playful-butterflies.webp",
+      "category": "playful",
+      "singlePrice": 6,
+      "setPrice": 65,
+      "time": "60–75 min",
+      "complexity": "standard",
+      "durability": "2–3 weeks"
+    },
+    {
+      "name": "disney",
+      "image": "images/playful-disney.webp",
+      "URL": "images/playful-disney.webp",
+      "category": "playful",
+      "singlePrice": 7,
+      "setPrice": 75,
+      "time": "75–90 min",
+      "complexity": "detailed",
+      "durability": "2–3 weeks"
+    },
+    {
+      "name": "halloween",
+      "image": "images/playful-halloween.webp",
+      "URL": "images/playful-halloween.webp",
+      "category": "playful",
+      "singlePrice": 7,
+      "setPrice": 80,
+      "time": "75–90 min",
+      "complexity": "detailed",
+      "durability": "2–3 weeks"
+    },
+    {
+      "name": "icecream",
+      "image": "images/playful-icecream.webp",
+      "URL": "images/playful-icecream.webp",
+      "category": "playful",
+      "singlePrice": 6,
+      "setPrice": 70,
+      "time": "70–85 min",
+      "complexity": "standard",
+      "durability": "2–3 weeks"
+    },
+    {
+      "name": "palmtrees",
+      "image": "images/playful-palmtrees.webp",
+      "URL": "images/playful-palmtrees.webp",
+      "category": "playful",
+      "singlePrice": 5,
+      "setPrice": 60,
+      "time": "60–75 min",
+      "complexity": "standard",
+      "durability": "2–3 weeks"
+    },
+    {
+      "name": "flower black",
+      "image": "images/three-d-flower-black.webp",
+      "URL": "images/three-d-flower-black.webp",
+      "category": "3D",
+      "singlePrice": 12,
+      "setPrice": 130,
+      "time": "90–120 min",
+      "complexity": "advanced",
+      "durability": "2–4 weeks"
+    },
+    {
+      "name": "flower color",
+      "image": "images/three-d-flower-color.webp",
+      "URL": "images/three-d-flower-color.webp",
+      "category": "3D",
+      "singlePrice": 11,
+      "setPrice": 120,
+      "time": "90–115 min",
+      "complexity": "advanced",
+      "durability": "2–4 weeks"
+    },
+    {
+      "name": "formal",
+      "image": "images/three-d-formal.webp",
+      "URL": "images/three-d-formal.webp",
+      "category": "3D",
+      "singlePrice": 10,
+      "setPrice": 110,
+      "time": "85–105 min",
+      "complexity": "advanced",
+      "durability": "2–4 weeks"
+    },
+    {
+      "name": "toy",
+      "image": "images/three-d-toy.webp",
+      "URL": "images/three-d-toy.webp",
+      "category": "3D",
+      "singlePrice": 13,
+      "setPrice": 140,
+      "time": "100–130 min",
+      "complexity": "premium",
+      "durability": "2–4 weeks"
+    },
+    {
+      "name": "classic",
+      "image": "images/elegant-classic.webp",
+      "URL": "images/elegant-classic.webp",
+      "category": "elegant",
+      "singlePrice": 7,
+      "setPrice": 85,
+      "time": "70–90 min",
+      "complexity": "detailed",
+      "durability": "2–3 weeks"
+    },
+    {
+      "name": "dress",
+      "image": "images/elegant-dress.webp",
+      "URL": "images/elegant-dress.webp",
+      "category": "elegant",
+      "singlePrice": 5,
+      "setPrice": 65,
+      "time": "60–75 min",
+      "complexity": "standard",
+      "durability": "2–3 weeks"
+    },
+    {
+      "name": "pearl",
+      "image": "images/elegant-pearl.webp",
+      "URL": "images/elegant-pearl.webp",
+      "category": "elegant",
+      "singlePrice": 6,
+      "setPrice": 75,
+      "time": "65–85 min",
+      "complexity": "standard",
+      "durability": "2–3 weeks"
+    }
+  ]
+}
