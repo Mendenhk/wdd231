@@ -5,14 +5,13 @@ const cards = document.getElementById('cards');
 let nailStyles = [];  
 //above list outside function allows for global use
 
-// last checked
 async function getNailsData() {
   try {
     const response = await fetch(nailsData);
-    console.log(response);
+    // console.log(response);
     if (!response.ok) throw new Error('Fetch failed');
     const data = await response.json();
-		console.log(data);
+		// console.log(data);
     displayNails(data.nails);
   } catch (error) {
     console.error(error);
@@ -21,27 +20,55 @@ async function getNailsData() {
 getNailsData();  //call to the above function 
 
 function displayNails(stylesObject) {
+	// console.log(stylesObject);
   cards.innerHTML = ''; //clears div
   let elegantSection = document.createElement('section');
+	let elegantTitle = document.createElement('H2');
+	elegantTitle.innerHTML = `ELEGANT`;
+	elegantSection.appendChild(elegantTitle);
   elegantSection.setAttribute('id', 'elegant');
   let threeDSection = document.createElement('section');
+	let threeDTitle = document.createElement('H2');
+	threeDTitle.innerHTML = `3D NAILS`;
+	threeDSection.appendChild(threeDTitle);
   threeDSection.setAttribute('id', 'threeD');
-  let standardSection = document.createElement('section');
-  standardSection.setAttribute('id', 'standard');
+  let playfulSection = document.createElement('section');
+	let playfulTitle = document.createElement('H2');
+	playfulTitle.innerHTML = `PLAYFUL`;
+	playfulSection.appendChild(playfulTitle);
+  playfulSection.setAttribute('id', 'playful');
+
   let elegantList = [];
   let threeDList = [];
-  let standardList = [];
-	stylesObject.forEach((style) => {
-		if (style.category === 'elegant') {
-			elegantList.filter((style) => style.category === 'elegant');
-			console.log(elegantList);
-			//above creates a filtered list of elegant styles
-			elegantList.forEach((style) => {
-				let card = document.createElement('div');
-				let myImage = document.createElement('img');
-			});
-		}
-	});
+  let playfulList = [];
+	elegantList = stylesObject.filter((object) => object.category === 'elegant')
+	console.log(elegantList);
+	threeDList = stylesObject.filter((object) => object.category === '3D')
+	console.log(threeDList);
+	playfulList = stylesObject.filter((object) => object.category === 'playful')
+	console.log(playfulList);
+
+	// last checked
+	//adding cards to each section from the corresponding list
+	elegantList.forEach((item) => {
+		let card = document.createElement('div');
+		let myImage = document.createElement('img');
+		let myName = document.createElement('h3');
+		let singleCost = document.createElement('p');
+		let setCost = document.createElement('p');
+		
+		myImage.setAttribute('src', `${item.image}`);
+		myImage.setAttribute('alt', `${item.name}`);
+		myName.innerHTML = `${item.name}`;
+		singleCost.innerHTML = `Price per nail: $${item.singlePrice}`;
+		setCost.innerHTML = `Price per set (10): $${item.setPrice}`;
+		card.appendChild(myImage);
+		card.appendChild(myName);
+		card.appendChild(singleCost);
+		card.appendChild(setCost);
+		elegantSection.appendChild(card);
+		cards.appendChild(elegantSection);
+		});
 //     nails.forEach((style) => {
     //   let card = document.createElement('section');
     //   let name = document.createElement('h2');
@@ -75,9 +102,8 @@ function displayNails(stylesObject) {
     //   // card.appendChild(image);
     //   card.appendChild(contact);
 
-      cards.appendChild(elegantSection);
       cards.appendChild(threeDSection);
-      cards.appendChild(standardSection);
+      cards.appendChild(playfulSection);
 //     });
 //   }
 //   else {
