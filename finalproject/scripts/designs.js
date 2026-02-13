@@ -1,16 +1,18 @@
 // ---------------- FETCHING AND DISPLAYING NAILS CARD DATA ----------------
 const nailsData = 'data/nail-styles.json';
 
-// last checked
 const cards = document.getElementById('cards');
 let nailStyles = [];  
 //above list outside function allows for global use
 
+// last checked
 async function getNailsData() {
   try {
     const response = await fetch(nailsData);
+    console.log(response);
     if (!response.ok) throw new Error('Fetch failed');
     const data = await response.json();
+		console.log(data);
     displayNails(data.nails);
   } catch (error) {
     console.error(error);
@@ -18,10 +20,29 @@ async function getNailsData() {
 }
 getNailsData();  //call to the above function 
 
-function displayNails(nails) {
+function displayNails(stylesObject) {
   cards.innerHTML = ''; //clears div
-//   if (cards.classList.contains('list')) {
-//     nails.forEach((business) => {
+  let elegantSection = document.createElement('section');
+  elegantSection.setAttribute('id', 'elegant');
+  let threeDSection = document.createElement('section');
+  threeDSection.setAttribute('id', 'threeD');
+  let standardSection = document.createElement('section');
+  standardSection.setAttribute('id', 'standard');
+  let elegantList = [];
+  let threeDList = [];
+  let standardList = [];
+	stylesObject.forEach((style) => {
+		if (style.category === 'elegant') {
+			elegantList.filter((style) => style.category === 'elegant');
+			console.log(elegantList);
+			//above creates a filtered list of elegant styles
+			elegantList.forEach((style) => {
+				let card = document.createElement('div');
+				let myImage = document.createElement('img');
+			});
+		}
+	});
+//     nails.forEach((style) => {
     //   let card = document.createElement('section');
     //   let name = document.createElement('h2');
     //   // let tagline = document.createElement('p');
@@ -31,17 +52,17 @@ function displayNails(nails) {
     //   let phone = document.createElement('p');
     //   let url = document.createElement('a');
     //   card.setAttribute('class', 'card');
-    //   name.innerHTML = `${business.name}`;
-    //   // tagline.textContent = `${business.tagline}`;
+    //   name.innerHTML = `${style.name}`;
+    //   // tagline.textContent = `${style.tagline}`;
     //   // tagline.setAttribute('class', 'tagline')
-    //   email.textContent = `EMAIL: ${business.email}`;
-    //   phone.textContent = `PHONE: ${business.phone}`;
-    //   url.textContent = `URL: ${business.URLName}`;
-    //   url.setAttribute('href', business.URL);
+    //   email.textContent = `EMAIL: ${style.email}`;
+    //   phone.textContent = `PHONE: ${style.phone}`;
+    //   url.textContent = `URL: ${style.URLName}`;
+    //   url.setAttribute('href', style.URL);
     //   url.setAttribute('target', '_blank');
     //   url.setAttribute('class', 'list');
-    //   // image.setAttribute('src', business.image);
-    //   // image.setAttribute('alt', `${business.name} photograph`);
+    //   // image.setAttribute('src', style.image);
+    //   // image.setAttribute('alt', `${style.name} photograph`);
     //   // image.setAttribute('loading', 'lazy');
     //   // image.setAttribute('width', '100');
     //   // image.setAttribute('length', '100');
@@ -54,11 +75,13 @@ function displayNails(nails) {
     //   // card.appendChild(image);
     //   card.appendChild(contact);
 
-//       cards.appendChild(card);
+      cards.appendChild(elegantSection);
+      cards.appendChild(threeDSection);
+      cards.appendChild(standardSection);
 //     });
 //   }
 //   else {
-//     businesses.forEach((business) => {
+//     nails.forEach((style) => {
 //       let card = document.createElement('section');
     //   let name = document.createElement('h2');
     //   let tagline = document.createElement('p');
@@ -68,18 +91,18 @@ function displayNails(nails) {
     //   let phone = document.createElement('p');
     //   let url = document.createElement('a');
     //   card.setAttribute('class', 'card');
-    //   name.innerHTML = `${business.name}`;
-    //   tagline.textContent = `${business.tagline}`;
+    //   name.innerHTML = `${style.name}`;
+    //   tagline.textContent = `${style.tagline}`;
     //   tagline.setAttribute('class', 'tagline')
-    //   email.textContent = `EMAIL: ${business.email}`;
-    //   phone.textContent = `PHONE: ${business.phone}`;
-    //   url.textContent = `URL: ${business.URLName}`;
-    //   image.setAttribute('src', business.image);
-    //   image.setAttribute('alt', `${business.name} photograph`);
+    //   email.textContent = `EMAIL: ${style.email}`;
+    //   phone.textContent = `PHONE: ${style.phone}`;
+    //   url.textContent = `URL: ${style.URLName}`;
+    //   image.setAttribute('src', style.image);
+    //   image.setAttribute('alt', `${style.name} photograph`);
     //   image.setAttribute('loading', 'lazy');
     //   image.setAttribute('width', '100');
     //   image.setAttribute('height', '100');
-    //   url.setAttribute('href', business.URL);
+    //   url.setAttribute('href', style.URL);
     //   url.setAttribute('target', '_blank');
     //   contact.setAttribute('id', 'contact');
     //   contact.appendChild(email);
