@@ -1,4 +1,4 @@
-/* --------------------20 - Color Scheme choices --------------------*/
+/* --------------------20 Color Scheme choices --------------------*/
 :root {
 
   /* backgrounds */
@@ -191,7 +191,7 @@ header span {
   border: 1px solid var(--footer);
 }
 
-.nails-section > div {
+.nails-section>div {
   background-color: var(--border);
 }
 
@@ -287,8 +287,8 @@ header span {
 
 
 
-/* --------------------20 - BUSINESS CARDS -------------------- */
-.designs-section {
+/* --------------------20 - BUSINESS CARDS(CHANGE TO NAILS CARDS) -------------------- */
+/* .designs-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -334,9 +334,6 @@ header span {
 }
 
 .card img {
-  /* width: 100px;
-  max-width: 100px;
-  height: auto; */
   display: block;
   padding: 0.3rem;
   border-radius: 10px;
@@ -367,7 +364,7 @@ header span {
 
 .card #contact a:hover {
   cursor: pointer;
-}
+} */
 
 /* --------------------20 SPOTLIGHT CARDS -------------------- */
 

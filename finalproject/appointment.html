@@ -2,6 +2,7 @@
 <!-- how do I utilize hidden date -->
 <!-- change OG:image -->
 <!-- change OG: url -->
+<!-- change hero image or remove entirely -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +47,6 @@
 
 <body>
   <header>
-    <!-- last checked -->
     <img src="images/logo.svg" alt="site logo" width="48" height="48">
     <span>Nails by Srey</span>
     <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
@@ -63,63 +63,63 @@
     <div class="image-overlay">
       <picture class="join-hero">
         <source src="images/design-hero-large.webp" media="(min-width: 740px)">
-        <img src="images/design-hero-small.webp" alt="morro-bay-small" width="400" height="200">
+        <img src="images/design-hero-small.webp" alt="Nails by Srey-appointment-small" width="400" height="200">
       </picture>
       <div class="overlay">
         <p>Join us — Start your membership today</p>
         <!-- add content for keynote ticket overlay.  Change above. -->
       </div>
     </div>
-    <div class="form-cards-div">
-      <div class="form-div">
-        <form method="GET" action="confirmation.html" class="designOne">
-          <h1>Membership Form</h1>
-          <label>First Name *<input type="text" name="first" required autocomplete="given-name"
-              title="Your First Name"></label>
-          <label>Last Name *<input type="text" name="last" required autocomplete="family-name"
-              title="Your Last Name"></label>
-          <label>Organizational Title *<input type="text" name="title" required autocomplete="organization-title"
-              title="Your organizational title" pattern="^[A-Za-z\- ]{7,}$"></label>
-          <!-- the "pattern" above allows only letters, hyphens, spaces and a maximum of 7 characters. -->
-          <label>Email *<input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
-              autocomplete="email"></label>
-          <label>Cell Phone *<input type="tel" name="phone" autocomplete="tel" required
-              title="A Phone Number with dashes" placeholder="555-555-5555"></label>
-          <label>Business/Organization Name *<input type="text" name="business" required autocomplete="organization"
-              title="Your business"></label>
 
-          <fieldset>
-            <legend>Membership Level *</legend>
-            <label>
-              <input type="radio" name="membership" value="NP" required>
-              NP Membership (non-profit)
-            </label>
-            <label>
-              <input type="radio" name="membership" value="Bronze">
-              Bronze Membership
-            </label>
-            <label>
-              <input type="radio" name="membership" value="Silver">
-              Silver Membership
-            </label>
-            <label>
-              <input type="radio" name="membership" value="Gold">
-              Gold Membership
-            </label>
-          </fieldset>
+    <!-- last checked -->
+    <div class="form-div">
+      <form method="GET" action="confirmation.html" class="designOne">
+        <h1>Make your selections</h1>
+        <label>First Name *<input type="text" name="first" required autocomplete="given-name"
+            title="Your First Name"></label>
+        <label>Last Name *<input type="text" name="last" required autocomplete="family-name"
+            title="Your Last Name"></label>
+        <label>Organizational Title *<input type="text" name="title" required autocomplete="organization-title"
+            title="Your organizational title" pattern="^[A-Za-z\- ]{7,}$"></label>
+        <!-- the "pattern" above allows only letters, hyphens, spaces and a maximum of 7 characters. -->
+        <label>Email *<input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+            autocomplete="email"></label>
+        <label>Cell Phone *<input type="tel" name="phone" autocomplete="tel" required title="A Phone Number with dashes"
+            placeholder="555-555-5555"></label>
+        <label>Business/Organization Name *<input type="text" name="business" required autocomplete="organization"
+            title="Your business"></label>
 
-          <label>Business/Organization description<textarea name="description" title="Business description"></textarea>
+        <fieldset>
+          <legend>Membership Level *</legend>
+          <label>
+            <input type="radio" name="membership" value="NP" required>
+            NP Membership (non-profit)
           </label>
+          <label>
+            <input type="radio" name="membership" value="Bronze">
+            Bronze Membership
+          </label>
+          <label>
+            <input type="radio" name="membership" value="Silver">
+            Silver Membership
+          </label>
+          <label>
+            <input type="radio" name="membership" value="Gold">
+            Gold Membership
+          </label>
+        </fieldset>
 
-          <input type="hidden" name="timestamp" id="timestamp">
+        <label>Business/Organization description<textarea name="description" title="Business description"></textarea>
+        </label>
 
-          <input type="submit" value="Apply for Membership">
-        </form>
-      </div>
-      <section id="level-cards" class="level-cards">
-        <h2>Membership Levels</h2>
-      </section>
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Apply for Membership">
+      </form>
     </div>
+    <section id="level-cards" class="level-cards">
+      <h2>Membership Levels</h2>
+    </section>
     <!-- modal html for the above created membership level-cards -->
     <dialog id="dialog-box">
       <h2>Sample Title</h2>
@@ -134,11 +134,11 @@
 
   <footer>
     <div id="cc-address">
-      <h3>Morro Bay Chamber of Commerce</h3>
-      <p>695 Harbor St</p>
-      <p>Morro Bay, CA 93442</p>
-      <p>info@morrochamber.org</p>
-      <p>(805) 772-4467</p>
+      <h3>Nails by Srey</h3>
+      <p>someplace</p>
+      <p>Santa Cruz, CA someZip</p>
+      <p>email</p>
+      <p>phone number</p>
     </div>
     <div class="social">
       <a href="https://www.linkedin.com/company/morro-bay-chamber-of-commerce/" target="_blank"><img
@@ -149,7 +149,7 @@
           alt="instagram" width="44" height="44"></a>
     </div>
     <div id="project-info">
-      <p>WDD231 Class Project: Chamber of Commerce</p>
+      <p>WDD231 Class Project: Nails by Srey</p>
       <p>Kriston Mendenhall</p>
       <p>
         ©️<span id="currentYear">JavaScript Year</span> Moro Bay Chamber
