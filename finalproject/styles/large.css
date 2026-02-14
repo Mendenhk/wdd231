@@ -38,12 +38,6 @@
     text-align: center;
   }
 
-  .designs-overlay {
-    font-size: 1.5rem;
-    top: 20px;
-    width: 400px;
-  }
-
   /* --------------------20 NAILS SECTIONS -------------------- */
   .nails-section {
     display: grid;

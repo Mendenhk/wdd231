@@ -244,11 +244,6 @@ header span {
   margin: 0 auto;
 }
 
-.image-overlay,
-.design-image-overlay {
-  position: relative;
-}
-
 .overlay {
   background-color: var(--section-faded);
   border: 1px solid black;
@@ -262,21 +257,6 @@ header span {
   text-align: center;
 }
 
-.designs-overlay {
-  position: absolute;
-  font-size: 0.9rem;
-  font-weight: bolder;
-  top: 15px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  text-align: center;
-  background-color: var(--section-faded);
-  border: 1px solid black;
-  padding: 0.5rem 0.5rem;
-  width: 100%;
-}
-
-
 /* ---------------------- 3D NAILS SECTION --------------------- */
 .elegant-nails,
 .three-d-nails,
@@ -287,7 +267,7 @@ header span {
 
 
 
-/* --------------------20 - BUSINESS CARDS(CHANGE TO NAILS CARDS) -------------------- */
+/* ---------------15 APPOINTMENT NAILS CARDS --------------- */
 /* .designs-section {
   display: flex;
   justify-content: space-between;
@@ -295,21 +275,21 @@ header span {
   margin-top: 2rem;
   margin-bottom: 0;
   height: 44px;
-}
+} */
 
-.designs-section h1 {
+/* .designs-section h1 {
   margin: 0;
   padding: 0;
-}
+} */
 
-.cards {
+/* .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   gap: 0.5rem;
   margin-top: 0.2rem;
-}
+} */
 
-.card {
+/* .card {
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: var(--section-bg);
@@ -317,141 +297,53 @@ header span {
   border: 1px solid darkgray;
   border-radius: 10px;
   padding-top: 0.3rem;
-}
+} */
 
-.card h2 {
+/* .card h2 {
   font-size: 1.1rem;
   text-align: center;
   grid-column: 1/-1;
-}
+} */
 
-.card .tagline {
+/* .card .tagline {
   font-size: 0.8rem;
   text-align: center;
   border-bottom: solid 1px var(--white-text);
   grid-column: 1/-1;
   padding-bottom: 0.2rem;
-}
-
-.card img {
-  display: block;
-  padding: 0.3rem;
-  border-radius: 10px;
-  justify-self: center;
-  align-self: center;
-}
-
-.card #contact {
-  padding: 0.5rem 0.5rem 0 0.5rem;
-}
-
-.card #contact p,
-.card #contact a {
-  text-align: left;
-  font-size: 0.8rem;
-  padding: 0.2rem 0;
-}
-
-.card #contact a {
-  text-decoration: none;
-  color: yellow;
-  padding: 15px 0;
-}
-
-#contact a.list {
-  color: blue;
-}
-
-.card #contact a:hover {
-  cursor: pointer;
 } */
 
-/* --------------------20 SPOTLIGHT CARDS -------------------- */
-
-/* .spotlight-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  gap: 0.5rem;
-  margin-top: 0.2rem;
-}
-
-.sCard {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: var(--section-bg);
-  color: var(--white-text);
-  border: 1px solid darkgray;
-  border-radius: 10px;
-  padding-top: 0.3rem;
-}
-
-.spotlight-cards h2 {
-  color: var(--black-text);
-  text-align: center;
-  grid-column: 1/-1;
-}
-
-.sCard h3 {
-  text-align: center;
-  grid-column: 1/-1;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid white;
-}
-
-.sCard img {
+/* .card img {
   display: block;
-  width: 100%;
-  height: auto;
   padding: 0.3rem;
+  border-radius: 10px;
   justify-self: center;
   align-self: center;
-  background-color: var(--footer);
-  border-radius: 20px;
-  margin-left: 0.5rem;
-}
+} */
 
-.sCard img[src*="golf"] {
-  background-color: darkgray;
-}
+/* .card #contact {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+} */
 
-.sCard #contact {
-  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
-  height: 90px;
-}
-
-.sCard #contact p,
-.sCard #contact a {
+/* .card #contact p,
+.card #contact a {
   text-align: left;
   font-size: 0.8rem;
   padding: 0.2rem 0;
-}
+} */
 
-.sCard #contact a {
-  color: yellow;
+/* .card #contact a {
   text-decoration: none;
+  color: yellow;
   padding: 15px 0;
-}
+} */
 
-.sCard .gold {
-  grid-column: 1/-1;
-  color: black;
-  background-color: gold;
-  text-align: center;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
+/* #contact a.list {
+  color: blue;
+} */
 
-.sCard .silver {
-  grid-column: 1/-1;
-  color: black;
-  background-color: silver;
-  text-align: center;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+/* .card #contact a:hover {
+  cursor: pointer;
 } */
 
 /* --------------------20 FORM/JOIN PAGE -------------------- */
