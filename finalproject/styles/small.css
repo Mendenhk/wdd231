@@ -191,8 +191,9 @@ header span {
   border: 1px solid var(--footer);
 }
 
-.nails-section>div {
+.nails-section > div {
   background-color: var(--border);
+  margin: 0.3rem 0;
 }
 
 .nails-section .button-div {
@@ -277,18 +278,40 @@ header span {
   height: 44px;
 } */
 
+.designs-section h2 {
+  margin: 0.5rem 0;
+}
+
 .designs-section section {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.designs-section .card {
+.dCard {
   background-color: var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
 }
 
-.designs-section img {
+.dCard img {
   width: 100%;
   height: auto;
+  grid-column: 1/-1;
+}
+
+.dCard h3 {
+  font-size: 2rem;
+  padding: 0.3rem 0 0.3rem 0.3rem;
+}
+
+.dCard h3,
+.dCard div {
+  background-color: var(--header-section-hd);
+  color: var(--white-text);
+  margin-top: 0.2rem;
 }
 
 /* .designs-section h1 {

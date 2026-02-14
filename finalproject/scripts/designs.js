@@ -54,10 +54,11 @@ function displayNails(stylesObject) {
 		let card = document.createElement('div');
 		let myImage = document.createElement('img');
 		let myName = document.createElement('h3');
+		let myInnerDiv = document.createElement('div');
 		let singleCost = document.createElement('p');
 		let setCost = document.createElement('p');
 
-		card.setAttribute('class', 'card');
+		card.setAttribute('class', 'dCard');
 		myImage.setAttribute('src', `${item.image}`);
 		myImage.setAttribute('alt', `${item.name}`);
 		myImage.setAttribute('width', '200');
@@ -65,10 +66,11 @@ function displayNails(stylesObject) {
 		myName.innerHTML = `${item.name}`;
 		singleCost.innerHTML = `Price per nail: $${item.singlePrice}`;
 		setCost.innerHTML = `Price per set (10): $${item.setPrice}`;
+		myInnerDiv.appendChild(singleCost);
+		myInnerDiv.appendChild(setCost);
 		card.appendChild(myImage);
 		card.appendChild(myName);
-		card.appendChild(singleCost);
-		card.appendChild(setCost);
+		card.append(myInnerDiv);
 		elegantSection.appendChild(card);
 		cards.appendChild(elegantSection);
 	});
@@ -77,19 +79,21 @@ function displayNails(stylesObject) {
 		let card = document.createElement('div');
 		let myImage = document.createElement('img');
 		let myName = document.createElement('h3');
+		let myInnerDiv = document.createElement('div');
 		let singleCost = document.createElement('p');
 		let setCost = document.createElement('p');
 
-		card.setAttribute('class', 'card');
+		card.setAttribute('class', 'dCard');
 		myImage.setAttribute('src', `${item.image}`);
 		myImage.setAttribute('alt', `${item.name}`);
 		myName.innerHTML = `${item.name}`;
 		singleCost.innerHTML = `Price per nail: $${item.singlePrice}`;
 		setCost.innerHTML = `Price per set (10): $${item.setPrice}`;
+		myInnerDiv.appendChild(singleCost);
+		myInnerDiv.appendChild(setCost);
 		card.appendChild(myImage);
 		card.appendChild(myName);
-		card.appendChild(singleCost);
-		card.appendChild(setCost);
+		card.append(myInnerDiv);
 		threeDSection.appendChild(card);
 		cards.appendChild(threeDSection);
 	});
@@ -98,19 +102,21 @@ function displayNails(stylesObject) {
 		let card = document.createElement('div');
 		let myImage = document.createElement('img');
 		let myName = document.createElement('h3');
+		let myInnerDiv = document.createElement('div');
 		let singleCost = document.createElement('p');
 		let setCost = document.createElement('p');
 
-		card.setAttribute('class', 'card');
+		card.setAttribute('class', 'dCard');
 		myImage.setAttribute('src', `${item.image}`);
 		myImage.setAttribute('alt', `${item.name}`);
 		myName.innerHTML = `${item.name}`;
 		singleCost.innerHTML = `Price per nail: $${item.singlePrice}`;
 		setCost.innerHTML = `Price per set (10): $${item.setPrice}`;
+		myInnerDiv.appendChild(singleCost);
+		myInnerDiv.appendChild(setCost);
 		card.appendChild(myImage);
 		card.appendChild(myName);
-		card.appendChild(singleCost);
-		card.appendChild(setCost);
+		card.append(myInnerDiv);
 		playfulSection.appendChild(card);
 		cards.appendChild(playfulSection);
 	});
