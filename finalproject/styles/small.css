@@ -277,6 +277,15 @@ header span {
   height: 44px;
 } */
 
+.designs-section .card {
+  background-color: var(--border);
+}
+
+.designs-section img {
+  width: 200;
+  height: auto;
+}
+
 /* .designs-section h1 {
   margin: 0;
   padding: 0;

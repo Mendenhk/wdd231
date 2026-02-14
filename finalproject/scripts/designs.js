@@ -60,6 +60,8 @@ function displayNails(stylesObject) {
 		card.setAttribute('class', 'card');
 		myImage.setAttribute('src', `${item.image}`);
 		myImage.setAttribute('alt', `${item.name}`);
+		myImage.setAttribute('width', '200');
+		myImage.setAttribute('height', '200');
 		myName.innerHTML = `${item.name}`;
 		singleCost.innerHTML = `Price per nail: $${item.singlePrice}`;
 		setCost.innerHTML = `Price per set (10): $${item.setPrice}`;
@@ -78,6 +80,7 @@ function displayNails(stylesObject) {
 		let singleCost = document.createElement('p');
 		let setCost = document.createElement('p');
 
+		card.setAttribute('class', 'card');
 		myImage.setAttribute('src', `${item.image}`);
 		myImage.setAttribute('alt', `${item.name}`);
 		myName.innerHTML = `${item.name}`;
@@ -98,6 +101,7 @@ function displayNails(stylesObject) {
 		let singleCost = document.createElement('p');
 		let setCost = document.createElement('p');
 
+		card.setAttribute('class', 'card');
 		myImage.setAttribute('src', `${item.image}`);
 		myImage.setAttribute('alt', `${item.name}`);
 		myName.innerHTML = `${item.name}`;
