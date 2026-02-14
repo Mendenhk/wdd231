@@ -131,6 +131,39 @@
       "time": "65–85 min",
       "complexity": "standard",
       "durability": "2–3 weeks"
+    },
+    {
+      "name": "French Tip",
+      "image": "images/elegant-french.webp",
+      "URL": "images/elegant-french.webp",
+      "category": "elegant",
+      "singlePrice": 6,
+      "setPrice": 70,
+      "time": "60–75 min",
+      "complexity": "standard",
+      "durability": "2–3 weeks"
+    },
+    {
+      "name": "Chrome Shine",
+      "image": "images/elegant-chrome.webp",
+      "URL": "images/elegant-chrome.webp",
+      "category": "elegant",
+      "singlePrice": 8,
+      "setPrice": 95,
+      "time": "75–90 min",
+      "complexity": "detailed",
+      "durability": "2–3 weeks"
+    },
+    {
+      "name": "Gem Accents",
+      "image": "images/three-d-gems.webp",
+      "URL": "images/three-d-gems.webp",
+      "category": "3D",
+      "singlePrice": 13,
+      "setPrice": 135,
+      "time": "95–120 min",
+      "complexity": "advanced",
+      "durability": "2–4 weeks"
     }
   ]
 }
