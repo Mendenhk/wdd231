@@ -121,3 +121,29 @@ function displayNails(stylesObject) {
 		cards.appendChild(playfulSection);
 	});
 }
+
+//code for local storage greeting based on visits
+const backAgain = document.querySelector('#back-again');
+const msOneDay = 86400000;
+// const twoDaysAgo = 1770261000000;
+// const twoHoursAgo = 1770253800000;
+const msDateNow = Date.now();
+//above: stores date as a millisecond number
+
+const storedValue = localStorage.getItem('sreyNailsVisited');
+// console.log(storedValue);
+if (storedValue !== null) {
+	localStorage.setItem('sreyNailsVisited', msDateNow);
+	// console.log(`not null: ${localStorage.getItem('sreyNailsVisited')}`);
+	// console.log(`not null: ${Date(localStorage.getItem('vissreyNailsVisitedited'))}`);
+	if ((msDateNow - storedValue) < msOneDay) {
+		backAgain.innerHTML = 'Thank you for visiting again.';
+	} else {
+		const days = Math.floor((msDateNow - storedValue) / msOneDay);
+		backAgain.innerHTML = `You last visited ${days} days ago.`;
+	}
+} else {
+	localStorage.setItem('sreyNailsVisited', msDateNow);
+	// console.log(`null: ${localStorage.getItem('sreyNailsVisited')}`);
+	backAgain.innerHTML = "Welcome! Let us know if you have any questions."
+}

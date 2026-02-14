@@ -33,6 +33,7 @@ function displayDiscoverCards(places) {
 
 displayDiscoverCards(discoverMorro);
 
+//code for welcoming back
 const welcomeElement = document.querySelector('#welcomeBack');
 const msOneDay = 86400000;
 // const twoDaysAgo = 1770261000000;
