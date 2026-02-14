@@ -142,7 +142,7 @@ header span {
   background-color: var(--section-faded);
   border: 1px solid black;
   position: absolute;
-  top: 120px;
+  top: 90px;
   left: 50%;
   transform: translate(-50%, 0);
   font-size: 1rem;
