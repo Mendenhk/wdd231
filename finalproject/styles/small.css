@@ -191,7 +191,7 @@ header span {
   border: 1px solid var(--footer);
 }
 
-.nails-section > div {
+.nails-section>div {
   background-color: var(--border);
   margin: 0.3rem 0;
 }
@@ -386,12 +386,12 @@ header span {
   cursor: pointer;
 } */
 
-/* --------------------20 FORM/JOIN PAGE -------------------- */
+/* --------------------20 FORM/APPOINTMENT PAGE -------------------- */
 form {
   margin: 1rem 2%;
 }
 
-form h1 {
+form h1, form h2 {
   font-size: 1.7rem;
   color: #a25844;
   margin: 1.5rem 0 .2rem 0;
@@ -408,7 +408,8 @@ label {
 input[type=text],
 input[type=tel],
 input[type=email],
-select {
+input[type=date],
+input[type=time] {
   display: block;
   margin: .1rem 0 1rem 0;
   padding: .3rem;

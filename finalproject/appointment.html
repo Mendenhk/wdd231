@@ -60,33 +60,13 @@
     </nav>
   </header>
   <main class="main-page">
-    <div class="image-overlay">
-      <picture class="join-hero">
-        <source src="images/design-hero-large.webp" media="(min-width: 740px)">
-        <img src="images/design-hero-small.webp" alt="Nails by Srey-appointment-small" width="400" height="200">
-      </picture>
-      <div class="overlay">
-        <p>Join us — Start your membership today</p>
-        <!-- add content for keynote ticket overlay.  Change above. -->
-      </div>
-    </div>
 
     <!-- last checked -->
     <div class="form-div">
       <form method="GET" action="confirmation.html" class="designOne">
         <h1>Make your selections</h1>
-        <label>First Name *<input type="text" name="first" required autocomplete="given-name"
-            title="Your First Name"></label>
-        <label>Last Name *<input type="text" name="last" required autocomplete="family-name"
-            title="Your Last Name"></label>
-        <!-- the "pattern" above allows only letters, hyphens, spaces and a maximum of 7 characters. -->
-        <label>Email *<input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
-            autocomplete="email"></label>
-        <label>Cell Phone *<input type="tel" name="phone" autocomplete="tel" required title="A Phone Number with dashes"
-            placeholder="555-555-5555"></label>
-
         <fieldset>
-          <legend>Elegant Nails *</legend>
+          <legend>Elegant Nails</legend>
           <label>
             <input type="checkbox" name="classic" value="classic">
             Classic
@@ -102,7 +82,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>3D Nails *</legend>
+          <legend>3D Nails</legend>
           <label>
             <input type="checkbox" name="flowerBlack" value="flowerBlack">
             Flower Black
@@ -122,7 +102,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>Playful Nails *</legend>
+          <legend>Playful Nails</legend>
           <label>
             <input type="checkbox" name="butterflies" value="butterflies">
             Butterflies
@@ -145,6 +125,20 @@
           </label>
         </fieldset>
 
+        <h2>Choose a date and time</h2>
+        <label>Date *<input type="date" name="date" required title="Choose date"></label>
+        <label>Time *<input type="time" name="time" required autocomplete="given-name" title="Your First Name"></label>
+
+        <h2>Contact Info</h2>
+        <label>First Name *<input type="text" name="first" required autocomplete="given-name"
+            title="Your First Name"></label>
+        <label>Last Name *<input type="text" name="last" required autocomplete="family-name"
+            title="Your Last Name"></label>
+        <label>Email *<input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+            autocomplete="email"></label>
+        <label>Cell Phone<input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+            placeholder="555-555-5555"></label>
+
         <label>Please list any special requests<textarea name="description" title="Business description"></textarea>
         </label>
 
@@ -153,19 +147,6 @@
         <input type="submit" value="Schedule Appointment">
       </form>
     </div>
-    <section id="level-cards" class="level-cards">
-      <h2>Membership Levels</h2>
-    </section>
-    <!-- modal html for the above created membership level-cards -->
-    <dialog id="dialog-box">
-      <h2>Sample Title</h2>
-      <div>
-        <p id="my-cost">Yearly Cost</p>
-        <p id="my-benefits">Benefits: </p>
-        <ul></ul>
-      </div>
-      <button>Close</button>
-    </dialog>
   </main>
 
   <footer>
