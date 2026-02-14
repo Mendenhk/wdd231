@@ -1,7 +1,7 @@
 {
   "nails": [
     {
-      "name": "butterflies",
+      "name": "Butterflies",
       "image": "images/playful-butterflies.webp",
       "URL": "images/playful-butterflies.webp",
       "category": "playful",
@@ -12,7 +12,7 @@
       "durability": "2–3 weeks"
     },
     {
-      "name": "disney",
+      "name": "Disney",
       "image": "images/playful-disney.webp",
       "URL": "images/playful-disney.webp",
       "category": "playful",
@@ -23,7 +23,7 @@
       "durability": "2–3 weeks"
     },
     {
-      "name": "halloween",
+      "name": "Halloween",
       "image": "images/playful-halloween.webp",
       "URL": "images/playful-halloween.webp",
       "category": "playful",
@@ -34,7 +34,7 @@
       "durability": "2–3 weeks"
     },
     {
-      "name": "icecream",
+      "name": "Icecream",
       "image": "images/playful-icecream.webp",
       "URL": "images/playful-icecream.webp",
       "category": "playful",
@@ -45,7 +45,7 @@
       "durability": "2–3 weeks"
     },
     {
-      "name": "palmtrees",
+      "name": "Palmtrees",
       "image": "images/playful-palmtrees.webp",
       "URL": "images/playful-palmtrees.webp",
       "category": "playful",
@@ -56,7 +56,7 @@
       "durability": "2–3 weeks"
     },
     {
-      "name": "flower black",
+      "name": "Flower Black",
       "image": "images/three-d-flower-black.webp",
       "URL": "images/three-d-flower-black.webp",
       "category": "3D",
@@ -67,7 +67,7 @@
       "durability": "2–4 weeks"
     },
     {
-      "name": "flower color",
+      "name": "Flower Color",
       "image": "images/three-d-flower-color.webp",
       "URL": "images/three-d-flower-color.webp",
       "category": "3D",
@@ -78,7 +78,7 @@
       "durability": "2–4 weeks"
     },
     {
-      "name": "formal",
+      "name": "Formal",
       "image": "images/three-d-formal.webp",
       "URL": "images/three-d-formal.webp",
       "category": "3D",
@@ -89,7 +89,7 @@
       "durability": "2–4 weeks"
     },
     {
-      "name": "toy",
+      "name": "Toy",
       "image": "images/three-d-toy.webp",
       "URL": "images/three-d-toy.webp",
       "category": "3D",
@@ -100,7 +100,7 @@
       "durability": "2–4 weeks"
     },
     {
-      "name": "classic",
+      "name": "Classic",
       "image": "images/elegant-classic.webp",
       "URL": "images/elegant-classic.webp",
       "category": "elegant",
@@ -111,7 +111,7 @@
       "durability": "2–3 weeks"
     },
     {
-      "name": "dress",
+      "name": "Dress",
       "image": "images/elegant-dress.webp",
       "URL": "images/elegant-dress.webp",
       "category": "elegant",
@@ -122,7 +122,7 @@
       "durability": "2–3 weeks"
     },
     {
-      "name": "pearl",
+      "name": "Pearl",
       "image": "images/elegant-pearl.webp",
       "URL": "images/elegant-pearl.webp",
       "category": "elegant",
