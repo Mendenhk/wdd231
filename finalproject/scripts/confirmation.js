@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Lab Start File">
+  <meta name="author" content="Paul Cheney">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <title>Web Lab Start File</title>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" alt="site logo" width="48" height="48">
+    <span>Morro Bay Chamber of Commerce</span>
+    <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <fieldset class="thanks">
+      <legend>Thank you for joining us</legend>
+      <h1>Below are your membership details</h1>
+      <div id="results"></div>
+      <h3>We will get back to you shortly with next steps</h3>
+      <!-- <a href="join.html" class="thanks-btn">← Previous Page</a> -->
+      <p id=join-timestamp></p>
+    </fieldset>
+  </main>
+  <footer>
+    <div id="cc-address">
+      <h3>Nails by Srey</h3>
+      <p>someplace</p>
+      <p>Santa Cruz, CA someZip</p>
+      <p>email</p>
+      <p>phone number</p>
+    </div>
+    <div class="social">
+      <a href="https://www.linkedin.com/company/morro-bay-chamber-of-commerce/" target="_blank"><img
+          src="images/linkedin.svg" alt="linkedin" width="44" height="44"></a>
+      <a href="https://www.facebook.com/morro.chamber/" target="_blank"><img src="images/facebook.svg" alt="facebook"
+          width="44" height="44"></a>
+      <a href="https://www.instagram.com/morrobaychamber/" target="_blank"><img src="images/instagram.svg"
+          alt="instagram" width="44" height="44"></a>
+    </div>
+    <div id="project-info">
+      <p>WDD231 Class Project: Nails by Srey</p>
+      <p>Kriston Mendenhall</p>
+      <p>
+        ©️<span id="currentYear">JavaScript Year</span> Moro Bay Chamber
+      </p>
+
+      <p id="lastModified">add last modified with JavaScript</p>
+    </div>
+  </footer>
+  <script src="scripts/confirmation.js"></script>
+</body>
+
+</html>
