@@ -42,7 +42,7 @@ header {
   align-items: center;
   /* above: pushes items to the vertical center */
   background-color: var(--header-section-hd);
-  color: var(--white-text);
+  color: var(--black-text);
   /* code below: allows the header to not scroll and float above other content as scrolls */
   position: sticky;
   top: 0;
@@ -69,13 +69,13 @@ header span {
   /* above: this font is used to increase the size of "x" */
   padding-bottom: 0.5rem;
   /* above: vertically centers the hamburger button */
-  color: var(--white-text)
+  color: var(--black-text)
 }
 
 .hamburger::before {
   content: "\2630";
   font-size: 2rem;
-  color: var(--white-text)
+  color: var(--black-text)
 }
 
 .hamburger.show::before {
@@ -97,7 +97,6 @@ header span {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  /* all <ul>elements come with preset padding and margins, so we want to get rid of them */
 }
 
 .navigation li {
@@ -109,7 +108,7 @@ header span {
   /* <a> elements default to inline */
   padding: 0.8rem 10px;
   /* above: large enough for finger touch (check with inspect-44px), and padding L/R to match header padding */
-  color: var(--white-text);
+  color: var(--black-text);
   text-decoration: none;
   border-top: solid 1px lightgray;
   cursor: pointer;
@@ -196,7 +195,7 @@ header span {
 
 .nails-section .elegant-h2 {
   color: var(--black-text);
-  background-color: var(--white-text);
+  background-color: var(--black-text);
   text-align: center;
   font-size: 1.7rem;
   grid-column: 1/-1;
@@ -213,7 +212,7 @@ header span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--header-section-hd);
-  color: var(--white-text);
+  color: var(--black-text);
 }
 
 .nails-section img {
@@ -232,7 +231,7 @@ header span {
   border-radius: 22px;
   background-color: var(--header-section-hd);
   margin: 0.2rem 0.4rem 0.2rem 0;
-  color: var(--white-text);
+  color: var(--black-text);
   cursor: pointer;
 }
 
@@ -263,7 +262,7 @@ header span {
 .three-d-nails,
 .playful-nails {
   background-color: var(--section-bg);
-  color: var(--white-text);
+  color: var(--black-text);
 }
 
 
@@ -310,7 +309,7 @@ header span {
 .dCard h3,
 .dCard div {
   background-color: var(--header-section-hd);
-  color: var(--white-text);
+  color: var(--black-text);
   margin-top: 0.2rem;
 }
 
