@@ -131,19 +131,23 @@ const msDateNow = Date.now();
 //above: stores date as a millisecond number
 
 const storedValue = localStorage.getItem('sreyNailsVisited');
-// console.log(storedValue);
-if (storedValue !== null) {
+console.log(storedValue);
+if (storedValue === null) {
+	console.log("Welcome! Let us know if you have any questions.");
+	backAgain.innerHTML = "Welcome! Let us know if you have any questions."
 	localStorage.setItem('sreyNailsVisited', msDateNow);
+} else if ((msDateNow - storedValue) < msOneDay) {
+	backAgain.innerHTML = 'Thank you for visiting again.';
+
 	// console.log(`not null: ${localStorage.getItem('sreyNailsVisited')}`);
 	// console.log(`not null: ${Date(localStorage.getItem('vissreyNailsVisitedited'))}`);
-	if ((msDateNow - storedValue) < msOneDay) {
-		backAgain.innerHTML = 'Thank you for visiting again.';
-	} else {
-		const days = Math.floor((msDateNow - storedValue) / msOneDay);
-		backAgain.innerHTML = `You last visited ${days} days ago.`;
-	}
 } else {
-	localStorage.setItem('sreyNailsVisited', msDateNow);
-	// console.log(`null: ${localStorage.getItem('sreyNailsVisited')}`);
-	backAgain.innerHTML = "Welcome! Let us know if you have any questions."
+	const days = Math.floor((msDateNow - storedValue) / msOneDay);
+	backAgain.innerHTML = `You last visited ${days} days ago.`;
 }
+// } else {
+// 	// console.log(`null: ${localStorage.getItem('sreyNailsVisited')}`);
+// 	localStorage.setItem('sreyNailsVisited', msDateNow);
+// }
+
+// 1771199855922
