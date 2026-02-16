@@ -20,6 +20,8 @@ function displayCategories(nailTypes) {
     myImage.setAttribute('alt', `${nailType.imageAlt}`)
     myTitle.innerHTML = `${nailType.title}`;
     modalButton.innerHTML = 'Learn More >>';
+
+    // opens modal and sends categories (nailType) to function below
     modalButton.addEventListener('click', () => showStuff(nailType));
     myDiv.appendChild(myTitle);
     myDiv.appendChild(modalButton);
