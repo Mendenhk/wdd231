@@ -279,6 +279,7 @@ header span {
 
 .designs-section h2 {
   margin: 0.5rem 0;
+  color: red;
 }
 
 .designs-section section {
@@ -309,7 +310,7 @@ header span {
 .dCard h3,
 .dCard div {
   background-color: var(--header-section-hd);
-  color: var(--black-text);
+  /* color: var(--black-text); */
   margin-top: 0.2rem;
 }
 
