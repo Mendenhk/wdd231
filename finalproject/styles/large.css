@@ -127,3 +127,8 @@
     justify-self: center;
   }
 }
+
+/* video demonstration link */
+.video-demonstration {
+  grid-column: 1/-1;
+}

@@ -527,3 +527,8 @@ footer p {
 #lastModified {
   font-size: 14px;
 }
+
+/* video demonstration link */
+.video-demonstration {
+  text-align: center;
+}
